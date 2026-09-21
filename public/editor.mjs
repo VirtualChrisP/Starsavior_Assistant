@@ -88,7 +88,7 @@ function renderEditor() {
     const input = document.createElement("input"); input.type = "number"; input.step = "any"; input.value = current.equipment?.[key] ?? 0; input.setAttribute("aria-label", `${statLabels[key]}装备加成`);
     const total = document.createElement("strong"); total.className = "stat-total"; total.textContent = formatNumber(getStatTotal(base, input.value), key);
     input.addEventListener("input", () => { total.textContent = formatNumber(getStatTotal(base, input.value), key); });
-    input.addEventListener("change", () => { overrides = upsertCharacterOverride(overrides, item.id, (old) => ({ ...old, equipment: { ...old.equipment, [key]: Number(input.value) || 0 } })); saveOverrides(); });
+    input.addEventListener("input", () => { overrides = upsertCharacterOverride(overrides, item.id, (old) => ({ ...old, equipment: { ...old.equipment, [key]: Number(input.value) || 0 } })); saveOverrides(); });
     row.append(label, input, total); dom.stats.append(row);
   }
   dom.skills.replaceChildren();
@@ -101,7 +101,7 @@ function renderEditor() {
     const nameLabel = document.createElement("label"); nameLabel.textContent = "中文技能名"; const nameInput = document.createElement("input"); nameInput.value = custom.nameZh ?? ""; nameInput.placeholder = "例如：月影斩"; nameLabel.append(nameInput);
     const descLabel = document.createElement("label"); descLabel.textContent = "中文技能描述"; const descInput = document.createElement("textarea"); descInput.value = custom.descriptionZh ?? ""; descInput.placeholder = "输入技能效果、持续回合和触发条件……"; descLabel.append(descInput);
     const update = () => { overrides = upsertCharacterOverride(overrides, item.id, (old) => ({ ...old, skills: { ...old.skills, [key]: { nameZh: nameInput.value, descriptionZh: descInput.value } } })); saveOverrides(); };
-    nameInput.addEventListener("change", update); descInput.addEventListener("change", update); fields.append(nameLabel, descLabel); card.append(heading, fields); dom.skills.append(card);
+    nameInput.addEventListener("input", update); descInput.addEventListener("input", update); fields.append(nameLabel, descLabel); card.append(heading, fields); dom.skills.append(card);
   }
 }
 function exportData() {

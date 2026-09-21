@@ -6,6 +6,7 @@ import {
   undoDraftAction
 } from "/src/draft/draft-state.mjs";
 import { getDraftCandidates, summarizeDraftRisks } from "/src/draft/rule-engine.mjs";
+import { getCharacterOverride, getEquipmentModifier, getStatTotal, sanitizeOverrides, skillOverrideKey } from "/src/knowledge/character-overrides.mjs";
 
 const imageMap = {
   "asherah-voyager-savior-party": "https://starsavior-db.pages.dev/images/icons/UFS_NKM_UNIT_S_VOYAGER_STRANIS.webp",
@@ -25,6 +26,7 @@ const labels = {
 };
 const stageLabels = ["首轮禁用", "首选 1", "次选 2", "首选 2", "次选 2", "首选 2", "次选 1", "末轮禁用"];
 const storageKey = "star-savior-bp-draft-v2";
+const characterOverridesStorageKey = "star-savior-bp-character-overrides-v1";
 
 const dom = {
   app: document.querySelector("#app"), version: document.querySelector("#version-label"),
@@ -47,6 +49,8 @@ let rules;
 let state;
 let actionSide = "ally";
 let toastTimer;
+let characterOverrides = sanitizeOverrides({});
+let selectedDetailId = null;
 
 const rosterById = () => new Map(roster.characters.map((character) => [character.id, character]));
 const knowledgeByRosterId = () => new Map(knowledgeBase.characters.filter((character) => character.rosterId).map((character) => [character.rosterId, character]));
@@ -74,6 +78,11 @@ function normalizedFor(ownerSlug, skill) {
 }
 function displayName(id) { return char(id)?.name ?? id; }
 function titleFor(id) { return char(id)?.title ?? ""; }
+
+function loadCharacterOverrides() {
+  try { characterOverrides = sanitizeOverrides(JSON.parse(localStorage.getItem(characterOverridesStorageKey) ?? "{}")); }
+  catch { characterOverrides = sanitizeOverrides({}); }
+}
 
 function initialState() {
   const saved = localStorage.getItem(storageKey);
@@ -192,49 +201,59 @@ function showDetail(id) {
     showToast("当前角色暂无 Tychara 详情页资料");
     return;
   }
+  selectedDetailId = id;
+  loadCharacterOverrides();
+  const characterOverride = getCharacterOverride(characterOverrides, id);
   dom.detailName.textContent = `${item.name} · ${item.title}`;
   dom.detailKicker.textContent = `${item.rarity} · ${labels.element[item.element] ?? item.element} · ${labels.class[item.class] ?? item.class}`;
   dom.detailProfile.textContent = data.profileEn || "Tychara 公开角色页未提供简介。";
-  dom.detailSource.textContent = `资料来源：Tychara · ${data.lastUpdated ?? "公开页面"}`;
+  dom.detailSource.textContent = Object.keys(characterOverride.equipment).length || Object.keys(characterOverride.skills).length
+    ? "资料来源：Tychara · 已应用本机编辑覆盖"
+    : `资料来源：Tychara · ${data.lastUpdated ?? "公开页面"}`;
   dom.detailArt.src = data.fullArtUrl;
   dom.detailArt.alt = `${item.name} 全身像`;
   dom.detailArt.onerror = () => { dom.detailArt.removeAttribute("src"); dom.detailArt.alt = "全身像加载失败"; };
   dom.detailStats.replaceChildren();
-  const statLabels = { attack: "攻击", vitality: "生命", defense: "防御", speed: "速度", criticalHitRate: "暴击率", criticalDamage: "暴击伤害", effectHit: "效果命中", effectResistance: "效果抵抗" };
+  const statLabels = { attack: "攻击", vitality: "生命（知识库）", hp: "生命", defense: "防御", speed: "速度", criticalHitRate: "暴击率", criticalDamage: "暴击伤害", effectHit: "效果命中", effectResistance: "效果抵抗", hitRate: "命中率" };
+  const percentStats = new Set(["criticalHitRate", "criticalDamage", "effectHit", "effectResistance", "hitRate"]);
+  const baseStats = { ...(item.stats ?? {}), ...(data.stats ?? {}) };
   for (const [key, label] of Object.entries(statLabels)) {
-    if (data.stats?.[key] == null) continue;
+    if (baseStats[key] == null && characterOverride.equipment?.[key] == null) continue;
+    const base = Number(baseStats[key] ?? 0);
+    const modifier = getEquipmentModifier(characterOverrides, id, key);
+    const total = getStatTotal(base, modifier);
+    const unit = percentStats.has(key) ? "%" : "";
     const stat = document.createElement("div");
     stat.className = "stat-item";
-    stat.innerHTML = `<span>${label}</span><strong>${data.stats[key]}${key.includes("Rate") || key.includes("Damage") || key.includes("Hit") || key.includes("Resistance") ? "%" : ""}</strong>`;
+    const labelNode = document.createElement("span"); labelNode.textContent = label;
+    const valueNode = document.createElement("strong"); valueNode.textContent = `${base}${unit} ${modifier >= 0 ? "+" : ""}${modifier}${unit} = ${total}${unit}`;
+    stat.append(labelNode, valueNode);
     dom.detailStats.append(stat);
   }
   dom.detailSkills.replaceChildren();
   if (!data.skills?.length) {
-    const empty = document.createElement("p");
-    empty.className = "no-detail";
-    empty.textContent = "该公开页面当前没有可读取的技能条目。";
-    dom.detailSkills.append(empty);
+    const empty = document.createElement("p"); empty.className = "no-detail"; empty.textContent = "该公开页面当前没有可读取的技能条目。"; dom.detailSkills.append(empty);
   } else {
     for (const skill of data.skills) {
       const normalized = normalizedFor(data.slug, skill);
-      const row = document.createElement("article");
-      row.className = "skill-row";
-      const icon = document.createElement("img");
-      icon.src = skill.iconUrl;
-      icon.alt = skill.name;
-      row.append(icon);
+      const custom = characterOverride.skills?.[skillOverrideKey(data.slug, skill)] ?? {};
+      const displaySkillName = custom.nameZh?.trim() ? `${custom.nameZh.trim()}（${skill.name}）` : skill.name;
+      const displayDescription = custom.descriptionZh?.trim() || skill.descriptionEn || "暂无技能说明。";
+      const row = document.createElement("article"); row.className = "skill-row";
+      const icon = document.createElement("img"); icon.src = skill.iconUrl; icon.alt = displaySkillName; row.append(icon);
       const copy = document.createElement("div");
+      const nameNode = document.createElement("strong"); nameNode.textContent = displaySkillName;
+      const metaNode = document.createElement("small");
       const tags = normalized?.tags?.length ? ` · ${normalized.tags.join(" / ")}` : "";
       const cooldown = normalized?.cooldown == null ? "冷却未从基础描述读取" : `冷却 ${normalized.cooldown} 回合`;
-      copy.innerHTML = `<strong>${skill.name}</strong><small>${skill.banner || skill.type} · 目标 ${normalized?.target ?? "unknown"} · ${cooldown}${tags}</small><p>${skill.descriptionEn || "暂无英文说明。"}</p>`;
-      row.append(copy);
-      dom.detailSkills.append(row);
+      metaNode.textContent = `${skill.banner || skill.type} · 目标 ${normalized?.target ?? "unknown"} · ${cooldown}${tags}`;
+      const descriptionNode = document.createElement("p"); descriptionNode.textContent = displayDescription;
+      copy.append(nameNode, metaNode, descriptionNode); row.append(copy); dom.detailSkills.append(row);
     }
   }
   dom.detailModal.hidden = false;
   dom.closeDetail.focus();
 }
-
 function closeDetail() {
   dom.detailModal.hidden = true;
 }
@@ -371,6 +390,9 @@ function resetDraft() {
 }
 
 function bindEvents() {
+  window.addEventListener("storage", (event) => {
+    if (event.key === characterOverridesStorageKey) { loadCharacterOverrides(); if (selectedDetailId && !dom.detailModal.hidden) showDetail(selectedDetailId); }
+  });
   dom.firstPickerButtons.forEach((button) => button.addEventListener("click", () => changeFirstPicker(button.dataset.firstPicker)));
   dom.actionSideButtons.forEach((button) => button.addEventListener("click", () => { actionSide = button.dataset.actionSide; renderRoster(); }));
   [dom.search, dom.element, dom.classFilter].forEach((control) => control.addEventListener("input", renderRoster));
