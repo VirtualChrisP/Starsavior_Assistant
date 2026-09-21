@@ -1,0 +1,27 @@
+{
+  "patchId": "2026-09-23-savior-balance",
+  "region": "asia",
+  "status": "announced-not-live",
+  "effectiveAt": "2026-09-23",
+  "source": {
+    "type": "official-dev-notes",
+    "url": "https://www.starsavior.com/en/news/01a0b307-5a4f-72f4-a4ea-d906b6355b33",
+    "publishedAt": "2026-09-18"
+  },
+  "changes": [
+    { "characterId": "asherah", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "luna", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "charlotte", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "frey", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "serpang", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "dana", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "lugh", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "lydia", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "lacy", "changeType": "balance-update-announced", "details": null },
+    { "characterId": "lily", "changeType": "balance-update-announced", "details": null }
+  ],
+  "notes": [
+    "官方说明称此次更新将强化部分 Supporter，并为尚未拥有 Boost 效果的角色加入新的 Boost 效果。",
+    "具体技能数值等待正式补丁说明，当前不能将本文件当作已生效技能数据。"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://star-savior-bp.local/schemas/characters.schema.json",
+  "title": "Star Savior 角色数据集",
+  "type": "object",
+  "required": ["schemaVersion", "datasetStatus", "lastReviewed", "characters"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "datasetStatus": { "type": "string" },
+    "lastReviewed": { "type": "string", "format": "date" },
+    "patch": { "type": ["string", "null"] },
+    "region": { "type": ["string", "null"] },
+    "source": { "type": "object" },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "roles", "tags", "skills", "verification"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "roles": { "type": "array", "items": { "type": "string" } },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "skills": { "type": "array", "items": { "type": "string" } },
+          "verification": {
+            "enum": ["confirmed-public", "observed-public", "assumption", "unknown"]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

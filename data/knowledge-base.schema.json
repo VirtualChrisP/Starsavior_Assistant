@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://star-savior-bp.local/schemas/knowledge-base.schema.json",
+  "title": "Star Savior BP 知识库",
+  "type": "object",
+  "required": ["schemaVersion", "datasetStatus", "lastReviewed", "patch", "region", "characters", "skills", "effectsCatalog"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "datasetStatus": { "type": "string" },
+    "lastReviewed": { "type": "string", "format": "date" },
+    "patch": { "type": ["string", "null"] },
+    "region": { "type": ["string", "null"] },
+    "source": { "type": "array", "items": { "type": "object" } },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "characters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/character" }
+    },
+    "skills": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/skill" }
+    },
+    "effectsCatalog": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/effectDefinition" }
+    }
+  },
+  "$defs": {
+    "verification": {
+      "enum": ["confirmed-public", "observed-public", "assumption", "unknown"]
+    },
+    "character": {
+      "type": "object",
+      "required": ["id", "rosterId", "name", "aliases", "roles", "tags", "skills", "verification"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "rosterId": { "type": ["string", "null"], "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "rarity": { "type": ["string", "null"] },
+        "class": { "type": ["string", "null"] },
+        "element": { "type": ["string", "null"] },
+        "roles": { "type": "array", "items": { "type": "string" } },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "stats": {
+          "type": ["object", "null"],
+          "properties": {
+            "attack": { "type": ["number", "null"] },
+            "vitality": { "type": ["number", "null"] },
+            "defense": { "type": ["number", "null"] },
+            "speed": { "type": ["number", "null"] },
+            "criticalHitRate": { "type": ["number", "null"] },
+            "criticalDamage": { "type": ["number", "null"] },
+            "effectHit": { "type": ["number", "null"] },
+            "effectResistance": { "type": ["number", "null"] },
+            "hitRate": { "type": ["number", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "skills": { "type": "array", "items": { "type": "string" } },
+        "verification": { "$ref": "#/$defs/verification" },
+        "dataCompleteness": { "enum": ["full-public-page", "partial-public-page", "metadata-only"] },
+        "sources": { "type": "array", "items": { "type": "string", "format": "uri" } }
+      },
+      "additionalProperties": false
+    },
+    "skill": {
+      "type": "object",
+      "required": ["id", "ownerId", "name", "type", "target", "effects", "verification"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "ownerId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "type": "string" },
+        "target": { "type": "string" },
+        "cooldown": { "type": ["number", "null"], "minimum": 0 },
+        "resourceCost": { "type": ["number", "null"], "minimum": 0 },
+        "effects": { "type": "array", "items": { "type": "object" } },
+        "descriptionZh": { "type": "string" },
+        "levelScaling": { "type": "array", "items": { "type": "string" } },
+        "verification": { "$ref": "#/$defs/verification" },
+        "sources": { "type": "array", "items": { "type": "string", "format": "uri" } }
+      },
+      "additionalProperties": false
+    },
+    "effectDefinition": {
+      "type": "object",
+      "required": ["id", "name", "category", "parameters", "verification"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "type": "string" },
+        "parameters": { "type": "array", "items": { "type": "string" } },
+        "verification": { "$ref": "#/$defs/verification" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

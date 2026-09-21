@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Star Savior BP 助手</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell" aria-busy="true">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">SS</div>
+          <div>
+            <h1>Star Savior BP 助手</h1>
+            <p id="version-label">亚服 · 正在载入</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <span id="save-state" class="save-state">本局自动保存</span>
+          <button id="undo-button" class="icon-command" type="button" title="撤销上一步（Ctrl+Z）" disabled>
+            <span aria-hidden="true">↶</span><span>撤销</span>
+          </button>
+          <button id="reset-button" class="secondary-command" type="button">新建对局</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="phase-bar" aria-labelledby="phase-title">
+          <div class="phase-summary">
+            <span id="phase-kicker" class="phase-kicker">准备</span>
+            <h2 id="phase-title">载入 Draft 规则</h2>
+            <p id="phase-detail">正在读取亚服阵容与规则配置。</p>
+          </div>
+          <div id="stage-track" class="stage-track" aria-label="Draft 阶段进度"></div>
+          <div class="first-picker-control">
+            <span>随机首选方</span>
+            <div class="segmented" role="group" aria-label="随机首选方">
+              <button type="button" data-first-picker="ally">我方</button>
+              <button type="button" data-first-picker="enemy">对方</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="draft-layout">
+          <aside class="team-column ally-column" aria-labelledby="ally-title">
+            <div class="team-heading">
+              <div>
+                <span class="side-label ally-label">ALLY</span>
+                <h2 id="ally-title">我方阵容</h2>
+              </div>
+              <strong id="ally-count">0 / 5</strong>
+            </div>
+            <div id="ally-picks" class="team-slots"></div>
+            <div class="ban-section">
+              <span>禁用记录</span>
+              <div id="ally-bans" class="ban-list"></div>
+            </div>
+          </aside>
+
+          <section class="roster-panel" aria-labelledby="roster-title">
+            <div class="roster-toolbar">
+              <div class="search-field">
+                <span aria-hidden="true">⌕</span>
+                <input id="search-input" type="search" placeholder="搜索角色或称号" autocomplete="off" />
+                <kbd>/</kbd>
+              </div>
+              <div id="action-side-control" class="action-side-control" hidden>
+                <span>记录操作方</span>
+                <div class="segmented compact" role="group" aria-label="记录操作方">
+                  <button type="button" data-action-side="ally">我方</button>
+                  <button type="button" data-action-side="enemy">对方</button>
+                </div>
+              </div>
+            </div>
+            <div class="filter-row">
+              <h2 id="roster-title">角色池</h2>
+              <div class="filters" aria-label="角色筛选">
+                <select id="element-filter" aria-label="属性筛选">
+                  <option value="all">全部属性</option>
+                  <option value="sun">太阳</option>
+                  <option value="moon">月亮</option>
+                  <option value="star">星辰</option>
+                  <option value="order">秩序</option>
+                  <option value="chaos">混沌</option>
+                </select>
+                <select id="class-filter" aria-label="职业筛选">
+                  <option value="all">全部职业</option>
+                  <option value="defender">防御</option>
+                  <option value="striker">强攻</option>
+                  <option value="ranger">游侠</option>
+                  <option value="caster">术师</option>
+                  <option value="supporter">支援</option>
+                  <option value="assassin">刺客</option>
+                </select>
+              </div>
+            </div>
+            <div id="status-strip" class="status-strip" role="status"></div>
+            <div id="roster-grid" class="roster-grid"></div>
+            <div id="empty-state" class="empty-state" hidden>当前筛选条件下没有可操作角色。</div>
+          </section>
+
+          <aside class="team-column enemy-column" aria-labelledby="enemy-title">
+            <div class="team-heading">
+              <div>
+                <span class="side-label enemy-label">ENEMY</span>
+                <h2 id="enemy-title">对方阵容</h2>
+              </div>
+              <strong id="enemy-count">0 / 5</strong>
+            </div>
+            <div id="enemy-picks" class="team-slots"></div>
+            <div class="ban-section">
+              <span>禁用记录</span>
+              <div id="enemy-bans" class="ban-list"></div>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <div id="toast" class="toast" role="alert" hidden></div>
+      <div id="detail-modal" class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-name" hidden>
+        <div class="detail-backdrop" data-close-detail></div>
+        <section class="detail-panel">
+          <button id="close-detail" class="detail-close" type="button" title="关闭详情">×</button>
+          <div class="detail-hero">
+            <div class="detail-art-wrap"><img id="detail-art" alt="" /></div>
+            <div class="detail-heading">
+              <span id="detail-kicker" class="side-label"></span>
+              <h2 id="detail-name"></h2>
+              <p id="detail-profile"></p>
+              <div id="detail-stats" class="detail-stats"></div>
+            </div>
+          </div>
+          <div class="detail-body">
+            <div class="detail-section-heading"><span>技能资料</span><small id="detail-source"></small></div>
+            <div id="detail-skills" class="detail-skills"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="/public/app.mjs"></script>
+  </body>
+</html>

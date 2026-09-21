@@ -1,0 +1,2176 @@
+{
+  "schemaVersion": 1,
+  "datasetStatus": "observed-public-tychara",
+  "source": {
+    "url": "https://tychara.com/StarSavior/characterlist/",
+    "sourceLastUpdated": "2026-06-29",
+    "verifiedInAsiaClient": false
+  },
+  "generatedAt": "2026-09-21T03:05:21.926Z",
+  "characters": [
+    {
+      "slug": "ceres",
+      "name": "Ceres",
+      "pageUrl": "https://tychara.com/StarSavior/characters/ceres/",
+      "lastUpdated": null,
+      "profileEn": "Ceres – striker SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/ceresicon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/ceresfullart.webp",
+      "stats": {
+        "attack": 3456,
+        "vitality": 18420,
+        "defense": 1434,
+        "speed": 106,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Order by Force",
+          "descriptionEn": "Increases self ATK by 15%. Grants self 2 stacks of Chill at the start of the first battle. Fills self action gauge by 35% proportional to the number of targets hit after using 7th Form: Earthshaker (up to 175%). Increases damage dealt by 30% if the enemy is under the effects of Freeze upon using 1st Form: Crescent Moon or 21st Form: Blade Gale.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Order%20by%20Force.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "1st Form: Crescent Moon",
+          "descriptionEn": "Charges alone and attacks the enemy in an instant. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/1st%20Form:%20Crescent%20Moon.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "7th Form: Earthshaker",
+          "descriptionEn": "Channels powerful force into two blades, then slams down to attack all enemies. 100% chance to remove 1 buff from all enemies. 100% chance to inflict 2 stacks of Freeze each on all enemies for 2 turns. 100% chance to inflict Isolation on all enemies for 2 turns. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/7th%20Form:%20Earthshaker.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "21st Form: Blade Gale",
+          "descriptionEn": "Overwhelms the enemy with countless slashes that surge like a storm. Grants self Western Winds for 3 turns. 100% chance to inflict Stun on the enemy for 1 turn. 100% chance to reduce the enemy's action gauge by 20%. Action Gauge Reduction increases by 10% for each stack of Chill on self (up to 5 stacks). Removes all stacks of Chill after attacking.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/21st%20Form:%20Blade%20Gale.webp"
+        }
+      ]
+    },
+    {
+      "slug": "annah",
+      "name": "Annah",
+      "pageUrl": "https://tychara.com/StarSavior/characters/annah/",
+      "lastUpdated": null,
+      "profileEn": "Annah – defender SR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/AnnahIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/AnnahFullArt.webp",
+      "stats": {
+        "attack": 2552,
+        "vitality": 17338,
+        "defense": 1342,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": []
+    },
+    {
+      "slug": "asherah",
+      "name": "Asherah",
+      "pageUrl": "https://tychara.com/StarSavior/characters/asherah/",
+      "lastUpdated": null,
+      "profileEn": "Asherah – striker SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/AsherahIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/AsherahFullArt.webp",
+      "stats": {
+        "attack": 3005,
+        "vitality": 20086,
+        "defense": 1560,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Stranis Style Breathing",
+          "descriptionEn": "Increases Asherah's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Stranis%20Style%20Breathing.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Stranis Style Slash",
+          "descriptionEn": "Charges toward the enemy and delivers an upward slash. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Stranis%20Style%20Slash.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Veil Cleave",
+          "descriptionEn": "Partially unleashes her magic blade's power to slash all enemies. Grants self SPD Up for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Veil%20Cleave.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Dawn of Night",
+          "descriptionEn": "Temporarily lifts the magic blade's seal to deal devastating damage to all enemies. Grants self CRIT Rate Up for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Dawn%20of%20Night.webp"
+        }
+      ]
+    },
+    {
+      "slug": "asherahwaltzofstarlight",
+      "name": "Asherah Waltz of Starlight",
+      "pageUrl": "https://tychara.com/StarSavior/characters/asherahwaltzofstarlight/",
+      "lastUpdated": null,
+      "profileEn": "Asherah Waltz of Starlight – supporter SSR (order). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/AsherahWaltzofStarlightIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/AsherahWaltzofStarlightFullArt.webp",
+      "stats": {
+        "attack": 3005,
+        "vitality": 20086,
+        "defense": 1560,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "L'unisson",
+          "descriptionEn": "Increases Asherah's Max HP by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/L'unisson.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Belle Lame",
+          "descriptionEn": "Rushes the enemy and delivers a powerful upward slash. Grants self 1 stack of Insight. DMG is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Belle%20Lame.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Bal Doré",
+          "descriptionEn": "Emits radiant light and unleashes a blade aura to attack the enemy. Restores all allies' HP. Grants self Starlight Wish (Undispellable) for 2 turns and 1 stack of Insight. DMG and Recovery are proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bal%20Dor%C3%A9.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Lumière Sonnet",
+          "descriptionEn": "Walks out on a red carpet to welcome allies. Restores all allies' HP and removes 2 debuffs from them, then increases all allies' (excluding self) Action Gauge by 15%. Grants self 1 stack of Insight. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Lumi%C3%A8re%20Sonnet.webp"
+        }
+      ]
+    },
+    {
+      "slug": "bellrhys",
+      "name": "Bell Rhys",
+      "pageUrl": "https://tychara.com/StarSavior/characters/bellrhys/",
+      "lastUpdated": null,
+      "profileEn": "Bell Rhys – ranger SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/BellrhysIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/BellRhysFullArt.webp",
+      "stats": {
+        "attack": 3230,
+        "vitality": 18420,
+        "defense": 1434,
+        "speed": 112,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Approaching Rest",
+          "descriptionEn": "Increases Bell's Action Gauge by 30% and self ATK by 6% each time an ally or enemy (excluding self) is defeated. ATK increase stacks up to 3 times.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Approaching%20Rest.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Obituary",
+          "descriptionEn": "Unleashes cursed energy to attack the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Obituary.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Condolence",
+          "descriptionEn": "Binds multiple enemies with a curse and attacks all enemies. Inflicts all enemies with ACC Down for 2 turns with a 50% chance. Grants self SPD Up for 2 turns and 3 stacks of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Condolence.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Encoffin",
+          "descriptionEn": "Attacks the enemy with the darkness of the underworld. Inflicts the enemy with Silence for 2 turns with a 75% chance and removes all buffs from them with a 100% chance. Deals 30% increased damage if Leap is at max stacks on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Encoffin.webp"
+        }
+      ]
+    },
+    {
+      "slug": "besta",
+      "name": "Besta",
+      "pageUrl": "https://tychara.com/StarSavior/characters/besta/",
+      "lastUpdated": null,
+      "profileEn": "Besta – defender SR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/BestaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/BestaFullArt.webp",
+      "stats": {
+        "attack": 2552,
+        "vitality": 17338,
+        "defense": 1342,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Faint Emotions",
+          "descriptionEn": "Increases Besta's Max HP by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Faint%20Emotions.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Steadfast Lance",
+          "descriptionEn": "Charges in with her lance to strike the enemy. Grants self 1 stack of Leap. Damage is proportional to her Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Steadfast%20Lance.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Repel",
+          "descriptionEn": "Deploys her shield to obscure the enemy's vision before striking. Inflicts the enemy with ATK Down for 1 turn with a 100% chance. Damage is proportional to her Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Repel.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Unstoppable Charge",
+          "descriptionEn": "Channels Void Force into her lance and drops at full speed to strike the enemy. Grants self DEF Up for 2 turns. Damage is proportional to her Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Unstoppable%20Charge.webp"
+        }
+      ]
+    },
+    {
+      "slug": "bunnygirlcharlotte",
+      "name": "Bunnygirl Charlotte",
+      "pageUrl": "https://tychara.com/StarSavior/characters/bunnygirlcharlotte/",
+      "lastUpdated": null,
+      "profileEn": "Bunnygirl Charlotte – assassin SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/BunnygirlCharlotteIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/BunnygirlCharlotteFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18260,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Rabbit's Luck",
+          "descriptionEn": "Charlotte grants herself 1 stack of Ignition at the start of the turn of a Sun Attribute ally (excluding self). Increases self Action Gauge by 6% after using Bunny Step. Triggers Bunny Step an additional time after using Bunny Step on self turn if self has Lucky Token (Undispellable). Additional trigger occurs once per turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Rabbit's%20Luck.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Bunny Step",
+          "descriptionEn": "Charlotte swiftly attacks the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bunny%20Step.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Song of the Toast",
+          "descriptionEn": "Charlotte casually raises a glass to rally all allies. Grants all allies ATK Up for 2 turns, then grants self Lucky Token (Undispellable) for 3 turns and a stack of Ignition with a 75% chance, 3 times total. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Song%20of%20the%20Toast.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Cornered Rabbit",
+          "descriptionEn": "Having lost all her chips, Charlotte flips the table and attacks the enemy. Deals 5% increased damage for each Ignition stack, up to 5 stacks, on attack, then removes all Ignition stacks after attacking. Resets the cooldown of Cornered Rabbit if Ignition is at max stacks after attacking.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Cornered%20Rabbit.webp"
+        }
+      ]
+    },
+    {
+      "slug": "bunnygirlclaire",
+      "name": "Bunnygirl Claire",
+      "pageUrl": "https://tychara.com/StarSavior/characters/bunnygirlclaire/",
+      "lastUpdated": null,
+      "profileEn": "Bunnygirl Claire – striker SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/BunnygirlClaireIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/BunnygirlClaireFullArt.webp",
+      "stats": {
+        "attack": 3456,
+        "vitality": 19381,
+        "defense": 1434,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Punctuality",
+          "descriptionEn": "Increases Claire's ATK by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Punctuality.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Perfect Strike",
+          "descriptionEn": "Swings her spear wide to strike the enemy. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Perfect%20Strike.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Menacing Blue Thorn",
+          "descriptionEn": "Pierces the enemy multiple times with a spear wreathed in razor-sharp energy. Grants self SPD Up for 1 turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Menacing%20Blue%20Thorn.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Final Service",
+          "descriptionEn": "Teaches a rude intruder a lesson by showing off her true skill. Increases self Action Gauge by 10%. Increases self Action Gauge by an additional 10% if she has a buff.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Final%20Service.webp"
+        }
+      ]
+    },
+    {
+      "slug": "bunnygirlscarlet",
+      "name": "Bunnygirl Scarlet",
+      "pageUrl": "https://tychara.com/StarSavior/characters/bunnygirlscarlet/",
+      "lastUpdated": null,
+      "profileEn": "Bunnygirl Scarlet – ranger SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/BunnygirlScarletIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/BunnygirlScarletFullArt.webp",
+      "stats": {
+        "attack": 3399,
+        "vitality": 19381,
+        "defense": 1434,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "I'll Take You On!",
+          "descriptionEn": "Increases Scarlet's Max HP by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/I'll%20Take%20You%20On!.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "I'll Cut You Up!",
+          "descriptionEn": "Attacks the enemy with her detached Tailion. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/I'll%20Cut%20You%20Up!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Let's Heat Things Up!",
+          "descriptionEn": "Throws a Tailion heated with dragon's breath at the enemy. Grants self ATK Up for 1 turn. Deals 15% increased damage if the enemy is afflicted with Burn on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Let's%20Heat%20Things%20Up!.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Think You Can Withstand This?!",
+          "descriptionEn": "Summons a vassal of the Bellarmini clan to unleash a superheated flame breath. Inflicts the enemy with Burn for 2 turns with a 100% chance, and inflicts an additional instance of Burn for 1 turn with a 50% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Think%20You%20Can%20Withstand%20This?!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "carmen",
+      "name": "Carmen",
+      "pageUrl": "https://tychara.com/StarSavior/characters/carmen/",
+      "lastUpdated": null,
+      "profileEn": "Carmen – defender SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/CarmenIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/CarmenFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 20220,
+        "defense": 1558,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Knights' Shield",
+          "descriptionEn": "Increases Carmen's Max HP by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Knights'%20Shield.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Knights Standard Swordsmanship",
+          "descriptionEn": "Attacks the enemy with a heavy spinning slash. Grants self 1 stack of Chill. Damage is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Knights%20Standard%20Swordsmanship.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Shock Therapy",
+          "descriptionEn": "Charges forward with a strengthened shield to strike the enemy. Grants self Rule of Monastir for 2 turns, and inflicts the enemy with Taunt for 1 turn with a 75% chance. DMG is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Shock%20Therapy.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Monastir Mobile Bulwark",
+          "descriptionEn": "Carmen manifests her resolve to protect everyone as a bulwark. Grants all allies DEF Up for 3 turns, and inflicts the enemy with Taunt for 1 turn with a 75% chance. DMG is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Monastir%20Mobile%20Bulwark.webp"
+        }
+      ]
+    },
+    {
+      "slug": "carmeneternalpromise",
+      "name": "Carmen Eternal Promise",
+      "pageUrl": "https://tychara.com/StarSavior/characters/carmeneternalpromise/",
+      "lastUpdated": null,
+      "profileEn": "Carmen Eternal Promise – defender SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/carmeneternalpromiseicon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/carmeneternalpromisefullart.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 20220,
+        "defense": 1558,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Oath",
+          "descriptionEn": "Increases Carmen's Max HP by 15%. Grants the ally with the highest ATK with Oath of Devotion (Undispellable) at the start of the first battle. Takes 40% of damage dealt to the ally with Oath of Devotion (Undispellable) and increases self Action Gauge by 30% if an ally with Oath of Devotion (Undispellable) is attacked by a single-target attack. Only the highest damage-sharing effect applies. Restores all allies' HP after using Do Not Disturb. Removes all stacks of Chill and increases Recovery if Chill is at max stacks when using Do Not Disturb. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Oath.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Do Not Disturb",
+          "descriptionEn": "Carmen strikes the enemy with righteous fury after having her good time ruined. Grants self 1 stack of Chill. Damage is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Do%20Not%20Disturb.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Guardian Knight",
+          "descriptionEn": "Protects allies with a shield imbued with guardian power. Triggers Guardian Knight when an ally with Oath of Devotion is attacked. Restores an ally's HP and grants them Barrier for 2 turns. Increases the action gauge of self and ally by 30%. Grants self 2 stacks of Chill. Recovery and Barrier are proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Guardian%20Knight.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Wedding March",
+          "descriptionEn": "Carmen tosses her bouquet to support her allies. Grants self 3 stacks of Chill. Removes all debuffs from allies, then restores their HP. Grants the ally 3 stacks of Chill if the ally is Moon Attribute. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Wedding%20March.webp"
+        }
+      ]
+    },
+    {
+      "slug": "carnelia",
+      "name": "Carnelia",
+      "pageUrl": "https://tychara.com/StarSavior/characters/carnelia/",
+      "lastUpdated": null,
+      "profileEn": "Carnelia – caster SSR (chaos). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/carneliaicon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/carneliafullart.webp",
+      "stats": {
+        "attack": 3642,
+        "vitality": 18385,
+        "defense": 1430,
+        "speed": 93,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Spoke",
+          "descriptionEn": "Increases self ATK by 15%. Grants self Umbral Echo (Undispellable) for 1 turn at the start of battle. Increases self ATK by 6% for each stack of Agitation, up to 5 stacks, on attack. Restores HP proportional to 1% of Max HP upon receiving lethal damage. Does not get defeated. Grants self Immortality for 1 turn. Grants self Umbral Echo (Undispellable) for 3 turns. Resets all skill cooldowns. Occurs once per battle.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Spoke.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Gesture of Dawn",
+          "descriptionEn": "Transforms dark magic into the form of crows to attack the enemy. Grants self 1 stack of Agitation.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Gesture%20of%20Dawn.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Guiding Twilight",
+          "descriptionEn": "Unleashes the power within the Light of Dawn to attack enemies. Inflicts the enemy with Buff Block for 2 turns with a 100% chance. Reduces the enemy's Action Gauge by 25%. Grants self 1 stack of Agitation. Uses Guiding Twilight on a random enemy 1 additional time if self has Umbral Echo (Undispellable) after attacking. Additional trigger occurs once per turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Guiding%20Twilight.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Dissonance Break",
+          "descriptionEn": "Unleashes the flames of Dissonance imbued with the power of disintegration and collapse, attacking all enemies. Increases self Action Gauge by 30% and grants self 1 stack of Agitation. Deals 50% increased damage if self has Umbral Echo (Undispellable).",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Dissonance%20Break.webp"
+        }
+      ]
+    },
+    {
+      "slug": "charlotte",
+      "name": "Charlotte",
+      "pageUrl": "https://tychara.com/StarSavior/characters/charlotte/",
+      "lastUpdated": null,
+      "profileEn": "Charlotte – striker SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/CharlotteIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/CharlotteFullArt.webp",
+      "stats": {
+        "attack": 3456,
+        "vitality": 19381,
+        "defense": 1434,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Unshaken Grand Master",
+          "descriptionEn": "Increases Charlotte's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Unshaken%20Grand%20Master.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Honest Thrust",
+          "descriptionEn": "Strikes the enemy with clean, disciplined swordsmanship. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Honest%20Thrust.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Vow of Victory",
+          "descriptionEn": "Shares her resolve for victory with one ally. Grants an ally CRIT Rate Up for 2 turns.Additionally grants the ally ATK Up for 1 turn with a 75% chance. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Vow%20of%20Victory.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Unyielding Strike",
+          "descriptionEn": "Displays the refined swordsmanship of the Monastir Knights. Inflicts the enemy with ATK Down for 2 turns with a 100% chance. Increases self Action Gauge by 20%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Unyielding%20Strike.webp"
+        }
+      ]
+    },
+    {
+      "slug": "claire",
+      "name": "Claire",
+      "pageUrl": "https://tychara.com/StarSavior/characters/claire/",
+      "lastUpdated": null,
+      "profileEn": "Claire – striker SR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/ClaireIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/ClaireFullArt.webp",
+      "stats": {
+        "attack": 2977,
+        "vitality": 15692,
+        "defense": 1225,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Conviction Toward Victory",
+          "descriptionEn": "Increases Claire's CRIT Rate by 6% at the start of the turn. Stacks up to 3 times. Removes all Chill stacks and triggers Where Are You Looking? after using Faster Than Sight if Chill is at max stacks.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Conviction%20Toward%20Victory.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Faster Than Sight",
+          "descriptionEn": "Quickly closes in, pulls her spear back, then thrusts it straight into the enemy. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Faster%20Than%20Sight.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Where Are You Looking?",
+          "descriptionEn": "Hits the jackpot to attack the enemy. Grants self ATK Up for 2 turns and increases self Action Gauge by 30%. Grants self 3 stacks of Chill on Critical Hit.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Where%20Are%20You%20Looking?.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Bunny Jackpot",
+          "descriptionEn": "Tosses and detonates a lucky card to attack the enemy. Increases self CRIT Rate by 20% on attack. Grants self Jackpot Bloom for 3 turns after attacking. Deals 10% increased damage for each buff on the enemy, up to 5 buffs.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bunny%20Jackpot.webp"
+        }
+      ]
+    },
+    {
+      "slug": "clarissa",
+      "name": "Clarissa",
+      "pageUrl": "https://tychara.com/StarSavior/characters/clarissa/",
+      "lastUpdated": null,
+      "profileEn": "Clarissa – ranger SR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/ClarissaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/ClarissaFullArt.webp",
+      "stats": {
+        "attack": 2940,
+        "vitality": 15827,
+        "defense": 1230,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Winding Windpath",
+          "descriptionEn": "Increases Clarissa's CRIT Rate by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Winding%20Windpath.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Step Back a Bit",
+          "descriptionEn": "Snipes the enemy with perfect form. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Step%20Back%20a%20Bit.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Shooting by Instinct",
+          "descriptionEn": "Snipes the enemy off guard. Inflicts the enemy with SPD Down for 1 turn with a 100% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Shooting%20by%20Instinct.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "This Is How You Shoot a Gun",
+          "descriptionEn": "Pinpoints the enemy's hidden weak spot using superhuman eyesight and snipes. Grants self SPD Up for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/This%20Is%20How%20You%20Shoot%20a%20Gun.webp"
+        }
+      ]
+    },
+    {
+      "slug": "dana",
+      "name": "Dana",
+      "pageUrl": "https://tychara.com/StarSavior/characters/dana/",
+      "lastUpdated": null,
+      "profileEn": "Dana – caster SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/DanaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/DanaFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18260,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Pure Heart",
+          "descriptionEn": "Increases Dana's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Pure%20Heart.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Leaf Barrage",
+          "descriptionEn": "Dana unleashes nature's energy to attack the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Leaf%20Barrage.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Rapid Bloom",
+          "descriptionEn": "Promotes rapid plant growth using nature's energy to attack the enemy. Grants ATK Up to self and the ally with the highest ATK (excluding Dana) for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Rapid%20Bloom.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Power of Nature",
+          "descriptionEn": "Imbues the earth with vitality and grows a giant tree to attack all enemies. Inflicts all enemies with SPD Down for 1 turn with a 50% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Power%20of%20Nature.webp"
+        }
+      ]
+    },
+    {
+      "slug": "elisa",
+      "name": "Elisa",
+      "pageUrl": "https://tychara.com/StarSavior/characters/elisa/",
+      "lastUpdated": null,
+      "profileEn": "Elisa – supporter SSR (chaos). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/ElisaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/ElisaFullArt.webp",
+      "stats": {
+        "attack": 3005,
+        "vitality": 20419,
+        "defense": 1560,
+        "speed": 98,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Timid Prayer",
+          "descriptionEn": "Increases Elisa's Max HP by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Timid%20Prayer.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Please Go Back",
+          "descriptionEn": "Elisa delivers divine judgment with her resolve-imbued flail. Grants self 1 stack of Agitation.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Please%20Go%20Back.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "A Futile Attempt to Help",
+          "descriptionEn": "Elisa offers a desperate prayer to overcome her fears and worries. Restores an ally's HP and grants them Holy Blessing for 2 turns. Grants self 2 stacks of Agitation. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/A%20Futile%20Attempt%20to%20Help.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Let Us Pray Together",
+          "descriptionEn": "Elisa's faith calls forth a miracle from within the depths of despair. Revives a fallen ally with 50% HP and increases their Action Gauge by 80%. Restores the ally's HP and grants them Holy Blessing for 2 turns with a 75% chance, then increases their Action Gauge by 40% if the ally is not fallen. Grants self 2 stacks of Agitation. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Let%20Us%20Pray%20Together.webp"
+        }
+      ]
+    },
+    {
+      "slug": "emilly",
+      "name": "Emilly",
+      "pageUrl": "https://tychara.com/StarSavior/characters/emilly/",
+      "lastUpdated": null,
+      "profileEn": "Emilly – defender SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/EmillyIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/EmillyFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 19890,
+        "defense": 1484,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Ready Maid",
+          "descriptionEn": "Grants Emily Barrier for 1 turn at the start of the first battle. Reduces the cooldown of Turn-Down Service by 1 turn after being attacked. Reduces the cooldown of Turn-Down Service by 1 additional turn, then grants self 1 stack of Chill with a 50% chance after being attacked by an attack that targets all. Barrier is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Ready%20Maid.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Commence Combat Cleanup",
+          "descriptionEn": "Swings a massive broom to attack the enemy. Grants self 1 stack of Chill. DMG is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Commence%20Combat%20Cleanup.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Cleaning Service",
+          "descriptionEn": "Cleanses allies with the pride of a cleanup maid. Grants an ally ATK Up and Barrier for 3 turns, and grants self 3 stacks of Chill, then grants self an extra turn. Barrier is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Cleaning%20Service.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Turn-Down Service",
+          "descriptionEn": "Attacks all enemies with the resolve of a veteran mercenary. Grants all allies DEF Up for 2 turns, and grants self 1 stack of Awakened Memory (Undispellable). Removes all stacks of Chill and reduces the cooldown of Turn-Down Service by 2 turns if Chill is at max stacks after attacking. DMG is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Turn-Down%20Service.webp"
+        }
+      ]
+    },
+    {
+      "slug": "epindel",
+      "name": "Epindel",
+      "pageUrl": "https://tychara.com/StarSavior/characters/epindel/",
+      "lastUpdated": null,
+      "profileEn": "Epindel – assassin SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/EpindelIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/EpindelFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18260,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Noble Bearing",
+          "descriptionEn": "Grants self 1 stack of Chill when a Moon Attribute ally triggers a Critical Hit. Deals 10% increased damage when Epindel uses Orlan Style Swordsmanship at max stacks of Chill. Removes all stacks of Chill after using Orlan Style Swordsmanship.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Noble%20Bearing.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Orlan Style Swordmanship",
+          "descriptionEn": "Attacks the enemy with House Orlan's dual sword style. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Orlan%20Style%20Swordmanship.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Relentless Effort",
+          "descriptionEn": "Sharpens her focus, recalling the pride of Orlan. Grants self Immunity for 2 turns and grants self a stack of Chill additionally with a 75% chance, 3 times total. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Relentless%20Effort.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Hawk of Orlan",
+          "descriptionEn": "Unleashes a hawk-shaped spirit sword slash and follows up to strike the enemy. Grants self SPD Up for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Hawk%20of%20Orlan.webp"
+        }
+      ]
+    },
+    {
+      "slug": "epindelblessinginbloom",
+      "name": "Epindel Blessing in Bloom",
+      "pageUrl": "https://tychara.com/StarSavior/characters/epindelblessinginbloom/",
+      "lastUpdated": null,
+      "profileEn": "Epindel Blessing in Bloom – assassin SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/EpindelBlessingBloomIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/epindelblessingbloomfullart.webp",
+      "stats": {
+        "attack": 3499,
+        "vitality": 18894,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Purewhite Resolve",
+          "descriptionEn": "Increases Epindel's ATK by 15%. Grants self 1 stack of Ignition when an ally triggers a Critical Hit. Grants self 2 stacks of Ignition each with a 100% chance at the start of the turn of a Sun Attribute ally.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Purewhite%20Resolve.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Falconet Strike",
+          "descriptionEn": "Dashes into the enemy's opening and cuts them down with dual swords. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Falconet%20Strike.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Bouquet Toss",
+          "descriptionEn": "Attacks enemies distracted by the bouquet toss. Reduces the enemy's Action Gauge by 20% with a 100% chance. Deals an additional 150% damage if the enemy has Barrier on attack. Increases the ally with highest ATK (excluding self)'s Action Gauge by 30% if Barrier is broken after attacking. Grants self an extra turn if Ignition is at max stacks after attacking on self turn. Grants ATK Up for 2 turns, then removes all stacks of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bouquet%20Toss.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Bride's Entrance",
+          "descriptionEn": "Having made up her mind, Epindel punishes those who interfere with the wedding. Grants self SPD Up for 2 turns. Reduces the action gauge of the target with Barrier by 20% on attack. Increases damage dealt by 15% per the enemy's Barrier, up to 3 Barriers.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bride's%20Entrance.webp"
+        }
+      ]
+    },
+    {
+      "slug": "fei",
+      "name": "Fei",
+      "pageUrl": "https://tychara.com/StarSavior/characters/fei/",
+      "lastUpdated": null,
+      "profileEn": "Fei – assassin SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/FeiIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/FeiFullArt.webp",
+      "stats": {},
+      "skills": []
+    },
+    {
+      "slug": "frey",
+      "name": "Frey",
+      "pageUrl": "https://tychara.com/StarSavior/characters/frey/",
+      "lastUpdated": null,
+      "profileEn": "Frey – supporter SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/FreyIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/FreyFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 20220,
+        "defense": 1558,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Cash In",
+          "descriptionEn": "Frey removes all Chill stacks and grants herself 1 stack of High Roller (Undispellable) if Chill is at max stacks at the start of the turn. Chill stacks are not removed if High Roller (Undispellable) is at max stacks at the start of the turn. Increases self Action Gauge by 8%, then grants self 1 stack of High Roller (Undispellable) with a 50% chance after a Moon Attribute ally (excluding self) attacks.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Cash%20In.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Bet Refusal",
+          "descriptionEn": "Frey slaps the enemy across the face with all her might in response to their ridiculous bet. Grants self 1 stack of Chill. Uses Forced Negotiation instead of Bet Refusal when using this Skill on self turn at max High Roller (Undispellable) stacks. Forced Negotiation: Frey brings down a crushing blow on the enemy in response to their ridiculous bet. Deals 100% increased damage on attack. Increases self Action Gauge by 30% and grants self 1 stack of Chill after attacking, then removes High Roller (Undispellable).",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bet%20Refusal.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "All In",
+          "descriptionEn": "Frey wagers all her chips to support all allies. Grants all allies CRIT Rate Up for 3 turns, then grants self a stack of Chill with a 75% chance, 3 times total. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/All%20In.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Bullseye",
+          "descriptionEn": "Frey throws darts and lands a high score to attack all enemies. Grants self ATK Up for 2 turns, and grants self a stack of High Roller (Undispellable) with a 75% chance, 3 times total.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bullseye.webp"
+        }
+      ]
+    },
+    {
+      "slug": "freynobleprincess",
+      "name": "Frey Noble Princess",
+      "pageUrl": "https://tychara.com/StarSavior/characters/freynobleprincess/",
+      "lastUpdated": null,
+      "profileEn": "Frey Noble Princess – caster SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/FreyNoblePrincessIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/FreyNoblePrincessFullArt.webp",
+      "stats": {
+        "vitality": 18260,
+        "speed": 90,
+        "criticalHitRate": null
+      },
+      "skills": []
+    },
+    {
+      "slug": "harley",
+      "name": "Harley",
+      "pageUrl": "https://tychara.com/StarSavior/characters/harley/",
+      "lastUpdated": null,
+      "profileEn": "Harley – defender SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/HarleyIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/HarleyFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 20220,
+        "defense": 1484,
+        "speed": 99,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "You Bullying My Boys?",
+          "descriptionEn": "Increases Harley's Max HP by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/You%20Bullying%20My%20Boys?.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Let's Go, Dave!",
+          "descriptionEn": "Harley and Dave dart in to attack the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Let's%20Go,%20Dave!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "You Wanna Go?",
+          "descriptionEn": "Using Dave as a springboard, Harley leaps up and hurls her axe at the enemy. Grants self SPD Up for 2 turns and grants 3 stacks of Ignition to the Sun Attribute ally with the highest ATK. Reduces the enemy's Action Gauge by 25% with a 100% chance. DMG is proportional to self SPD.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/You%20Wanna%20Go?.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Chicken Race!",
+          "descriptionEn": "Harley calls in the hog pack to charge forth. Grants all allies DEF Up for 2 turns. Grants all allies (excluding self) SPD Up for 1 turn with a 75% chance if self HP is 50% or above, and grants self Berserk Mode (Undispellable) for 3 turns if self HP is 50% or below. DMG is proportional to self SPD.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Chicken%20Race!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "haydee",
+      "name": "Haydee",
+      "pageUrl": "https://tychara.com/StarSavior/characters/haydee/",
+      "lastUpdated": null,
+      "profileEn": "Haydee – defender SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/HaydeeIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/HaydeeFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 19890,
+        "defense": 1558,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Eroded Emotions",
+          "descriptionEn": "Increases Haydee's DEF by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Eroded%20Emotions.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Steel Hail",
+          "descriptionEn": "Fires Void Force condensed in Haydee's flower to attack the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Steel%20Hail.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Spiked Armor",
+          "descriptionEn": "Haydee wraps herself in Void Force as a defensive measure. Grants self Barrier and DEF Up for 3 turns. Removes all Leap stacks and grants self an extra turn if Leap is at max stacks. Barrier is proportional to self DEF.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Spiked%20Armor.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Thorned Grave",
+          "descriptionEn": "Haydee gathers as much Void Force as she can handle, then unleashes it on the enemy. Grants self Guard for 2 turns, and inflicts the enemy with ACC Down for 2 turns with a 100% chance. Deals 20% increased damage on attack if self has Barrier. DMG is proportional to self DEF.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Thorned%20Grave.webp"
+        }
+      ]
+    },
+    {
+      "slug": "hilde",
+      "name": "Hilde",
+      "pageUrl": "https://tychara.com/StarSavior/characters/hilde/",
+      "lastUpdated": null,
+      "profileEn": "Hilde – defender SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/HildeIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/HildeFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 20220,
+        "defense": 1558,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Valkyrie's Will",
+          "descriptionEn": "Increases Hilde's Preemptive Guard Chance by 10% and grants all allies (excluding self) Barrier for 1 turn at the start of the first battle. Barrier is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Valkyrie's%20Will.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Twin Blade",
+          "descriptionEn": "Quickly closes in on the enemy and slashes with two swords. Grants self 1 stack of Ignition. Damage is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Twin%20Blade.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Dragon Buster",
+          "descriptionEn": "Pierces through the enemy, then leaps and strikes down. Grants self Immunity and DEF Up for 2 turns. Removes all Ignition stacks and reduces the cooldown of Dragon Buster by 1 turn if Ignition is at max stacks after attacking. Damage is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Dragon%20Buster.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Buster Overdrive",
+          "descriptionEn": "Charges forward and bombards all enemies. Grants self Fafnir's Descent (Undispellable) for 3 turns and inflicts the enemy with the highest Action Gauge with Taunt for 1 turn with a 75% chance. Grants self 1 stack of Ignition. Barrier and damage are proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Buster%20Overdrive.webp"
+        }
+      ]
+    },
+    {
+      "slug": "kyra",
+      "name": "Kyra",
+      "pageUrl": "https://tychara.com/StarSavior/characters/kyra/",
+      "lastUpdated": null,
+      "profileEn": "Kyra – assassin SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/KyraIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/KyraFullArt.webp",
+      "stats": {
+        "attack": 3499,
+        "vitality": 18260,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Flesh-Cutting Kotodama",
+          "descriptionEn": "Kyra deals 6% increased damage when using a Skill if she has Stealth.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Flesh-Cutting%20Kotodama.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Unusual Greeting",
+          "descriptionEn": "Stages an accidental bump to attack the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Unusual%20Greeting.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Price of Silence",
+          "descriptionEn": "Uses her Kotodama to force the enemy to imagine a grim future. Grants self ATK Up for 2 turns. Reduces the enemy's Action Gauge by 20% if self has Stealth.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Price%20of%20Silence.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Distorted Attention",
+          "descriptionEn": "Unleashes her Kotodama to curse the enemy with misfortune. Grants self Stealth for 2 turns and inflicts the enemy with ATK Down for 1 turn with a 100% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Distorted%20Attention.webp"
+        }
+      ]
+    },
+    {
+      "slug": "lacy",
+      "name": "Lacy",
+      "pageUrl": "https://tychara.com/StarSavior/characters/lacy/",
+      "lastUpdated": null,
+      "profileEn": "Lacy – ranger SSR (chaos). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LacyIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LacyFullArt.webp",
+      "stats": {
+        "attack": 3255,
+        "vitality": 18560,
+        "defense": 1435,
+        "speed": 115,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Wish-Bearing Script",
+          "descriptionEn": "Increases Lacy's Action Gauge by 6% and restores her HP after she is attacked by an enemy afflicted with Entangled Dream. Recovery is proportional to her ATK.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Wish-Bearing%20Script.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Ascending Fire Dragon",
+          "descriptionEn": "Unleashes a fiery breath to attack the enemy. Grants self 1 stack of Agitation.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Ascending%20Fire%20Dragon.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Upstream Water Prison",
+          "descriptionEn": "Forms a reversing water surge to attack the enemy. Grants self SPD Up for 2 turns. Deals 20% increased damage if the enemy is afflicted with Entangled Dream on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Upstream%20Water%20Prison.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Song of Water and Fire",
+          "descriptionEn": "Slashes the enemy with a blade infused with water and fire. Grants self ATK Up for 2 turns, and inflicts all enemies with Entangled Dream for 3 turns with a 75% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Song%20of%20Water%20and%20Fire.webp"
+        }
+      ]
+    },
+    {
+      "slug": "lily",
+      "name": "Lily",
+      "pageUrl": "https://tychara.com/StarSavior/characters/lily/",
+      "lastUpdated": null,
+      "profileEn": "Lily – caster SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LilyIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LilyFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18894,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Mystery Duo",
+          "descriptionEn": "Increases Lily's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Mystery%20Duo.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Strike Amidst the Chaos",
+          "descriptionEn": "Borrows Mr. Rabbit's mysterious power to attack the enemy. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Strike%20Amidst%20the%20Chaos.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Lily's Precious Moment",
+          "descriptionEn": "Fixes Mr. Rabbit on the spot to find a breakthrough. Grants all allies (excluding self) Barrier for 2 turns, and grants self ATK Up and Mr. Rabbit's Detective Consulting for 2 turns. Barrier is proportional to self ATK.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Lily's%20Precious%20Moment.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Mr. Rabbit's Instant Verdict",
+          "descriptionEn": "In a moment of crisis, Mr. Rabbit steps in and attacks all enemies. Inflicts all enemies with ATK Down for 2 turns with a 75% chance. Deals 30% increased damage if self has Mr. Rabbit's Detective Consulting on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Mr.%20Rabbit's%20Instant%20Verdict.webp"
+        }
+      ]
+    },
+    {
+      "slug": "lugh",
+      "name": "Lugh",
+      "pageUrl": "https://tychara.com/StarSavior/characters/lugh/",
+      "lastUpdated": null,
+      "profileEn": "Lugh – ranger SSR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LughIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LughFullArt.webp",
+      "stats": {
+        "attack": 3399,
+        "vitality": 18420,
+        "defense": 1434,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Way of the Exorcist",
+          "descriptionEn": "Inflicts the enemy with Freeze for 1 turn with a 50% chance after Lugh uses Subdual Charm.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Way%20of%20the%20Exorcist.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Subdual Charm",
+          "descriptionEn": "Throws a charm to attack the enemy. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Subdual%20Charm.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Winterborne Quartet",
+          "descriptionEn": "Conjures cold air with a charm to attack the enemy. Inflicts the enemy with Freeze for 2 turns with a 75% chance, and grants self SPD Up for 1 turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Winterborne%20Quartet.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Heaven Forbids Evil, Justice Strikes",
+          "descriptionEn": "Strikes down evil with a charm-forged blade. Inflicts the enemy with DEF Down for 2 turns with a 75% chance, and increases the enemy's Ultimate Skill cooldown by 1 turn with a 100% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Heaven%20Forbids%20Evil,%20Justice%20Strikes.webp"
+        }
+      ]
+    },
+    {
+      "slug": "luna",
+      "name": "Luna",
+      "pageUrl": "https://tychara.com/StarSavior/characters/luna/",
+      "lastUpdated": null,
+      "profileEn": "Luna – caster SSR (order). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LunaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LunaFullArt.webp",
+      "stats": {
+        "attack": 3468,
+        "vitality": 18385,
+        "defense": 1430,
+        "speed": 93,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Girl Who Sees the Future",
+          "descriptionEn": "Increases Luna's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Girl%20Who%20Sees%20the%20Future.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Defensive Mana Shot",
+          "descriptionEn": "Snaps her fingers to fire a conjured mana orb at enemies. Grants self 1 stack of Insight.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Defensive%20Mana%20Shot.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Hecate's Ember",
+          "descriptionEn": "Channels lunar mana into her hat and blasts it into the enemy's center. Grants self CRIT Rate Up for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Hecate's%20Ember.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "The World I See",
+          "descriptionEn": "Draws out the Moon Staff's power to deliver enemies an inescapable fate. Inflicts all enemies with Bind for 2 turns with a 50% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/The%20World%20I%20See.webp"
+        }
+      ]
+    },
+    {
+      "slug": "lydia",
+      "name": "Lydia",
+      "pageUrl": "https://tychara.com/StarSavior/characters/lydia/",
+      "lastUpdated": null,
+      "profileEn": "Lydia – ranger SSR (chaos). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LydiaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LydiaFullArt.webp",
+      "stats": {
+        "attack": 3426,
+        "vitality": 18560,
+        "defense": 1435,
+        "speed": 107,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Seeker of the Void",
+          "descriptionEn": "Increases Lydia's ATK by 4% and inflicts the enemy with Unknown Hex for 1 turn with a 100% chance after using Touch of the Void if the enemy has a debuff. ATK increase stacks up to 5 times.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Seeker%20of%20the%20Void.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Touch of the Void",
+          "descriptionEn": "Attacks the enemy using an unknown force. Grants self 1 stack of Agitation.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Touch%20of%20the%20Void.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Invitation Beyond the Stars",
+          "descriptionEn": "Summons Kuku's tentacle to attack all enemies. Inflicts all enemies with Unknown Hex for 2 turns with a 50% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Invitation%20Beyond%20the%20Stars.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Void Within the Tome",
+          "descriptionEn": "Temporarily lifts Kuku's seal, unleashing an indescribable terror into reality. Inflicts the enemy with SPD Down for 2 turns with a 75% chance. Increases self Action Gauge by 30% if the enemy has a debuff on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Void%20Within%20the%20Tome.webp"
+        }
+      ]
+    },
+    {
+      "slug": "lyn",
+      "name": "Lyn",
+      "pageUrl": "https://tychara.com/StarSavior/characters/lyn/",
+      "lastUpdated": null,
+      "profileEn": "Lyn – striker SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/LynIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/LynFullArt.webp",
+      "stats": {},
+      "skills": []
+    },
+    {
+      "slug": "marcille",
+      "name": "Marcille",
+      "pageUrl": "https://tychara.com/StarSavior/characters/marcille/",
+      "lastUpdated": null,
+      "profileEn": "Marcille – caster SR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/MarcilleIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/MarcilleFullArt.webp",
+      "stats": {
+        "attack": 2977,
+        "vitality": 15692,
+        "defense": 1225,
+        "speed": 94,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Hammer and Anvil",
+          "descriptionEn": "Increases Marcille's CRIT Rate by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Hammer%20and%20Anvil.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Nut Twist",
+          "descriptionEn": "Swings her wrench with full force to attack the enemy. Grants 1 stack of Ignition to self.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Nut%20Twist.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Nail Drive",
+          "descriptionEn": "Fires her modified nail gun at the enemy. Inflict the enemy with Burn for 1 turn with a 100% chance. Grants SPD Up to self for 1 turn on Critical hit.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Nail%20Drive.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Screw Breaker",
+          "descriptionEn": "Activates her wrench at maximum output to clear everything in front of her. Grants ATK Up to self for 2 turns. Inflict the enemy with Recovery Down for 1 turn with a 100% chance on Critical hit.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Screw%20Breaker.webp"
+        }
+      ]
+    },
+    {
+      "slug": "muriel",
+      "name": "Muriel",
+      "pageUrl": "https://tychara.com/StarSavior/characters/muriel/",
+      "lastUpdated": null,
+      "profileEn": "Muriel – caster SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/MurielIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/MurielFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18894,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Triumphant",
+          "descriptionEn": "Increases Muriel's CRIT DMG by 15%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Triumphant.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Divine Flame",
+          "descriptionEn": "Sends holy flames to attack the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Divine%20Flame.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Holy Bombardment",
+          "descriptionEn": "Throws stolen holy water at the enemy. Deals 3% increased damage for each debuff on the enemy. Extends all of the enemy's debuffs by 1 turn with a 75% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Holy%20Bombardment.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "I'll Be Good From Now On",
+          "descriptionEn": "The divine punishment meant for Muriel engulfs all enemies instead. Inflicts all enemies with ATK Down for 2 turns with a 50% chance. Inflicts all enemies with Burn for 2 turns with a 100% chance if Ignition is at max stacks.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/I'll%20Be%20Good%20From%20Now%20On.webp"
+        }
+      ]
+    },
+    {
+      "slug": "naru",
+      "name": "Naru",
+      "pageUrl": "https://tychara.com/StarSavior/characters/naru/",
+      "lastUpdated": null,
+      "profileEn": "Naru – ranger SR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/NaruIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/NaruFullArt.webp",
+      "stats": {
+        "attack": 2940,
+        "vitality": 16632,
+        "defense": 1230,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Career Ambitions",
+          "descriptionEn": "Increases Naru's ATK by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Career%20Ambitions.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Eyes on Me!",
+          "descriptionEn": "Channels the power of the stars into her sextant and fires at the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Eyes%20on%20Me!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Behold My Skill!",
+          "descriptionEn": "Calculates possibility of falling trajectories on the enemy. Grants self ATK Up for 1 turn. Deals 10% increased damage if the enemy has a debuff on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Behold%20My%20Skill!.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Beyond Expectations!",
+          "descriptionEn": "Performs an unstable energy-release equation with overflowing confidence. Inflicts the enemy with SPD Down for 2 turns with a 75% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Beyond%20Expectations!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "omega",
+      "name": "Omega",
+      "pageUrl": "https://tychara.com/StarSavior/characters/omega/",
+      "lastUpdated": null,
+      "profileEn": "Omega – caster SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/OmegaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/OmegaFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 19211,
+        "defense": 1429,
+        "speed": 96,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Auto-Hunt System",
+          "descriptionEn": "Omega grants herself 1 stack of Leap with a 70% chance after a Star Attribute ally (excluding self) attacks. Removes all Leap stacks and grants self 1 stack of Power-Up Star if Leap is at max stacks at the start of the turn. Leap stacks are not removed if Power-Up Star is at max stacks at the start of the turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Auto-Hunt%20System.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Pew Pew!",
+          "descriptionEn": "Fires three short laser shots to attack the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Pew%20Pew!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Mega Punch!",
+          "descriptionEn": "Attacks all enemies with a wide-area projection punch. Grants self 1 stack of Leap. The applied effect changes based on the number of stacks of Power-Up Star. Additional instances of Mega Punch! triggered by Mega Punch! only trigger on self turn. 1 stack of Power-Up Star: Triggers Mega Punch! 1 additional time. 2 stacks of Power-Up Star: Triggers Mega Punch! 2 additional times. 3 stacks of Power-Up Star: Deals 10% increased damage and triggers Mega Punch! 2 additional times.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Mega%20Punch!.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "The Biggest and Coolest One!",
+          "descriptionEn": "Summons and detonates the biggest and coolest item registered in the database to attack the enemy. Grants self ATK Up for 2 turns and 3 stacks of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/The%20Biggest%20and%20Coolest%20One!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "petra",
+      "name": "Petra",
+      "pageUrl": "https://tychara.com/StarSavior/characters/petra/",
+      "lastUpdated": null,
+      "profileEn": "Petra – ranger SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/PetraIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/PetraFullArt.webp",
+      "stats": {
+        "attack": 3399,
+        "vitality": 18420,
+        "defense": 1434,
+        "speed": 104,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Pre-Construction Review",
+          "descriptionEn": "Increases Petra's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Pre-Construction%20Review.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Improvised Blueprints",
+          "descriptionEn": "Petra slams her blueprints down on the enemy to attack. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Improvised%20Blueprints.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Breaking Ground",
+          "descriptionEn": "Petra pulls a bomb from her side bag and hurls it at the enemy. Grants self SPD Up for 2 turns, and grants self 2 stacks of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Breaking%20Ground.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Construction Negotiations",
+          "descriptionEn": "Petra rolls out a barrage of bombs to attack the enemy. Inflicts the enemy with DEF Down for 2 turns with a 75% chance.Deals 4% increased damage for each Ignition stack, up to 5 stacks on attack, and removes all Ignition stacks after attacking.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Construction%20Negotiations.webp"
+        }
+      ]
+    },
+    {
+      "slug": "roberta",
+      "name": "Roberta",
+      "pageUrl": "https://tychara.com/StarSavior/characters/roberta/",
+      "lastUpdated": null,
+      "profileEn": "Roberta – striker SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/RobertaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/RobertaFullArt.webp",
+      "stats": {
+        "vitality": 19381,
+        "speed": 100,
+        "criticalHitRate": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Veteran's Instinct",
+          "descriptionEn": "Increases Roberta’s CRIT Rate by 50% on attack. Deals 6% increased damage if self HP is 50% or above, and deals 12% increased damage if self HP is below 50%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Veteran's%20Instinct.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Commence Operation",
+          "descriptionEn": "Strikes the enemy with a rapid flurry of punches. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Commence%20Operation.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Fast Track",
+          "descriptionEn": "Triggers Fast Track on the attacker after being attacked by an attack that targets all. Removes 1 debuff from self when using this Skill. Increases self Action Gauge by 15% and grants self 1 stack of Leap after attacking. Reduces the cooldown of Fast Track by 1 turn on Critical Hit.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Fast%20Track.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "On-Site Emergency Judgment",
+          "descriptionEn": "Based on a field assessment, skips procedure and immediately takes decisive force to attack the enemy. Grants self ATK Up for 2 turns and increases self Action Gauge by 15%. Removes all Leap stacks and additionally increases self Action Gauge by 20% if Leap is at max stacks.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/On-Site%20Emergency%20Judgment.webp"
+        }
+      ]
+    },
+    {
+      "slug": "rosaria",
+      "name": "Rosaria",
+      "pageUrl": "https://tychara.com/StarSavior/characters/rosaria/",
+      "lastUpdated": null,
+      "profileEn": "Rosaria – ranger SSR (chaos). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/RosariaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/RosariaFullArt.webp",
+      "stats": {
+        "vitality": 18560,
+        "speed": 109,
+        "criticalHitRate": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Tyrant of the North",
+          "descriptionEn": "Increases Rosaria's chance to grant self 1 stack of Inferno (Undispellable) after using Ashen Inferno by 20% per stack of Agitation, up to 5 stacks of Agitation. Prevents self current HP from dropping below 40% and grants self ATK UP for 1 turn after being attacked by an attack that would take self HP under 40%. The effect that triggers after being attacked occurs once per battle.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Tyrant%20of%20the%20North.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Ashen Inferno",
+          "descriptionEn": "Unleashes an ashen inferno at the enemy. Grants self 1 stack of Agitation.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Ashen%20Inferno.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Ruler's Judgement",
+          "descriptionEn": "Unleashes an inferno of condemnation to ravage the enemy. Grants self 1 stack of Agitation. The applied effect changes based on the number of stacks of Inferno (Undispellable). Removes all Inferno (Undispellable) stacks after attacking. 1 stack of Inferno (Undispellable): Deals 10% increased damage. 2 stacks of Inferno (Undispellable): Deals 20% increased damage. 3 stacks of Inferno (Undispellable): Deals 20% increased damage and triggers Ashen Inferno.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Ruler's%20Judgement.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Difference in Class",
+          "descriptionEn": "Swings her sword to cleave a planet, attacking all enemies. Inflicts all enemies with DEF Down for 2 turns with a 75% chance. Increases self Action Gauge by 50% and grants self Owner of the Throne (Undispellable) for 3 turns. Grants self a stack of Inferno (Undispellable) for each target hit by a Critical Hit. Stacks up to 3 times.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Difference%20in%20Class.webp"
+        }
+      ]
+    },
+    {
+      "slug": "scarlet",
+      "name": "Scarlet",
+      "pageUrl": "https://tychara.com/StarSavior/characters/scarlet/",
+      "lastUpdated": null,
+      "profileEn": "Scarlet – ranger SR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/ScarletIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/ScarletFullArt.webp",
+      "stats": {
+        "attack": 2940,
+        "vitality": 16632,
+        "defense": 1230,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "High Score!",
+          "descriptionEn": "Scarlet triggers Pinball Time! 3 times at the start of the turn, and removes all stacks of Pinball Time! after attacking. Increases self SPD by 1 for each stack of Seven Ball (Undispellable) on self at the start of the turn. Stacks up to 6 times. Normal Ball (Undispellable): Deals 1% increased damage. Seven Ball (Undispellable): Deals 7% increased damage.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/High%20Score!.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Here I Come!",
+          "descriptionEn": "Scarlet swings the detached Tailion at the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Here%20I%20Come!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "This Doesn't Count!",
+          "descriptionEn": "Scarlet throws a plate she was holding at the enemy. Inflicts the enemy with Recovery Down for 2 turns with a 100% chance. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/This%20Doesn't%20Count!.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Anyway, I Won!",
+          "descriptionEn": "Scarlet spins a massive pinball around to deal damage to all enemies. Inflicts all enemies with SPD Down for 1 turn with a 75% chance. Reduces this skill's cooldown by 1 turn for each stack of Seven Ball (Undispellable) on self. Resets this skill's cooldown if self has 3 stacks of Seven Ball (Undispellable).",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Anyway,%20I%20Won!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "seira",
+      "name": "Seira",
+      "pageUrl": "https://tychara.com/StarSavior/characters/seira/",
+      "lastUpdated": null,
+      "profileEn": "Seira – striker SSR (order). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/SeiraIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/SeiraFullArt.webp",
+      "stats": {
+        "attack": 3483,
+        "vitality": 19529,
+        "defense": 1435,
+        "speed": 107,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Blessing of Premonition",
+          "descriptionEn": "Increases Seira's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Blessing%20of%20Premonition.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Fleeting Dream",
+          "descriptionEn": "Quickly closes in on the enemy and swings her scythe. Grants self 1 stack of Insight.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Fleeting%20Dream.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Starlit Butterflies",
+          "descriptionEn": "Summons starlit butterflies to buff an ally. Grants an ally ATK Up for 2 turns and increases the ally's Action Gauge by 10%. Grants self an extra turn.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Starlit%20Butterflies.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Invitation to the Phantasm",
+          "descriptionEn": "Draws the enemy into a dream realm and attacks with a slash. Inflicts the enemy with SPD Down for 2 turns with a 100% chance. Grants self Light of the Phantasm for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Invitation%20to%20the%20Phantasm.webp"
+        }
+      ]
+    },
+    {
+      "slug": "serpang",
+      "name": "Serpang",
+      "pageUrl": "https://tychara.com/StarSavior/characters/serpang/",
+      "lastUpdated": null,
+      "profileEn": "Serpang – supporter SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/SerpangIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/SerpangFullArt.webp",
+      "stats": {
+        "attack": 2990,
+        "vitality": 19890,
+        "defense": 1484,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Rise, Phoenix!",
+          "descriptionEn": "Increases Serpang's Max HP by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Rise,%20Phoenix!.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "I Choose You!",
+          "descriptionEn": "Serpang throws Toto at the enemy. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/I%20Choose%20You!.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "I Trust You!",
+          "descriptionEn": "Toto intimidates the enemy with a murderous glare. Restores HP to the ally with the current lowest HP ratio, and inflicts the enemy with ATK Down for 1 turn with a 100% chance. Recovery is proportional to self Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/I%20Trust%20You!.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Let's Show Them, Toto!",
+          "descriptionEn": "Serpang and Toto share their fiery bond with everyone. Restores all allies' HP and grants self and the ally with the current lowest HP ratio (excluding Serpang) 1 stack of Skill DMG Nullification. Recovery is proportional to her Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Let's%20Show%20Them,%20Toto!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "smile",
+      "name": "Smile",
+      "pageUrl": "https://tychara.com/StarSavior/characters/smile/",
+      "lastUpdated": null,
+      "profileEn": "Smile – ranger SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/SmileIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/SmileFullArt.webp",
+      "stats": {
+        "attack": 3399,
+        "vitality": 19381,
+        "defense": 1434,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Happy Trigger",
+          "descriptionEn": "Increases Smile's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Happy%20Trigger.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Firing Coordinates Confirmed",
+          "descriptionEn": "Bombards the enemy with her handmade Happy End cannon. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Firing%20Coordinates%20Confirmed.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Cat Tapdance",
+          "descriptionEn": "Triggers Cat Tapdance on the enemy if the enemy's HP is 50% or below after using Firing Coordinates Confirmed. Inflicts all enemies with Burn for 1 turn with a 50% chance. Occurs once per turn, and does not trigger if the enemy is defeated by Firing Coordinates Confirmed.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Cat%20Tapdance.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "All Units, Open Fire!",
+          "descriptionEn": "Unleashes concentrated fire alongside Smile Cat at the enemy. Inflicts the enemy with DEF Down for 2 turns with a 100% chance.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/All%20Units,%20Open%20Fire!.webp"
+        }
+      ]
+    },
+    {
+      "slug": "tanya",
+      "name": "Tanya",
+      "pageUrl": "https://tychara.com/StarSavior/characters/tanya/",
+      "lastUpdated": null,
+      "profileEn": "Tanya – striker SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/TanyaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/TanyaFullArt.webp",
+      "stats": {
+        "attack": 3399,
+        "vitality": 19381,
+        "defense": 1505,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Demolition Work",
+          "descriptionEn": "Increases Tanya's ATK by 5%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Demolition%20Work.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Boom-Boom Tool",
+          "descriptionEn": "Swings her heavy multitool to attack the enemy. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Boom-Boom%20Tool.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Buzz-Buzz Chainsaw",
+          "descriptionEn": "Uses the cutting tool in her multitool to slice the enemy. Grants all allies CRIT Rate Up for 1 turn, and increases self Action Gauge by 15%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Buzz-Buzz%20Chainsaw.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Bang-Bang Bunker",
+          "descriptionEn": "Pulverizes the enemy with the multitool's drill. Grants self ATK Up for 1 turn. Deals 1 more Toughness DMG if self has Demolition Mode on attack.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Bang-Bang%20Bunker.webp"
+        }
+      ]
+    },
+    {
+      "slug": "trish",
+      "name": "Trish",
+      "pageUrl": "https://tychara.com/StarSavior/characters/trish/",
+      "lastUpdated": null,
+      "profileEn": "Trish – assassin SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/TrishIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/TrishFullArt.webp",
+      "stats": {
+        "attack": 3442,
+        "vitality": 18260,
+        "defense": 1429,
+        "speed": 90,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Top-Tier Hunter",
+          "descriptionEn": "Increases Trish's CRIT DMG by 15%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Top-Tier%20Hunter.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Phantom Step",
+          "descriptionEn": "Dashes in with a stylish surprise attack on the enemy. Grants 1 stack of Leap to self.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Phantom%20Step.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Accelerated Assault",
+          "descriptionEn": "Throws a dagger, catches it mid-air with style, and slams it down. Grants CRIT Rate Up to self for 2 turns.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Accelerated%20Assault.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Continuous Cuts",
+          "descriptionEn": "Unleashes lightning-fast consecutive strikes that only a top-tier hunter can pull off. Grants ATK Up to self for 2 turns. Upon defeating the enemy, this Skill's cooldown resets.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Continuous%20Cuts.webp"
+        }
+      ]
+    },
+    {
+      "slug": "tyria",
+      "name": "Tyria",
+      "pageUrl": "https://tychara.com/StarSavior/characters/tyria/",
+      "lastUpdated": null,
+      "profileEn": "Tyria – striker SSR (sun). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/TyriaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/TyriaFullArt.webp",
+      "stats": {
+        "attack": 3569,
+        "vitality": 19381,
+        "defense": 1434,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Guillotine Executor",
+          "descriptionEn": "Penetrates 15% of DEF if the enemy has Thorns of Ruin (Undispellable) when using Prelude to the End or Requiem of Ruin. Inflicts the enemy with Thorns of Ruin (Undispellable) with a 100% chance after using Prelude to the End. Triggers Requiem of Ruin if the enemy's Thorns of Ruin (Undispellable) is at max stacks after using Prelude to the End.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Guillotine%20Executor.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Prelude to the End",
+          "descriptionEn": "Tyria charges towards the enemy with her greatsword. Grants self 1 stack of Ignition.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Prelude%20to%20the%20End.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Requiem of Ruin",
+          "descriptionEn": "Binds the enemy with thorny vines and swings a greatsword with grace. Deals 10% additional damage on attack for each stack of Thorns of Ruin (Undispellable) on self, and deals an additional 50% damage if the enemy is Defender-class. Removes Thorns of Ruin (Undispellable) from the enemy after attacking. Deals 20% increased damage if Ignition is at max stacks on attack. Removes all stacks of Ignition after attacking. Grants self SPD Up for 3 turns if this skill is not an additionally triggered skill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Requiem%20of%20Ruin.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Crescendo of Sorrow",
+          "descriptionEn": "Slashes through space with a greatsword, dealing massive damage to all enemies. Grants self Shatter for 2 turns, and grants self 2 stacks of Ignition. Inflicts all enemies 1 stack of Thorns of Ruin (Undispellable) with a 100% chance, and inflicts the enemy with the highest DEF 3 stacks of Thorns of Ruin (Undispellable).",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Crescendo%20of%20Sorrow.webp"
+        }
+      ]
+    },
+    {
+      "slug": "vera",
+      "name": "Vera",
+      "pageUrl": "https://tychara.com/StarSavior/characters/vera/",
+      "lastUpdated": null,
+      "profileEn": "Vera – supporter SR (moon). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/VeraIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/VeraFullArt.webp",
+      "stats": {
+        "attack": 2552,
+        "vitality": 17061,
+        "defense": 1321,
+        "speed": 95,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Veteran Courier",
+          "descriptionEn": "Increases Vera's Max HP by 3%.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Veteran%20Courier.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Proper Response",
+          "descriptionEn": "Attacks the enemy with determination to protect the parcel. Grants self 1 stack of Chill.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Proper%20Response.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Swift and Safe Delivery",
+          "descriptionEn": "Vera brings good tidings. Restores an ally's HP and removes 1 debuff from the ally. Recovery is proportional to her Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Swift%20and%20Safe%20Delivery.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "One Step Toward My Dream",
+          "descriptionEn": "Vera completes a special delivery. Restores all allies' HP. Grants self Express Delivery for 1 turn if the target has a buff. Recovery is proportional to Muriel's Max HP.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/One%20Step%20Toward%20My%20Dream.webp"
+        }
+      ]
+    },
+    {
+      "slug": "yoomina",
+      "name": "Yoo Mina",
+      "pageUrl": "https://tychara.com/StarSavior/characters/yoomina/",
+      "lastUpdated": null,
+      "profileEn": "Yoo Mina – ranger SSR (star). Stats, skills, potentials, and build guide for Star Savior.",
+      "iconUrl": "https://tychara.com/StarSavior/characterimg/charicons/YooMinaIcon.webp",
+      "fullArtUrl": "https://tychara.com/StarSavior/characterimg/fullart/YooMinaFullArt.webp",
+      "stats": {
+        "attack": 3456,
+        "vitality": 18420,
+        "defense": 1434,
+        "speed": 100,
+        "criticalHitRate": null,
+        "criticalDamage": null
+      },
+      "skills": [
+        {
+          "type": "passive",
+          "banner": "Passive",
+          "name": "Experienced Rookie",
+          "descriptionEn": "Increases Yoo Mina's ATK by 2% after attacking. Stacks up to 5 times. Increases self Action Gauge by 9% on Critical Hit.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Experienced%20Rookie.webp"
+        },
+        {
+          "type": "basic",
+          "banner": "Basic",
+          "name": "Pulse Revolver",
+          "descriptionEn": "Attacks the enemy using her Pulse Revolver. Grants self 1 stack of Leap.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Pulse%20Revolver.webp"
+        },
+        {
+          "type": "special",
+          "banner": "Special",
+          "name": "Pulse Impact",
+          "descriptionEn": "Fires high-output energy from the Pulse Revolver to attack the enemy. Grants self CRIT Rate Up for 2 turns and inflicts the enemy with Bleed for 2 turns with a 75% chance. Inflicts the enemy with an additional instance of Bleed for 2 turns with a 100% chance if Leap is at max stacks after attacking.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Pulse%20Impact.webp"
+        },
+        {
+          "type": "ultimate",
+          "banner": "Ultimate",
+          "name": "Wolvesbane",
+          "descriptionEn": "Swings Wolvesbane to attack all enemies. Grants self ATK Up for 2 turns and 2 stacks of Leap. Inflicts all enemies with an instance of Bleed for 2 turns with a 75% chance, 2 times total.",
+          "iconUrl": "https://tychara.com/StarSavior/skills/Wolvesbane.webp"
+        }
+      ]
+    }
+  ]
+}

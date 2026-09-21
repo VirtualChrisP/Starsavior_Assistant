@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://star-savior-bp.local/schemas/skills.normalized.schema.json",
+  "title": "Star Savior 标准化公开技能数据",
+  "type": "object",
+  "required": ["schemaVersion", "datasetStatus", "source", "skills"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "datasetStatus": { "type": "string" },
+    "source": { "type": "object" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "ownerSlug", "name", "type", "target", "cooldown", "effects", "tags", "descriptionEn", "sourceUrl", "verification", "parsing"],
+        "properties": {
+          "id": { "type": "string" },
+          "ownerSlug": { "type": "string" },
+          "name": { "type": "string" },
+          "type": { "enum": ["passive", "basic", "special", "hyper"] },
+          "target": { "enum": ["self", "single-enemy", "all-enemies", "single-ally", "all-allies", "unknown"] },
+          "cooldown": { "type": ["number", "null"] },
+          "resourceCost": { "type": ["number", "null"] },
+          "effects": { "type": "array", "items": { "type": "object" } },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "descriptionEn": { "type": "string" },
+          "descriptionZh": { "type": ["string", "null"] },
+          "iconUrl": { "type": "string", "format": "uri" },
+          "sourceUrl": { "type": "string", "format": "uri" },
+          "verification": { "enum": ["confirmed-public", "observed-public", "assumption", "unknown"] },
+          "parsing": { "type": "object" }
+        }
+      }
+    }
+  }
+}

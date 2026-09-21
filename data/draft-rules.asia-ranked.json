@@ -1,0 +1,26 @@
+{
+  "id": "asia-ranked-pending-order",
+  "mode": "ranked-arena",
+  "strictTurnOrder": true,
+  "allowDuplicateAcrossSides": false,
+  "teamSize": 5,
+  "banLimit": 2,
+  "turnOrder": [],
+  "firstPickerMode": "random",
+  "turnStages": [
+    { "id": "opening-ban", "type": "ban", "sides": ["ally", "enemy"], "countPerSide": 1, "simultaneous": true },
+    { "id": "pick-1", "type": "pick", "side": "first", "count": 1 },
+    { "id": "pick-2", "type": "pick", "side": "second", "count": 2 },
+    { "id": "pick-3", "type": "pick", "side": "first", "count": 2 },
+    { "id": "pick-4", "type": "pick", "side": "second", "count": 2 },
+    { "id": "pick-5", "type": "pick", "side": "first", "count": 2 },
+    { "id": "pick-6", "type": "pick", "side": "second", "count": 1 },
+    { "id": "closing-ban", "type": "ban", "sides": ["ally", "enemy"], "countPerSide": 1, "simultaneous": true, "eligibleFrom": "opponentPicks" }
+  ],
+  "notes": [
+    "首轮双方同时各禁用 1 名角色；首选方由游戏随机决定，需在创建 Draft 状态时传入 firstPicker。",
+    "选人顺序为首选方 1 人、另一方 2 人、首选方 2 人、另一方 2 人、首选方 2 人、另一方 1 人。",
+    "双方各完成 5 人后，双方同时从对方已选角色中各禁用 1 人。",
+    "simultaneous=true 仅表示两边动作互不依赖；程序仍逐条记录动作，便于回放和撤销。"
+  ]
+}

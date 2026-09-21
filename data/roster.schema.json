@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://star-savior-bp.local/schemas/roster.schema.json",
+  "title": "Star Savior 当前角色阵容快照",
+  "type": "object",
+  "required": ["schemaVersion", "snapshotDate", "patch", "region", "source", "characters"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "snapshotDate": { "type": "string", "format": "date" },
+    "patch": { "type": "string" },
+    "region": { "type": "string" },
+    "source": { "type": "object" },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "title", "rarity", "element", "class", "stats", "verification"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "rarity": { "type": "string" },
+          "element": { "type": "string" },
+          "class": { "type": "string" },
+          "stats": {
+            "type": "object",
+            "required": ["hp", "attack", "defense", "speed", "criticalHitRate", "criticalDamage", "effectHit", "effectResistance"],
+            "properties": {
+              "hp": { "type": "number" },
+              "attack": { "type": "number" },
+              "defense": { "type": "number" },
+              "speed": { "type": "number" },
+              "criticalHitRate": { "type": "number" },
+              "criticalDamage": { "type": "number" },
+              "effectHit": { "type": "number" },
+              "effectResistance": { "type": "number" }
+            },
+            "additionalProperties": false
+          },
+          "verification": { "enum": ["confirmed-public", "observed-public", "assumption", "unknown"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

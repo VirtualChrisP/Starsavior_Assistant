@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "datasetStatus": "phase-0-seed",
+  "lastReviewed": "2026-09-20",
+  "patch": null,
+  "region": null,
+  "source": {
+    "type": "public-article-observation",
+    "url": "https://vortexgaming.io/en/postdetail/714181",
+    "verifiedInClient": false
+  },
+  "characters": [
+    {
+      "id": "lacy",
+      "name": "Lacy",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "bellis",
+      "name": "Bellis",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "seira",
+      "name": "Seira",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "taya",
+      "name": "Taya",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "emily",
+      "name": "Emily",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "claire",
+      "name": "Claire",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "roberta",
+      "name": "Roberta",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "muriel",
+      "name": "Muriel",
+      "aliases": [],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    },
+    {
+      "id": "bunny-girl-charle",
+      "name": "Bunny Girl Charle",
+      "aliases": ["Charle"],
+      "roles": [],
+      "tags": [],
+      "skills": [],
+      "verification": "observed-public"
+    }
+  ]
+}
