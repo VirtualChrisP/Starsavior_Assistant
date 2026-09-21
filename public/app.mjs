@@ -7,6 +7,7 @@ import {
 } from "/src/draft/draft-state.mjs";
 import { getDraftCandidates, summarizeDraftRisks } from "/src/draft/rule-engine.mjs";
 import { getCharacterOverride, getEquipmentModifier, getStatTotal, sanitizeOverrides, skillOverrideKey } from "/src/knowledge/character-overrides.mjs";
+import { getDraftRecommendations } from "/src/draft/recommendation-engine.mjs";
 
 const imageMap = {
   "asherah-voyager-savior-party": "https://starsavior-db.pages.dev/images/icons/UFS_NKM_UNIT_S_VOYAGER_STRANIS.webp",
@@ -35,7 +36,7 @@ const dom = {
   stageTrack: document.querySelector("#stage-track"), firstPickerButtons: [...document.querySelectorAll("[data-first-picker]")],
   actionSideControl: document.querySelector("#action-side-control"), actionSideButtons: [...document.querySelectorAll("[data-action-side]")],
   search: document.querySelector("#search-input"), element: document.querySelector("#element-filter"), classFilter: document.querySelector("#class-filter"),
-  status: document.querySelector("#status-strip"), grid: document.querySelector("#roster-grid"), empty: document.querySelector("#empty-state"),
+  status: document.querySelector("#status-strip"), recommendations: document.querySelector("#recommendation-panel"), grid: document.querySelector("#roster-grid"), empty: document.querySelector("#empty-state"),
   allyPicks: document.querySelector("#ally-picks"), enemyPicks: document.querySelector("#enemy-picks"), allyBans: document.querySelector("#ally-bans"), enemyBans: document.querySelector("#enemy-bans"),
   allyCount: document.querySelector("#ally-count"), enemyCount: document.querySelector("#enemy-count"), toast: document.querySelector("#toast"),
   detailModal: document.querySelector("#detail-modal"), detailArt: document.querySelector("#detail-art"), detailKicker: document.querySelector("#detail-kicker"), detailName: document.querySelector("#detail-name"), detailProfile: document.querySelector("#detail-profile"), detailStats: document.querySelector("#detail-stats"), detailSource: document.querySelector("#detail-source"), detailSkills: document.querySelector("#detail-skills"), closeDetail: document.querySelector("#close-detail")
@@ -314,6 +315,34 @@ function filteredCharacters() {
   });
 }
 
+
+function renderRecommendations() {
+  if (!dom.recommendations) return;
+  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+  const side = state.currentSide ?? actionSide ?? candidates[0]?.side;
+  const items = getDraftRecommendations(state, roster, knowledgeBase, { side, normalizedSkills, tycharaData, overrides: characterOverrides, limit: 3 });
+  dom.recommendations.replaceChildren();
+  if (getDraftProgress(state).complete || items.length === 0) { dom.recommendations.hidden = true; return; }
+  dom.recommendations.hidden = false;
+  const heading = document.createElement("div"); heading.className = "recommendation-heading";
+  const title = document.createElement("strong"); title.id = "recommendation-title"; title.textContent = `推荐${state.phase === "ban" ? "禁用" : "选择"} · ${side === "ally" ? "我方" : "对方"}`;
+  const note = document.createElement("small"); note.textContent = "规则评分，不代表胜率；点击角色可查看依据数据。"; heading.append(title, note); dom.recommendations.append(heading);
+  const list = document.createElement("div"); list.className = "recommendation-list";
+  for (const item of items) {
+    const card = document.createElement("article"); card.className = "recommendation-card";
+    const action = document.createElement("button"); action.type = "button"; action.className = "recommendation-card-action"; action.addEventListener("click", () => showDetail(item.rosterId));
+    const name = document.createElement("strong"); name.textContent = item.name;
+    const score = document.createElement("span"); score.className = "recommendation-score"; score.textContent = `${item.score} 分`;
+    const role = document.createElement("small"); role.textContent = item.title;
+    const reasons = document.createElement("ul");
+    for (const reason of item.reasons.slice(0, 3)) { const reasonNode = document.createElement("li"); reasonNode.textContent = reason; reasons.append(reasonNode); }
+    action.append(name, score, role, reasons); card.append(action);
+    if (item.risk) { const risk = document.createElement("small"); risk.className = "recommendation-risk"; risk.textContent = `风险：${item.risk}`; card.append(risk); }
+    list.append(card);
+  }
+  dom.recommendations.append(list);
+}
+
 function renderRoster() {
   const candidates = getDraftCandidates(state, roster, knowledgeBase);
   resolveActionSide(candidates);
@@ -358,6 +387,7 @@ function render() {
   renderPhase();
   renderTeams();
   renderRoster();
+  renderRecommendations();
   dom.undo.disabled = state.history.length === 0;
   dom.app.setAttribute("aria-busy", "false");
 }
@@ -394,7 +424,7 @@ function bindEvents() {
     if (event.key === characterOverridesStorageKey) { loadCharacterOverrides(); if (selectedDetailId && !dom.detailModal.hidden) showDetail(selectedDetailId); }
   });
   dom.firstPickerButtons.forEach((button) => button.addEventListener("click", () => changeFirstPicker(button.dataset.firstPicker)));
-  dom.actionSideButtons.forEach((button) => button.addEventListener("click", () => { actionSide = button.dataset.actionSide; renderRoster(); }));
+  dom.actionSideButtons.forEach((button) => button.addEventListener("click", () => { actionSide = button.dataset.actionSide; render(); }));
   [dom.search, dom.element, dom.classFilter].forEach((control) => control.addEventListener("input", renderRoster));
   dom.undo.addEventListener("click", () => { state = undoDraftAction(state); persist(); render(); });
   dom.reset.addEventListener("click", resetDraft);

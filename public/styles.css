@@ -153,3 +153,19 @@ select { color: #aeb9c1; background: #1d242b; border: 1px solid var(--line); pad
   .roster-grid { grid-template-columns: repeat(4, minmax(100px, 1fr)); }
   .team-column { padding: 13px; }
 }
+
+.recommendation-panel { margin-top: 12px; border: 1px solid #4a4230; background: #25231d; padding: 12px; }
+.recommendation-panel[hidden] { display: none; }
+.recommendation-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.recommendation-heading strong { color: #f2cf7b; font-size: 12px; }
+.recommendation-heading small { color: #9f9a8a; font-size: 10px; }
+.recommendation-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 9px; }
+.recommendation-card { border: 1px solid #574d39; background: #1c2024; min-width: 0; }
+.recommendation-card-action { width: 100%; min-height: 116px; border: 0; background: transparent; color: inherit; padding: 10px; text-align: left; }
+.recommendation-card-action:hover { background: #2b2d2b; }
+.recommendation-card-action > strong { display: inline-block; color: #edf3f6; font-size: 13px; }
+.recommendation-score { float: right; color: #f1c96e; font-size: 11px; }
+.recommendation-card-action > small { display: block; color: #8e9ba5; font-size: 10px; margin-top: 3px; }
+.recommendation-card-action ul { color: #b7c0c5; font-size: 10px; line-height: 1.5; margin: 8px 0 0; padding-left: 15px; }
+.recommendation-risk { display: block; border-top: 1px solid #493f33; color: #e3aa65; font-size: 10px; padding: 7px 10px; }
+@media (max-width: 760px) { .recommendation-list { grid-template-columns: 1fr; } }
