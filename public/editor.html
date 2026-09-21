@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Star Savior · 角色资料编辑</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+    <style>
+      .editor-page { min-height: 100vh; padding: 22px 28px 40px; }
+      .editor-page-header { display:flex; align-items:center; justify-content:space-between; gap:20px; border-bottom:1px solid var(--line); padding-bottom:18px; }
+      .editor-page-header h1 { font-size:20px; margin:6px 0 0; }
+      .editor-page-header p { color:var(--muted); font-size:12px; margin-top:6px; }
+      .editor-page-actions { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+      .editor-page-layout { display:grid; grid-template-columns:260px minmax(640px,1fr); gap:16px; margin-top:16px; align-items:start; }
+      .editor-roster-panel, .character-editor { border:1px solid var(--line); background:var(--surface); }
+      .editor-roster-panel { padding:16px; position:sticky; top:16px; max-height:calc(100vh - 60px); overflow:auto; }
+      .editor-roster-panel h2, .character-editor h2 { margin:6px 0 0; font-size:16px; }
+      .editor-panel-heading { display:flex; justify-content:space-between; align-items:end; }
+      .editor-count { color:var(--muted); font-size:11px; }
+      .editor-search { height:36px; display:flex; align-items:center; gap:8px; margin:16px 0 10px; padding:0 10px; border:1px solid var(--line); background:#11161b; }
+      .editor-search input { flex:1; min-width:0; border:0; outline:0; background:transparent; color:var(--text); font-size:12px; }
+      .editor-character-list { display:grid; gap:6px; }
+      .editor-character-button { display:flex; gap:9px; align-items:center; width:100%; padding:8px; border:1px solid #303b46; background:#20272f; color:inherit; text-align:left; }
+      .editor-character-button:hover, .editor-character-button.active { border-color:var(--gold); background:#2a3035; }
+      .editor-character-button strong { display:block; font-size:12px; }
+      .editor-character-button small { display:block; color:var(--muted); font-size:10px; margin-top:3px; }
+      .editor-character-button .portrait { width:34px; height:34px; flex:0 0 34px; font-size:12px; }
+      .character-editor { min-height:650px; padding:22px 24px 28px; }
+      .editor-empty { min-height:590px; display:grid; place-content:center; gap:8px; text-align:center; color:var(--muted); }
+      .editor-empty strong { color:var(--text); font-size:18px; }
+      .editor-empty span { font-size:12px; }
+      .editor-header { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; padding-bottom:20px; border-bottom:1px solid var(--line); }
+      .editor-heading-main { display:flex; align-items:center; gap:14px; }
+      .editor-portrait { width:74px; height:74px; border:1px solid #53616d; background:#28313a; overflow:hidden; display:grid; place-items:center; color:#e4ecf0; font-size:24px; font-weight:700; }
+      .editor-portrait img { width:100%; height:100%; object-fit:cover; }
+      .editor-header p { color:var(--muted); font-size:11px; margin-top:6px; }
+      .editor-actions { display:flex; gap:7px; flex-wrap:wrap; justify-content:flex-end; }
+      .editor-section { margin-top:24px; }
+      .editor-section-heading { display:flex; align-items:end; justify-content:space-between; gap:12px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+      .editor-section-heading h3 { margin:5px 0 0; font-size:14px; }
+      .editor-section-heading small { color:var(--muted); font-size:10px; }
+      .stats-editor { display:grid; grid-template-columns:repeat(3,minmax(170px,1fr)); gap:8px; margin-top:12px; }
+      .stat-editor-row { display:grid; grid-template-columns:1fr 86px 84px; gap:7px; align-items:center; border:1px solid #35414b; background:#20272f; padding:9px; }
+      .stat-editor-row strong { font-size:11px; }
+      .stat-editor-row small { display:block; color:var(--muted); font-size:10px; margin-top:3px; }
+      .stat-editor-row input { width:100%; min-width:0; height:30px; border:1px solid #4a5660; background:#11161b; color:var(--text); padding:0 7px; font-size:12px; }
+      .stat-total { text-align:right; color:var(--gold); font-size:12px; white-space:nowrap; }
+      .skills-editor { display:grid; gap:10px; margin-top:12px; }
+      .skill-editor-card { border:1px solid #35414b; background:#20272f; padding:12px; }
+      .skill-editor-heading { display:flex; align-items:center; gap:10px; }
+      .skill-editor-heading img { width:40px; height:40px; object-fit:cover; border:1px solid #4a5660; }
+      .skill-editor-heading strong { font-size:12px; }
+      .skill-editor-heading small { display:block; color:var(--gold); margin-top:4px; font-size:10px; }
+      .skill-editor-fields { display:grid; grid-template-columns:1fr 2fr; gap:9px; margin-top:11px; }
+      .skill-editor-fields label { display:grid; gap:5px; color:var(--muted); font-size:10px; }
+      .skill-editor-fields input, .skill-editor-fields textarea { width:100%; border:1px solid #4a5660; background:#11161b; color:var(--text); padding:8px; font-size:12px; resize:vertical; }
+      .skill-editor-fields textarea { min-height:64px; line-height:1.5; }
+      .editor-note { margin-top:10px; color:var(--muted); font-size:11px; line-height:1.5; }
+      @media (max-width: 980px) { .editor-page-layout { grid-template-columns:1fr; } .editor-roster-panel { position:static; max-height:none; } .editor-character-list { grid-template-columns:repeat(3,minmax(0,1fr)); } .stats-editor { grid-template-columns:repeat(2,minmax(170px,1fr)); } }
+      @media (max-width: 700px) { body { min-width:0; } .editor-page { padding:16px; } .editor-page-header, .editor-header { align-items:flex-start; flex-direction:column; } .editor-actions { justify-content:flex-start; } .editor-character-list, .stats-editor, .skill-editor-fields { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <main class="editor-page" id="editor-app" aria-busy="true">
+      <header class="editor-page-header">
+        <div>
+          <span class="phase-kicker">Star Savior · 资料工具</span>
+          <h1>角色装备属性与技能中文编辑</h1>
+          <p id="editor-status">正在载入角色资料……</p>
+        </div>
+        <div class="editor-page-actions">
+          <a class="secondary-command" href="/">返回 BP 对局</a>
+          <button id="export-editor-button" class="secondary-command" type="button">导出编辑数据</button>
+          <button id="import-editor-button" class="secondary-command" type="button">导入编辑数据</button>
+          <input id="import-editor-input" type="file" accept="application/json" hidden />
+        </div>
+      </header>
+      <section class="editor-page-layout">
+        <aside class="editor-roster-panel">
+          <div class="editor-panel-heading"><div><span class="phase-kicker">角色池</span><h2>选择角色</h2></div><span id="editor-character-count" class="editor-count"></span></div>
+          <div class="editor-search"><span aria-hidden="true">⌕</span><input id="editor-search-input" type="search" placeholder="搜索角色或称号" autocomplete="off" /></div>
+          <div id="editor-character-list" class="editor-character-list"></div>
+        </aside>
+        <section class="character-editor">
+          <div id="editor-empty" class="editor-empty"><strong>选择一个角色开始编辑</strong><span>装备加成和中文技能覆盖会自动保存在本机。</span></div>
+          <div id="editor-content" hidden>
+            <header class="editor-header">
+              <div class="editor-heading-main"><div id="editor-portrait" class="editor-portrait"></div><div><span id="editor-character-kicker" class="side-label"></span><h2 id="character-editor-title"></h2><p id="editor-character-subtitle"></p></div></div>
+              <button id="reset-character-button" class="secondary-command" type="button">清除本角色修改</button>
+            </header>
+            <section class="editor-section"><div class="editor-section-heading"><div><span class="phase-kicker">装备属性</span><h3>基础属性与装备加成</h3></div><small>输入正数或负数，右侧显示当前总值</small></div><div id="stats-editor" class="stats-editor"></div></section>
+            <section class="editor-section"><div class="editor-section-heading"><div><span class="phase-kicker">技能翻译</span><h3>技能中文覆盖</h3></div><small>留空则继续显示公开英文原文</small></div><div id="skills-editor" class="skills-editor"></div><p class="editor-note">中文技能只作为本机覆盖层保存，不会修改原始抓取数据，也不会影响基础规则计算。</p></section>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script type="module" src="/public/editor.mjs"></script>
+  </body>
+</html>
