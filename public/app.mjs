@@ -429,12 +429,17 @@ function renderRecommendations() {
   for (const item of items) {
     const card = document.createElement("article"); card.className = "recommendation-card";
     const action = document.createElement("button"); action.type = "button"; action.className = "recommendation-card-action"; action.addEventListener("click", () => showDetail(item.rosterId));
+    const body = document.createElement("div"); body.className = "recommendation-body";
+    const avatar = portrait(item.rosterId); avatar.classList.add("recommendation-avatar");
+    const info = document.createElement("div"); info.className = "recommendation-info";
+    const top = document.createElement("div"); top.className = "recommendation-top";
     const name = document.createElement("strong"); name.textContent = displayName(item.rosterId);
     const score = document.createElement("span"); score.className = "recommendation-score"; score.textContent = `${item.score} 分`;
+    top.append(name, score);
     const role = document.createElement("small"); role.textContent = titleFor(item.rosterId);
     const reasons = document.createElement("ul");
     for (const reason of item.reasons.slice(0, 3)) { const reasonNode = document.createElement("li"); reasonNode.textContent = reason; reasons.append(reasonNode); }
-    action.append(name, score, role, reasons); card.append(action);
+    info.append(top, role, reasons); body.append(avatar, info); action.append(body); card.append(action);
     if (item.risk) { const risk = document.createElement("small"); risk.className = "recommendation-risk"; risk.textContent = `风险：${item.risk}`; card.append(risk); }
     list.append(card);
   }

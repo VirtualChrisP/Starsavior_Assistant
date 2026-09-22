@@ -163,10 +163,14 @@ select { color: #aeb9c1; background: #1d242b; border: 1px solid var(--line); pad
 .recommendation-card { border: 1px solid #574d39; background: #1c2024; min-width: 0; }
 .recommendation-card-action { width: 100%; min-height: 116px; border: 0; background: transparent; color: inherit; padding: 10px; text-align: left; }
 .recommendation-card-action:hover { background: #2b2d2b; }
-.recommendation-card-action > strong { display: inline-block; color: #edf3f6; font-size: 13px; }
-.recommendation-score { float: right; color: #f1c96e; font-size: 11px; }
-.recommendation-card-action > small { display: block; color: #8e9ba5; font-size: 10px; margin-top: 3px; }
-.recommendation-card-action ul { color: #b7c0c5; font-size: 10px; line-height: 1.5; margin: 8px 0 0; padding-left: 15px; }
+.recommendation-body { display: grid; grid-template-columns: 45px minmax(0, 1fr); gap: 10px; align-items: start; }
+.recommendation-avatar { width: 45px; height: 45px; flex: 0 0 45px; }
+.recommendation-info { min-width: 0; }
+.recommendation-top { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; min-width: 0; }
+.recommendation-top strong { color: #edf3f6; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recommendation-score { flex: 0 0 auto; color: #f1c96e; font-size: 11px; }
+.recommendation-info > small { display: block; color: #8e9ba5; font-size: 10px; margin-top: 3px; }
+.recommendation-info ul { color: #b7c0c5; font-size: 10px; line-height: 1.5; margin: 8px 0 0; padding-left: 15px; }
 .recommendation-risk { display: block; border-top: 1px solid #493f33; color: #e3aa65; font-size: 10px; padding: 7px 10px; }
 @media (max-width: 760px) { .recommendation-list { grid-template-columns: 1fr; } }
 .match-result-panel { margin-top: 16px; border: 1px solid var(--line); border-top: 3px solid var(--green); background: var(--surface); padding: 18px 20px 20px; }
