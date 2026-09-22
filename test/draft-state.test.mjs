@@ -99,3 +99,23 @@ test("亚服末轮禁用只能选择对方已选角色", () => {
   state = applyDraftAction(state, { type: "ban", side: "enemy", rosterId: "smile-voyager-savior-party" }, roster);
   assert.equal(getDraftProgress(state).complete, true);
 });
+test("每个动作保存动作前可见状态且同时禁用不泄漏同阶段动作", () => {
+  let state = createDraftState({ draftId: "snapshot-test", patch: roster.patch, region: "asia", rules: asiaRules });
+  state = setFirstPicker(state, "ally");
+  state = applyDraftAction(state, { type: "ban", side: "ally", rosterId: "lacy" }, roster);
+  assert.deepEqual(state.history[0].visibleState.allyBans, []);
+  assert.deepEqual(state.history[0].visibleState.enemyBans, []);
+  state = applyDraftAction(state, { type: "ban", side: "enemy", rosterId: "omega" }, roster);
+  assert.deepEqual(state.history[1].visibleState.allyBans, []);
+  assert.deepEqual(state.history[1].visibleState.enemyBans, []);
+});
+
+test("连续选人阶段的动作快照包含之前已公开的选择", () => {
+  let state = createDraftState({ draftId: "sequential-snapshot-test", patch: roster.patch, region: "asia", rules });
+  state = applyDraftAction(state, { type: "ban", side: "enemy", rosterId: "lacy" }, roster);
+  state = applyDraftAction(state, { type: "ban", side: "ally", rosterId: "omega" }, roster);
+  state = applyDraftAction(state, { type: "pick", side: "ally", rosterId: "charlotte-monastir-knights" }, roster);
+  state = applyDraftAction(state, { type: "pick", side: "enemy", rosterId: "asherah-voyager-savior-party" }, roster);
+  assert.deepEqual(state.history[3].visibleState.allyPicks, ["charlotte-monastir-knights"]);
+  assert.equal(state.history[3].visibleState.visibleActionCount, 3);
+});

@@ -1,4 +1,4 @@
-export const matchHistorySchemaVersion = 1;
+export const matchHistorySchemaVersion = 2;
 
 const WINNERS = new Set(["ally", "enemy", "draw", "unknown"]);
 const STATUSES = new Set(["completed", "surrender", "disconnect", "invalid"]);
@@ -11,6 +11,38 @@ function stringArray(value) {
   return Array.isArray(value) ? value.filter((item) => typeof item === "string") : [];
 }
 
+function sanitizeVisibleState(value) {
+  if (!value || typeof value !== "object") return null;
+  const side = value.currentSide === "ally" || value.currentSide === "enemy" ? value.currentSide : null;
+  const firstPicker = value.firstPicker === "ally" || value.firstPicker === "enemy" ? value.firstPicker : null;
+  const phase = value.phase === "ban" || value.phase === "pick" ? value.phase : null;
+  if (!phase) return null;
+  return {
+    schemaVersion: 1,
+    phase,
+    stageIndex: Number.isInteger(value.stageIndex) && value.stageIndex >= 0 ? value.stageIndex : 0,
+    actionIndex: Number.isInteger(value.actionIndex) && value.actionIndex >= 0 ? value.actionIndex : 0,
+    currentSide: side,
+    firstPicker,
+    allyBans: stringArray(value.allyBans),
+    enemyBans: stringArray(value.enemyBans),
+    allyPicks: stringArray(value.allyPicks),
+    enemyPicks: stringArray(value.enemyPicks),
+    visibleActionCount: Number.isInteger(value.visibleActionCount) && value.visibleActionCount >= 0 ? value.visibleActionCount : 0
+  };
+}
+
+function sanitizeActions(value) {
+  if (!Array.isArray(value)) return [];
+  return value.filter((item) => item && typeof item === "object").map((item) => ({
+    type: item.type === "ban" || item.type === "pick" ? item.type : "pick",
+    side: item.side === "enemy" ? "enemy" : "ally",
+    rosterId: typeof item.rosterId === "string" ? item.rosterId : "",
+    at: typeof item.at === "string" ? item.at : null,
+    stageIndex: Number.isInteger(item.stageIndex) && item.stageIndex >= 0 ? item.stageIndex : 0,
+    visibleState: sanitizeVisibleState(item.visibleState)
+  })).filter((item) => item.rosterId);
+}
 export function sanitizeMatchRecord(input) {
   if (!input || typeof input !== "object") return null;
   const winner = WINNERS.has(input.result?.winner) ? input.result.winner : "unknown";
@@ -31,8 +63,9 @@ export function sanitizeMatchRecord(input) {
     enemyPicks: stringArray(input.enemyPicks),
     allyBans: stringArray(input.allyBans),
     enemyBans: stringArray(input.enemyBans),
-    actions: Array.isArray(input.actions) ? structuredClone(input.actions) : [],
+    actions: sanitizeActions(input.actions),
     characterOverrides: input.characterOverrides && typeof input.characterOverrides === "object" ? structuredClone(input.characterOverrides) : {},
+    schemaVersion: 2,
     result: {
       winner,
       status,

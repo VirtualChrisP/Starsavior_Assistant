@@ -13,6 +13,7 @@ test("完整 Draft 和胜负可以生成本地对局记录", () => {
   assert.equal(record.result.durationSeconds, 601);
   assert.ok(record.characterOverrides.lacy);
   assert.equal(record.characterOverrides.unused, undefined);
+  assert.equal(record.schemaVersion, 2);
 });
 
 test("重复保存同一 draftId 会更新而不是追加", () => {
@@ -39,4 +40,9 @@ test("空时长保持为空而不是被转换为零", () => {
   const record = createMatchRecord(draft, { winner: "ally", status: "completed", durationSeconds: null });
   const restored = sanitizeMatchHistory({ matches: [record] });
   assert.equal(restored.matches[0].result.durationSeconds, null);
+});
+test("对局记录会保留每个动作的可见状态快照", () => {
+  const record = createMatchRecord({ ...draft, history: [{ type: "pick", side: "ally", rosterId: "lacy", stageIndex: 1, visibleState: { phase: "pick", stageIndex: 1, actionIndex: 2, currentSide: "ally", firstPicker: "ally", allyBans: [], enemyBans: [], allyPicks: [], enemyPicks: [], visibleActionCount: 2 } }] }, { winner: "ally", status: "completed" });
+  assert.equal(record.actions[0].visibleState.phase, "pick");
+  assert.equal(record.actions[0].visibleState.visibleActionCount, 2);
 });

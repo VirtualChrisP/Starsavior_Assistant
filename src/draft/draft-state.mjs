@@ -12,6 +12,25 @@ function assertActionType(type) {
 function cloneState(state) {
   return structuredClone(state);
 }
+function getVisibleStateSnapshot(state) {
+  const hiddenActions = new Set((getStage(state)?.simultaneous ? state.history : [])
+    .filter((item) => item.stageIndex === state.stageIndex)
+    .map((item) => `${item.type}:${item.rosterId}:${item.side}`));
+  const isVisible = (type, side, rosterId) => !hiddenActions.has(`${type}:${rosterId}:${side}`);
+  return {
+    schemaVersion: 1,
+    phase: state.phase,
+    stageIndex: state.stageIndex,
+    actionIndex: state.actionIndex,
+    currentSide: state.currentSide,
+    firstPicker: state.firstPicker,
+    allyBans: state.allyBans.filter((rosterId) => isVisible("ban", "ally", rosterId)),
+    enemyBans: state.enemyBans.filter((rosterId) => isVisible("ban", "enemy", rosterId)),
+    allyPicks: state.allyPicks.filter((rosterId) => isVisible("pick", "ally", rosterId)),
+    enemyPicks: state.enemyPicks.filter((rosterId) => isVisible("pick", "enemy", rosterId)),
+    visibleActionCount: getStage(state)?.simultaneous ? state.history.filter((item) => item.stageIndex !== state.stageIndex).length : state.history.length
+  };
+}
 
 function countSideBans(state, side) {
   return side === "ally" ? state.allyBans.length : state.enemyBans.length;
@@ -163,7 +182,7 @@ export function applyDraftAction(state, action, roster) {
   } else {
     next[`${action.side}Picks`].push(action.rosterId);
   }
-  next.history.push({ ...normalized, stageIndex: next.stageIndex });
+  next.history.push({ ...normalized, stageIndex: next.stageIndex, visibleState: getVisibleStateSnapshot(state) });
   next.actionIndex += 1;
   if (next.stageActionCounts) next.stageActionCounts[next.stageIndex] += 1;
   if (next.rules.turnStages) advanceStage(next);

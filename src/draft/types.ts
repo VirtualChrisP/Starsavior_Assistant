@@ -2,12 +2,26 @@ export type DraftSide = "ally" | "enemy";
 export type DraftActionType = "ban" | "pick";
 export type DraftStageSide = DraftSide | "first" | "second";
 
+export interface DraftVisibleState {
+  schemaVersion: number;
+  phase: DraftActionType;
+  stageIndex: number;
+  actionIndex: number;
+  currentSide: DraftSide | null;
+  firstPicker: DraftSide | null;
+  allyBans: string[];
+  enemyBans: string[];
+  allyPicks: string[];
+  enemyPicks: string[];
+  visibleActionCount: number;
+}
 export interface DraftAction {
   type: DraftActionType;
   side: DraftSide;
   rosterId: string;
   at?: string;
   stageIndex?: number;
+  visibleState?: DraftVisibleState;
 }
 
 export interface DraftTurnRule {
