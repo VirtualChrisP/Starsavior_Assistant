@@ -8,6 +8,7 @@ import {
 import { getDraftCandidates, summarizeDraftRisks } from "/src/draft/rule-engine.mjs";
 import { getCharacterOverride, getEquipmentModifier, getStatTotal, sanitizeOverrides, skillOverrideKey } from "/src/knowledge/character-overrides.mjs";
 import { getDraftRecommendations } from "/src/draft/recommendation-engine.mjs";
+import { createEmptyMatchHistory, createMatchRecord, findMatchByDraftId, sanitizeMatchHistory, upsertMatchRecord } from "/src/matches/match-history.mjs";
 
 const imageMap = {
   "asherah-voyager-savior-party": "https://starsavior-db.pages.dev/images/icons/UFS_NKM_UNIT_S_VOYAGER_STRANIS.webp",
@@ -28,6 +29,7 @@ const labels = {
 const stageLabels = ["首轮禁用", "首选 1", "次选 2", "首选 2", "次选 2", "首选 2", "次选 1", "末轮禁用"];
 const storageKey = "star-savior-bp-draft-v2";
 const characterOverridesStorageKey = "star-savior-bp-character-overrides-v1";
+const matchHistoryStorageKey = "star-savior-bp-match-history-v1";
 
 const dom = {
   app: document.querySelector("#app"), version: document.querySelector("#version-label"),
@@ -39,7 +41,8 @@ const dom = {
   status: document.querySelector("#status-strip"), recommendations: document.querySelector("#recommendation-panel"), grid: document.querySelector("#roster-grid"), empty: document.querySelector("#empty-state"),
   allyPicks: document.querySelector("#ally-picks"), enemyPicks: document.querySelector("#enemy-picks"), allyBans: document.querySelector("#ally-bans"), enemyBans: document.querySelector("#enemy-bans"),
   allyCount: document.querySelector("#ally-count"), enemyCount: document.querySelector("#enemy-count"), toast: document.querySelector("#toast"),
-  detailModal: document.querySelector("#detail-modal"), detailArt: document.querySelector("#detail-art"), detailKicker: document.querySelector("#detail-kicker"), detailName: document.querySelector("#detail-name"), detailProfile: document.querySelector("#detail-profile"), detailStats: document.querySelector("#detail-stats"), detailSource: document.querySelector("#detail-source"), detailSkills: document.querySelector("#detail-skills"), closeDetail: document.querySelector("#close-detail")
+  detailModal: document.querySelector("#detail-modal"), detailArt: document.querySelector("#detail-art"), detailKicker: document.querySelector("#detail-kicker"), detailName: document.querySelector("#detail-name"), detailProfile: document.querySelector("#detail-profile"), detailStats: document.querySelector("#detail-stats"), detailSource: document.querySelector("#detail-source"), detailSkills: document.querySelector("#detail-skills"), closeDetail: document.querySelector("#close-detail"),
+  resultPanel: document.querySelector("#match-result-panel"), resultForm: document.querySelector("#match-result-form"), resultWinnerButtons: [...document.querySelectorAll("[data-result-winner]")], resultStatus: document.querySelector("#result-status"), resultDuration: document.querySelector("#result-duration"), resultNotes: document.querySelector("#result-notes"), resultState: document.querySelector("#match-result-state"), historySummary: document.querySelector("#match-history-summary"), exportHistory: document.querySelector("#export-history-button")
 };
 
 let roster;
@@ -52,6 +55,9 @@ let actionSide = "ally";
 let toastTimer;
 let characterOverrides = sanitizeOverrides({});
 let selectedDetailId = null;
+let matchHistory = createEmptyMatchHistory();
+let selectedWinner = "unknown";
+let resultFormDraftId = null;
 
 const rosterById = () => new Map(roster.characters.map((character) => [character.id, character]));
 const knowledgeByRosterId = () => new Map(knowledgeBase.characters.filter((character) => character.rosterId).map((character) => [character.rosterId, character]));
@@ -83,6 +89,87 @@ function titleFor(id) { return char(id)?.title ?? ""; }
 function loadCharacterOverrides() {
   try { characterOverrides = sanitizeOverrides(JSON.parse(localStorage.getItem(characterOverridesStorageKey) ?? "{}")); }
   catch { characterOverrides = sanitizeOverrides({}); }
+}
+
+function loadMatchHistory() {
+  try { matchHistory = sanitizeMatchHistory(JSON.parse(localStorage.getItem(matchHistoryStorageKey) ?? "{}")); }
+  catch { matchHistory = createEmptyMatchHistory(); }
+}
+
+function persistMatchHistory() {
+  localStorage.setItem(matchHistoryStorageKey, JSON.stringify(matchHistory));
+}
+
+function validMatchCount() {
+  return matchHistory.matches.filter((match) => match.patch === state.patch && match.region === state.region && match.result.status !== "invalid" && match.result.winner !== "unknown").length;
+}
+
+function setSelectedWinner(winner) {
+  selectedWinner = winner;
+  dom.resultWinnerButtons.forEach((button) => button.classList.toggle("active", button.dataset.resultWinner === winner));
+}
+
+function renderMatchResult() {
+  const complete = getDraftProgress(state).complete;
+  dom.resultPanel.hidden = !complete;
+  if (!complete) {
+    resultFormDraftId = null;
+    return;
+  }
+  const existing = findMatchByDraftId(matchHistory, state.draftId);
+  if (resultFormDraftId !== state.draftId) {
+    setSelectedWinner(existing?.result.winner ?? "unknown");
+    dom.resultStatus.value = existing?.result.status ?? "completed";
+    dom.resultDuration.value = existing?.result.durationSeconds == null ? "" : String(Math.round(existing.result.durationSeconds / 60));
+    dom.resultNotes.value = existing?.result.notes ?? "";
+    resultFormDraftId = state.draftId;
+  } else {
+    setSelectedWinner(selectedWinner);
+  }
+  const validCount = validMatchCount();
+  dom.historySummary.textContent = validCount > 0
+    ? `本机已有 ${validCount} 局有效结果参与推荐校准；未知结果和无效对局不会计入。`
+    : "本机还没有可用于校准的对局结果。";
+  dom.resultState.textContent = existing
+    ? `已保存 · ${new Date(existing.recordedAt).toLocaleString("zh-CN")}`
+    : "尚未保存";
+  dom.resultState.classList.toggle("saved", Boolean(existing));
+}
+
+function saveMatchResult(event) {
+  event.preventDefault();
+  if (!getDraftProgress(state).complete) return;
+  const durationText = dom.resultDuration.value.trim();
+  const durationMinutes = durationText === "" ? null : Number(durationText);
+  if (durationMinutes != null && (!Number.isFinite(durationMinutes) || durationMinutes < 0)) {
+    showToast("对局时长必须是大于或等于 0 的数字");
+    return;
+  }
+  try {
+    const record = createMatchRecord(state, {
+      winner: selectedWinner,
+      status: dom.resultStatus.value,
+      durationSeconds: durationMinutes == null ? null : Math.round(durationMinutes * 60),
+      notes: dom.resultNotes.value.trim()
+    }, characterOverrides);
+    matchHistory = upsertMatchRecord(matchHistory, record);
+    persistMatchHistory();
+    resultFormDraftId = null;
+    render();
+    showToast("对局结果已保存，并已用于后续推荐校准");
+  } catch (error) {
+    showToast(`保存失败：${error.message}`);
+  }
+}
+
+function exportMatchHistory() {
+  const blob = new Blob([JSON.stringify(matchHistory, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `star-savior-match-history-${new Date().toISOString().slice(0, 10)}.json`;
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 function initialState() {
@@ -320,7 +407,7 @@ function renderRecommendations() {
   if (!dom.recommendations) return;
   const candidates = getDraftCandidates(state, roster, knowledgeBase);
   const side = state.currentSide ?? actionSide ?? candidates[0]?.side;
-  const items = getDraftRecommendations(state, roster, knowledgeBase, { side, normalizedSkills, tycharaData, overrides: characterOverrides, limit: 3 });
+  const items = getDraftRecommendations(state, roster, knowledgeBase, { side, normalizedSkills, tycharaData, overrides: characterOverrides, matchHistory, limit: 3 });
   dom.recommendations.replaceChildren();
   if (getDraftProgress(state).complete || items.length === 0) { dom.recommendations.hidden = true; return; }
   dom.recommendations.hidden = false;
@@ -388,6 +475,7 @@ function render() {
   renderTeams();
   renderRoster();
   renderRecommendations();
+  renderMatchResult();
   dom.undo.disabled = state.history.length === 0;
   dom.app.setAttribute("aria-busy", "false");
 }
@@ -422,12 +510,16 @@ function resetDraft() {
 function bindEvents() {
   window.addEventListener("storage", (event) => {
     if (event.key === characterOverridesStorageKey) { loadCharacterOverrides(); if (selectedDetailId && !dom.detailModal.hidden) showDetail(selectedDetailId); }
+    if (event.key === matchHistoryStorageKey) { loadMatchHistory(); resultFormDraftId = null; render(); }
   });
   dom.firstPickerButtons.forEach((button) => button.addEventListener("click", () => changeFirstPicker(button.dataset.firstPicker)));
   dom.actionSideButtons.forEach((button) => button.addEventListener("click", () => { actionSide = button.dataset.actionSide; render(); }));
   [dom.search, dom.element, dom.classFilter].forEach((control) => control.addEventListener("input", renderRoster));
   dom.undo.addEventListener("click", () => { state = undoDraftAction(state); persist(); render(); });
   dom.reset.addEventListener("click", resetDraft);
+  dom.resultWinnerButtons.forEach((button) => button.addEventListener("click", () => setSelectedWinner(button.dataset.resultWinner)));
+  dom.resultForm.addEventListener("submit", saveMatchResult);
+  dom.exportHistory.addEventListener("click", exportMatchHistory);
   dom.closeDetail.addEventListener("click", closeDetail);
   document.querySelector("[data-close-detail]").addEventListener("click", closeDetail);
   document.addEventListener("keydown", (event) => {
@@ -444,6 +536,8 @@ async function boot() {
     fetch("/data/skills.normalized.json").then((response) => response.json()),
     fetch("/data/draft-rules.asia-ranked.json").then((response) => response.json())
   ]);
+  loadCharacterOverrides();
+  loadMatchHistory();
   state = initialState();
   bindEvents();
   render();

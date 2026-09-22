@@ -1,5 +1,6 @@
 import { getDraftCandidates } from "./rule-engine.mjs";
 import { getEquipmentModifier, getStatTotal } from "../knowledge/character-overrides.mjs";
+import { getCharacterPerformance } from "../matches/match-history.mjs";
 
 const CONTROL_TAGS = new Set(["control", "stun", "freeze", "entangled-dream", "isolation", "chill"]);
 const DAMAGE_TAGS = new Set(["damage", "single-target", "area-damage", "critical", "follow-up"]);
@@ -84,6 +85,7 @@ export function getDraftRecommendations(state, roster, knowledgeBase, options = 
   const normalizedSkills = options.normalizedSkills;
   const tycharaData = options.tycharaData;
   const overrides = options.overrides ?? { characters: {} };
+  const matchHistory = options.matchHistory ?? { matches: [] };
   const ownPicks = side === "ally" ? state.allyPicks : state.enemyPicks;
   const opponentPicks = side === "ally" ? state.enemyPicks : state.allyPicks;
   const ownTags = new Set(ownPicks.flatMap((id) => {
@@ -123,12 +125,19 @@ export function getDraftRecommendations(state, roster, knowledgeBase, options = 
     }
     const speed = scoreStat(candidate, "speed", overrides);
     if (speed != null && speed >= 110) { score += 4; reasons.push(`当前速度 ${speed}，行动顺序价值较高`); }
+    const performance = getCharacterPerformance(matchHistory, candidate.rosterId, { patch: state.patch, region: state.region });
+    if (performance.appearances > 0) {
+      score += performance.scoreAdjustment;
+      const direction = performance.scoreAdjustment >= 0 ? "+" : "";
+      reasons.unshift(`本机历史 ${performance.appearances} 场，平滑胜率 ${Math.round(performance.smoothedWinRate * 100)}%，校准 ${direction}${performance.scoreAdjustment.toFixed(1)} 分`);
+    }
     if (candidate.usableForSimulation) reasons.push("技能数据可用于进一步模拟");
     else reasons.push("技能数据不完整，建议人工复核后再高权重使用");
     return {
       rosterId: candidate.rosterId,
       side,
       score: Math.round(score * 10) / 10,
+      historySampleSize: performance.appearances,
       name: candidate.rosterCharacter.name,
       title: candidate.rosterCharacter.title,
       reasons,

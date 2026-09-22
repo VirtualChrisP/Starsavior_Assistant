@@ -118,6 +118,49 @@
             </div>
           </aside>
         </section>
+
+        <section id="match-result-panel" class="match-result-panel" aria-labelledby="match-result-title" hidden>
+          <header class="match-result-heading">
+            <div>
+              <span class="phase-kicker">赛后记录</span>
+              <h2 id="match-result-title">保存对局结果</h2>
+              <p id="match-history-summary">本机还没有可用于校准的对局结果。</p>
+            </div>
+            <span id="match-result-state" class="match-result-state">尚未保存</span>
+          </header>
+          <form id="match-result-form" class="match-result-form">
+            <fieldset class="result-winner-field">
+              <legend>胜负结果</legend>
+              <div class="segmented result-winner-control" role="group" aria-label="胜负结果">
+                <button type="button" data-result-winner="ally">我方胜利</button>
+                <button type="button" data-result-winner="enemy">对方胜利</button>
+                <button type="button" data-result-winner="draw">平局</button>
+                <button type="button" data-result-winner="unknown">暂不确定</button>
+              </div>
+            </fieldset>
+            <label>
+              <span>结束方式</span>
+              <select id="result-status">
+                <option value="completed">正常结束</option>
+                <option value="surrender">投降</option>
+                <option value="disconnect">掉线</option>
+                <option value="invalid">无效对局</option>
+              </select>
+            </label>
+            <label>
+              <span>对局时长（分钟）</span>
+              <input id="result-duration" type="number" min="0" step="1" inputmode="numeric" placeholder="可选" />
+            </label>
+            <label class="result-notes-field">
+              <span>复盘备注</span>
+              <textarea id="result-notes" maxlength="2000" rows="3" placeholder="可选：关键回合、阵容问题或异常情况"></textarea>
+            </label>
+            <div class="match-result-actions">
+              <button class="primary-action" type="submit">保存对局结果</button>
+              <button id="export-history-button" class="ghost-button" type="button">导出历史</button>
+            </div>
+          </form>
+        </section>
       </main>
 
       <div id="toast" class="toast" role="alert" hidden></div>
