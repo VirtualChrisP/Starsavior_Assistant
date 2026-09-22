@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Star Savior 训练数据</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell training-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">SS</div>
+          <div>
+            <h1>训练数据预览</h1>
+            <p id="training-version">正在载入本地对局</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <a class="secondary-command" href="/public/index.html">返回 BP</a>
+          <button id="refresh-training" class="secondary-command" type="button">刷新数据</button>
+          <button id="export-training" class="primary-action" type="button">导出 TSV</button>
+        </div>
+      </header>
+
+      <main class="training-workspace">
+        <section class="training-toolbar" aria-label="训练数据筛选">
+          <div>
+            <span class="phase-kicker">数据集</span>
+            <h2>CatBoost 训练样本</h2>
+            <p>当前页面只预览本机已保存的对局，不会自动上传数据。</p>
+          </div>
+          <div class="training-filters">
+            <label><span>版本</span><select id="training-patch"><option value="all">全部版本</option></select></label>
+            <label><span>服务器</span><select id="training-region"><option value="all">全部服务器</option></select></label>
+          </div>
+        </section>
+
+        <section class="training-summary" aria-label="训练数据统计">
+          <article><span>历史记录</span><strong id="training-total">0</strong><small>已解析对局</small></article>
+          <article><span>训练可用</span><strong id="training-eligible">0</strong><small>明确胜负且有快照</small></article>
+          <article><span>样本行数</span><strong id="training-rows">0</strong><small>每个 BP 动作一行</small></article>
+          <article><span>质量问题</span><strong id="training-issues">0</strong><small>需要关注的问题类型</small></article>
+        </section>
+
+        <section class="training-section" aria-labelledby="quality-title">
+          <div class="training-section-heading"><h2 id="quality-title">数据质量检查</h2><span id="quality-caption"></span></div>
+          <div id="quality-list" class="quality-list"></div>
+        </section>
+
+        <section class="training-section" aria-labelledby="preview-title">
+          <div class="training-section-heading"><h2 id="preview-title">样本预览</h2><span id="preview-caption"></span></div>
+          <div class="training-table-wrap">
+            <table class="training-table">
+              <thead><tr><th>阶段</th><th>动作</th><th>操作方</th><th>角色</th><th>我方已选</th><th>对方已选</th><th>标签</th><th>对局</th></tr></thead>
+              <tbody id="training-rows-body"></tbody>
+            </table>
+          </div>
+          <p id="training-empty" class="training-empty" hidden>还没有可预览的训练样本。请先在 BP 页面导入或保存带胜负结果的对局。</p>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/public/training.mjs"></script>
+  </body>
+</html>

@@ -8,7 +8,8 @@ import {
 import { getDraftCandidates, summarizeDraftRisks } from "/src/draft/rule-engine.mjs";
 import { getCharacterOverride, getEquipmentModifier, getStatTotal, sanitizeOverrides, skillOverrideKey } from "/src/knowledge/character-overrides.mjs";
 import { getDraftRecommendations } from "/src/draft/recommendation-engine.mjs";
-import { createEmptyMatchHistory, createMatchRecord, findMatchByDraftId, sanitizeMatchHistory, upsertMatchRecord } from "/src/matches/match-history.mjs";
+import { createEmptyMatchHistory, createMatchRecord, findMatchByDraftId, mergeMatchHistories, sanitizeMatchHistory, upsertMatchRecord } from "/src/matches/match-history.mjs";
+import { inspectMatchHistory } from "/src/matches/match-quality.mjs";
 
 const imageMap = {
   "asherah-voyager-savior-party": "https://starsavior-db.pages.dev/images/icons/UFS_NKM_UNIT_S_VOYAGER_STRANIS.webp",
@@ -33,7 +34,7 @@ const matchHistoryStorageKey = "star-savior-bp-match-history-v1";
 
 const dom = {
   app: document.querySelector("#app"), version: document.querySelector("#version-label"),
-  saveState: document.querySelector("#save-state"), undo: document.querySelector("#undo-button"), reset: document.querySelector("#reset-button"),
+  saveState: document.querySelector("#save-state"), undo: document.querySelector("#undo-button"), reset: document.querySelector("#reset-button"), importHistory: document.querySelector("#import-history-button"), exportTop: document.querySelector("#export-history-top-button"), importHistoryInput: document.querySelector("#import-history-input"),
   phaseKicker: document.querySelector("#phase-kicker"), phaseTitle: document.querySelector("#phase-title"), phaseDetail: document.querySelector("#phase-detail"),
   stageTrack: document.querySelector("#stage-track"), firstPickerButtons: [...document.querySelectorAll("[data-first-picker]")],
   actionSideControl: document.querySelector("#action-side-control"), actionSideButtons: [...document.querySelectorAll("[data-action-side]")],
@@ -173,6 +174,25 @@ function exportMatchHistory() {
   link.download = `star-savior-match-history-${new Date().toISOString().slice(0, 10)}.json`;
   link.click();
   URL.revokeObjectURL(url);
+}
+
+async function importMatchHistory(event) {
+  const file = event.target.files?.[0];
+  event.target.value = "";
+  if (!file) return;
+  try {
+    const parsed = JSON.parse(await file.text());
+    const report = inspectMatchHistory(parsed, { patch: roster.patch, region: roster.region });
+    if (report.recordsKept === 0) throw new Error("文件中没有可识别的对局记录");
+    matchHistory = mergeMatchHistories(matchHistory, parsed);
+    persistMatchHistory();
+    resultFormDraftId = null;
+    render();
+    const warning = report.issues.length ? `，发现 ${report.issues.length} 类质量问题` : "";
+    showToast(`已导入 ${report.recordsKept} 局对局${warning}`);
+  } catch (error) {
+    showToast(`导入失败：${error.message}`);
+  }
 }
 
 function initialState() {
@@ -538,6 +558,9 @@ function bindEvents() {
   dom.resultWinnerButtons.forEach((button) => button.addEventListener("click", () => setSelectedWinner(button.dataset.resultWinner)));
   dom.resultForm.addEventListener("submit", saveMatchResult);
   dom.exportHistory.addEventListener("click", exportMatchHistory);
+  dom.exportTop.addEventListener("click", exportMatchHistory);
+  dom.importHistory.addEventListener("click", () => dom.importHistoryInput.click());
+  dom.importHistoryInput.addEventListener("change", importMatchHistory);
   dom.closeDetail.addEventListener("click", closeDetail);
   document.querySelector("[data-close-detail]").addEventListener("click", closeDetail);
   document.addEventListener("keydown", (event) => {

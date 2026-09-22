@@ -129,6 +129,12 @@ export function upsertMatchRecord(history, record, now = new Date()) {
   return next;
 }
 
+export function mergeMatchHistories(current, imported, now = new Date()) {
+  let merged = sanitizeMatchHistory(current);
+  for (const record of sanitizeMatchHistory(imported).matches) merged = upsertMatchRecord(merged, record, now);
+  return merged;
+}
+
 export function findMatchByDraftId(history, draftId) {
   return sanitizeMatchHistory(history).matches.find((item) => item.draftId === draftId) ?? null;
 }

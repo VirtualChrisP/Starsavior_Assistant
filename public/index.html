@@ -19,6 +19,10 @@
         </div>
         <div class="top-actions">
           <a class="secondary-command" href="/public/editor.html">角色资料编辑</a>
+          <a class="secondary-command" href="/public/training.html">训练数据</a>
+          <button id="import-history-button" class="secondary-command" type="button">导入历史</button>
+          <button id="export-history-top-button" class="secondary-command" type="button">导出历史</button>
+          <input id="import-history-input" type="file" accept="application/json,.json" hidden />
           <span id="save-state" class="save-state">本局自动保存</span>
           <button id="undo-button" class="icon-command" type="button" title="撤销上一步（Ctrl+Z）" disabled>
             <span aria-hidden="true">↶</span><span>撤销</span>
