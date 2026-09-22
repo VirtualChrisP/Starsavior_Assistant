@@ -7,9 +7,10 @@
     "validate:knowledge": "node tools/validate-knowledge.mjs",
     "validate:roster": "node tools/validate-roster.mjs",
     "validate:tychara": "node tools/validate-tychara.mjs",
+    "validate:espr": "node tools/validate-espr.mjs",
     "validate:skills": "node tools/validate-normalized-skills.mjs",
     "training:catboost": "node tools/generate-catboost-dataset.mjs",
-    "validate": "npm run validate:knowledge && npm run validate:roster && npm run validate:tychara && npm run validate:skills",
+    "validate": "npm run validate:knowledge && npm run validate:roster && npm run validate:tychara && npm run validate:espr && npm run validate:skills",
     "test": "node --test"
   }
 }

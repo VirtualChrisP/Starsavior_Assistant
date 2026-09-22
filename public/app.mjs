@@ -48,6 +48,7 @@ const dom = {
 let roster;
 let knowledgeBase;
 let tycharaData;
+let esprData;
 let normalizedSkills;
 let rules;
 let state;
@@ -71,9 +72,11 @@ const tycharaSlugOverrides = {
   "epindel-house-orlan": "epindel", "epindel-blessing-in-bloom": "epindelblessinginbloom"
 };
 const tycharaBySlug = () => new Map(tycharaData.characters.map((character) => [character.slug, character]));
+const esprByRosterId = () => new Map(esprData.characters.map((character) => [character.rosterId, character]));
 
 function char(id) { return rosterById().get(id); }
 function knowledge(id) { return knowledgeByRosterId().get(id); }
+function esprFor(id) { return esprByRosterId().get(id) ?? null; }
 function tycharFor(id) {
   const item = char(id);
   if (!item) return null;
@@ -83,8 +86,8 @@ function tycharFor(id) {
 function normalizedFor(ownerSlug, skill) {
   return normalizedSkills.skills.find((candidate) => candidate.ownerSlug === ownerSlug && candidate.type === (skill.type === "ultimate" ? "hyper" : skill.type) && candidate.name === skill.name) ?? null;
 }
-function displayName(id) { return char(id)?.name ?? id; }
-function titleFor(id) { return char(id)?.title ?? ""; }
+function displayName(id) { return esprFor(id)?.nameZh ?? char(id)?.name ?? id; }
+function titleFor(id) { return esprFor(id)?.factionZh ?? char(id)?.title ?? ""; }
 
 function loadCharacterOverrides() {
   try { characterOverrides = sanitizeOverrides(JSON.parse(localStorage.getItem(characterOverridesStorageKey) ?? "{}")); }
@@ -270,7 +273,7 @@ function renderStatus(candidates) {
 function portrait(id, small = false) {
   const box = document.createElement("div");
   box.className = `portrait ${small ? "small" : ""}`;
-  const source = tycharFor(id)?.iconUrl ?? imageMap[id];
+  const source = esprFor(id)?.portraitUrl ?? tycharFor(id)?.iconUrl ?? imageMap[id];
   if (source) {
     const image = document.createElement("img");
     image.src = source;
@@ -284,22 +287,24 @@ function portrait(id, small = false) {
 
 function showDetail(id) {
   const item = char(id);
-  const data = tycharFor(id);
+  const localized = esprFor(id);
+  const data = localized ?? tycharFor(id);
   if (!item || !data) {
-    showToast("当前角色暂无 Tychara 详情页资料");
+    showToast("当前角色暂无公开详情页资料");
     return;
   }
   selectedDetailId = id;
   loadCharacterOverrides();
   const characterOverride = getCharacterOverride(characterOverrides, id);
-  dom.detailName.textContent = `${item.name} · ${item.title}`;
+  dom.detailName.textContent = `${displayName(id)} · ${titleFor(id)}`;
   dom.detailKicker.textContent = `${item.rarity} · ${labels.element[item.element] ?? item.element} · ${labels.class[item.class] ?? item.class}`;
-  dom.detailProfile.textContent = data.profileEn || "Tychara 公开角色页未提供简介。";
+  dom.detailProfile.textContent = localized?.profileZh || data.profileEn || "公开角色页未提供简介。";
+  const sourceName = localized ? "ESPR 中文数据库" : "Tychara";
   dom.detailSource.textContent = Object.keys(characterOverride.equipment).length || Object.keys(characterOverride.skills).length
-    ? "资料来源：Tychara · 已应用本机编辑覆盖"
-    : `资料来源：Tychara · ${data.lastUpdated ?? "公开页面"}`;
-  dom.detailArt.src = data.fullArtUrl;
-  dom.detailArt.alt = `${item.name} 全身像`;
+    ? `资料来源：${sourceName} · 已应用本机编辑覆盖`
+    : `资料来源：${sourceName} · ${data.lastUpdated ?? "公开页面"}`;
+  dom.detailArt.src = localized?.fullArtUrl ?? data.fullArtUrl;
+  dom.detailArt.alt = `${displayName(id)} 全身像`;
   dom.detailArt.onerror = () => { dom.detailArt.removeAttribute("src"); dom.detailArt.alt = "全身像加载失败"; };
   dom.detailStats.replaceChildren();
   const statLabels = { attack: "攻击", vitality: "生命（知识库）", hp: "生命", defense: "防御", speed: "速度", criticalHitRate: "暴击率", criticalDamage: "暴击伤害", effectHit: "效果命中", effectResistance: "效果抵抗", hitRate: "命中率" };
@@ -323,10 +328,16 @@ function showDetail(id) {
     const empty = document.createElement("p"); empty.className = "no-detail"; empty.textContent = "该公开页面当前没有可读取的技能条目。"; dom.detailSkills.append(empty);
   } else {
     for (const skill of data.skills) {
-      const normalized = normalizedFor(data.slug, skill);
-      const custom = characterOverride.skills?.[skillOverrideKey(data.slug, skill)] ?? {};
-      const displaySkillName = custom.nameZh?.trim() ? `${custom.nameZh.trim()}（${skill.name}）` : skill.name;
-      const displayDescription = custom.descriptionZh?.trim() || skill.descriptionEn || "暂无技能说明。";
+      const skillIndex = data.skills.indexOf(skill);
+      const legacyData = tycharFor(id);
+      const fallbackSkill = legacyData?.skills?.[skillIndex];
+      const skillName = skill.name ?? skill.nameZh ?? skill.type;
+      const normalized = skill.name ? normalizedFor(data.slug, skill) : null;
+      const overrideSkill = fallbackSkill ?? { ...skill, name: skillName };
+      const custom = characterOverride.skills?.[skillOverrideKey(legacyData?.slug ?? data.slug, overrideSkill)]
+        ?? characterOverride.skills?.[skillOverrideKey(data.slug, { ...skill, name: skillName })] ?? {};
+      const displaySkillName = custom.nameZh?.trim() ? `${custom.nameZh.trim()}（${skillName}）` : skill.nameZh ?? skill.name ?? skill.type;
+      const displayDescription = custom.descriptionZh?.trim() || skill.descriptionZh || skill.descriptionEn || fallbackSkill?.descriptionEn || (skill.levelDescZh === "基本效果" ? "暂无技能说明。" : skill.levelDescZh) || "暂无技能说明。";
       const row = document.createElement("article"); row.className = "skill-row";
       const icon = document.createElement("img"); icon.src = skill.iconUrl; icon.alt = displaySkillName; row.append(icon);
       const copy = document.createElement("div");
@@ -397,7 +408,7 @@ function renderTeams() {
 function filteredCharacters() {
   const query = dom.search.value.trim().toLowerCase();
   return roster.characters.filter((item) => {
-    const matchesQuery = !query || `${item.name} ${item.title}`.toLowerCase().includes(query);
+    const matchesQuery = !query || `${displayName(item.id)} ${titleFor(item.id)} ${item.name} ${item.title}`.toLowerCase().includes(query);
     return matchesQuery && (dom.element.value === "all" || item.element === dom.element.value) && (dom.classFilter.value === "all" || item.class === dom.classFilter.value);
   });
 }
@@ -418,9 +429,9 @@ function renderRecommendations() {
   for (const item of items) {
     const card = document.createElement("article"); card.className = "recommendation-card";
     const action = document.createElement("button"); action.type = "button"; action.className = "recommendation-card-action"; action.addEventListener("click", () => showDetail(item.rosterId));
-    const name = document.createElement("strong"); name.textContent = item.name;
+    const name = document.createElement("strong"); name.textContent = displayName(item.rosterId);
     const score = document.createElement("span"); score.className = "recommendation-score"; score.textContent = `${item.score} 分`;
-    const role = document.createElement("small"); role.textContent = item.title;
+    const role = document.createElement("small"); role.textContent = titleFor(item.rosterId);
     const reasons = document.createElement("ul");
     for (const reason of item.reasons.slice(0, 3)) { const reasonNode = document.createElement("li"); reasonNode.textContent = reason; reasons.append(reasonNode); }
     action.append(name, score, role, reasons); card.append(action);
@@ -439,7 +450,7 @@ function renderRoster() {
   dom.empty.hidden = visible.length > 0;
   for (const item of visible) {
     const data = knowledge(item.id);
-    const publicData = tycharFor(item.id);
+    const publicData = esprFor(item.id) ?? tycharFor(item.id);
     const hasPublicSkills = Boolean(publicData?.skills?.length);
     const hasStructuredSkills = Boolean(data?.skills?.length);
     const card = document.createElement("article");
@@ -449,19 +460,19 @@ function renderRoster() {
     action.type = "button";
     action.className = "card-action";
     action.disabled = !canAct;
-    action.title = canAct ? `记录${state.phase === "ban" ? "禁用" : "选择"}：${item.name}` : "当前阶段不可操作";
+    action.title = canAct ? `记录${state.phase === "ban" ? "禁用" : "选择"}：${displayName(item.id)}` : "当前阶段不可操作";
     action.innerHTML = `<div class="card-top"><span class="rarity">${item.rarity}</span><span>${labels.element[item.element] ?? item.element}</span></div>`;
     action.append(portrait(item.id));
     const dataLabel = hasStructuredSkills ? "结构化技能" : hasPublicSkills ? "公开技能" : "资料占位";
-    action.insertAdjacentHTML("beforeend", `<strong class="card-name">${item.name}</strong><span class="card-title">${item.title}</span><span class="card-meta"><span>${labels.class[item.class] ?? item.class}</span><span>${hasPublicSkills || hasStructuredSkills ? `<i class="knowledge-dot"></i>${dataLabel}` : dataLabel}</span></span>`);
+    action.insertAdjacentHTML("beforeend", `<strong class="card-name">${displayName(item.id)}</strong><span class="card-title">${titleFor(item.id)}</span><span class="card-meta"><span>${labels.class[item.class] ?? item.class}</span><span>${hasPublicSkills || hasStructuredSkills ? `<i class="knowledge-dot"></i>${dataLabel}` : dataLabel}</span></span>`);
     action.addEventListener("click", () => recordAction(item.id));
     card.append(action);
     const detail = document.createElement("button");
     detail.type = "button";
     detail.className = "card-detail";
     detail.textContent = "i";
-    detail.title = `查看 ${item.name} 的全身像与技能`;
-    detail.setAttribute("aria-label", `查看 ${item.name} 的全身像与技能`);
+    detail.title = `查看 ${displayName(item.id)} 的全身像与技能`;
+    detail.setAttribute("aria-label", `查看 ${displayName(item.id)} 的全身像与技能`);
     detail.addEventListener("click", () => showDetail(item.id));
     card.append(detail);
     dom.grid.append(card);
@@ -529,10 +540,11 @@ function bindEvents() {
 }
 
 async function boot() {
-  [roster, knowledgeBase, tycharaData, normalizedSkills, rules] = await Promise.all([
+  [roster, knowledgeBase, tycharaData, esprData, normalizedSkills, rules] = await Promise.all([
     fetch("/data/roster.asia-2026-09-17.json").then((response) => response.json()),
     fetch("/data/knowledge-base.json").then((response) => response.json()),
     fetch("/data/tychara.characters.json").then((response) => response.json()),
+    fetch("/data/espr.characters.zh-CN.json").then((response) => response.json()),
     fetch("/data/skills.normalized.json").then((response) => response.json()),
     fetch("/data/draft-rules.asia-ranked.json").then((response) => response.json())
   ]);

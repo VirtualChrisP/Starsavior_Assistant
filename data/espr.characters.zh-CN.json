@@ -1,0 +1,2432 @@
+{
+  "schemaVersion": 1,
+  "datasetStatus": "observed-public-espr-zh-CN",
+  "source": {
+    "url": "https://ss.espr.gg/zh-CN/database/characters",
+    "sourceLastUpdated": null,
+    "verifiedInAsiaClient": false
+  },
+  "generatedAt": "2026-09-22T09:41:39.083Z",
+  "characters": [
+    {
+      "rosterId": "asherah-voyager-savior-party",
+      "slug": "asherah-moon-striker",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/asherah-moon-striker",
+      "nameZh": "亚瑟菈",
+      "factionZh": "航行者救援团",
+      "profileZh": "憧憬星之救援者，为了成为那样的救援者而参加旅程的贵族大小姐。行动力十足，想到就做，既是优点也是缺点。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "striker",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1001.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1001.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "斯特拉尼斯式呼吸法",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "斯特拉尼斯式一闪",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "帷幕斩击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "夜之曙光",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "smile-voyager-savior-party",
+      "slug": "smile",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/smile",
+      "nameZh": "微笑",
+      "factionZh": "航行者救援团",
+      "profileZh": "自称不是人类，而是由高度科学技术制造而成的科学信奉者。因为从出生至今从未笑过，为了研究让自己能笑，将团长当成实验对象。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "ranger",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1002.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1002.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "快乐扳机",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "确认射击坐标",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "猫咪踢踏舞",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "全员，集中射击！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "luna-voyager-savior-party",
+      "slug": "luna",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/luna",
+      "nameZh": "露娜",
+      "factionZh": "航行者救援团",
+      "profileZh": "幻梦大魔女玛琪的得意门生，继承了她的「月之法杖」，自称拉维斯塔第一的预言者。过著有多少钱就当天全在赌场花掉的毫无计划人生。",
+      "rarity": "SSR",
+      "element": "order",
+      "class": "caster",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1003.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1003.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "预见未来的少女",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "护身用魔力弹",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "黑卡蒂的火种",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "我眼中映照的世界",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "carnelia",
+      "slug": "carnelia",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/carnelia",
+      "nameZh": "卡奈莉亚",
+      "factionZh": "流浪者",
+      "profileZh": "烛光广场的前任女仆长，也是莉丝家族的长女。背负着想死也死不了的「不死诅咒」，并对生命的喜悦感到麻木。她曾经行踪不明，如今为了解开诅咒而回到NOA。",
+      "rarity": "SSR",
+      "element": "chaos",
+      "class": "caster",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1005.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1005.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "辐条",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "黎明的手势",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "引领的暮色",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "解放乖离",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "bell",
+      "slug": "bell",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/bell",
+      "nameZh": "贝尔·莉丝",
+      "factionZh": "烛光广场",
+      "profileZh": "她是莉丝家族的次女，也是NOA公墓的管理员。她是一名咒术师，为了接替失踪的姊姊履行「家族的义务」而在烛光广场服务。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "ranger",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1008.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1008.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "临近的安息",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "讣闻",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "吊唁",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "入殓",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "emily",
+      "slug": "emily",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/emily",
+      "nameZh": "埃米莉",
+      "factionZh": "烛光广场",
+      "profileZh": "总是拿着清扫工具，执行严厉战斗清扫的烛光广场女仆。患有严重健忘症，每次都会忘记重要的事情，或甚至记反。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "defender",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1009.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1009.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "有备而来的女仆",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "开始战斗清扫",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "清洁服务",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "开床服务",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "charlotte-monastir-knights",
+      "slug": "charlotte-sun-striker",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/charlotte-sun-striker",
+      "nameZh": "夏尔",
+      "factionZh": "莫纳斯提尔骑士团",
+      "profileZh": "莫纳斯提尔公国骑士团的骑士团长。努力想成为严肃沉稳的骑士团长，但原本活泼朴实的性格总是拖后腿。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "striker",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1010.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1010.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "屹立不摇的骑士团长",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "正直的突刺",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "胜利的决心",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "不屈不挠的一击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "carmen-monastir-knights",
+      "slug": "carmen-moon-defender",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/carmen-moon-defender",
+      "nameZh": "卡蜜",
+      "factionZh": "莫纳斯提尔骑士团",
+      "profileZh": "莫纳斯提尔公国骑士团的副团长。无论身处多困难的情况，始终不失从容笑容的骑士团之盾。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "defender",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1011.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1011.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "骑士团之盾",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "骑士团制式剑术",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "冲击疗法",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "莫纳斯提尔机动壁垒",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "frey-monastir-knights",
+      "slug": "frey-star-supporter",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/frey-star-supporter",
+      "nameZh": "芙蕾",
+      "factionZh": "莫纳斯提尔骑士团",
+      "profileZh": "自称是莫纳斯提尔骑士团补给官的少女。对赚钱充满兴趣，总是在构思各种生意点子，但大部分都以失败告终。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "supporter",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1013.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1013.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "绝不吃亏的交易",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "谈判破裂",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "最高速补给",
+          "descriptionZh": "莫纳斯提尔的补给官芙蕾为我军紧急调度生存物资。恢复我军目标的生命力，并解除所有弱化效果。恢复量依自身最大生命力比例增加。",
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "莫纳斯提尔全力支援",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "seira",
+      "slug": "seira",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/seira",
+      "nameZh": "赛拉",
+      "factionZh": "梦魇",
+      "profileZh": "长时间在拉维斯塔游走的梦魔。拥有为人们带来美梦的能力，但也可能让人沉溺其中，因此无法久留一地。",
+      "rarity": "SSR",
+      "element": "order",
+      "class": "striker",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1014.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1014.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "预知梦的庇佑",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "虚幻之梦",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "星蝶群",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "通往幻梦的邀请",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "trish",
+      "slug": "trish",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/trish",
+      "nameZh": "崔瑞丝",
+      "factionZh": "阿塞卢斯协会",
+      "profileZh": "隶属于阿塞卢斯猎人协会、实力出众的猎人。过着虽然赚进大笔悬赏金，却总是大手大脚地挥霍一空的人生。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "assassin",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1015.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1015.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "一流猎人",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "鬼影步",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "加速强袭",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "连续斩击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "lyn",
+      "slug": "lyn",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/lyn",
+      "nameZh": "凌",
+      "factionZh": "风月堂",
+      "profileZh": "风月堂的儿童班老师。因为负责教导孩子们礼仪与武功，有时会像对待孩子一样对待他人。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "striker",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1016.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1016.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "刃之舞姬",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "五连斩",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "幻影剑舞",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "清风明月",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "cristelle",
+      "slug": "cristelle",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/cristelle",
+      "nameZh": "克莉丝特",
+      "factionZh": "莫雷尔海运商会",
+      "profileZh": "大型商会——莫雷尔海运商会的代表。因其独特的言行举止，在社交界颇具名气。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "ranger",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1017.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1017.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "累积的怨恨",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "复仇与惩戒",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "沸腾的复仇心",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "噩梦解放",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "haydee",
+      "slug": "haydee",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/haydee",
+      "nameZh": "艾黛",
+      "factionZh": "莫雷尔海运商会",
+      "profileZh": "横跨整个大陆进行贸易的莫雷尔海运商会副代表。性格冷淡，总是与人保持距离。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "defender",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1018.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1018.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "磨损的情感",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "钢铁骤雨",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "锥刺铠甲",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "荆棘坟场",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "serpang",
+      "slug": "serpang",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/serpang",
+      "nameZh": "瑟乐芬",
+      "factionZh": "风月堂",
+      "profileZh": "与幻兽托托一同自东大陆渡海而来，隶属风月堂的少女。因为讨厌麻烦，常常想偷懒翘课。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "supporter",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1019.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1019.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "飞翔吧，凤凰啊",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "就决定是你了！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "我只相信你",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "让他们看看吧，托托！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "dana",
+      "slug": "dana",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/dana",
+      "nameZh": "达娜",
+      "factionZh": "卡诺普斯警备队",
+      "profileZh": "在卡诺普斯山脉深处的德鲁伊村落长大的少女。由于性格极度乐观，无论遇到什么状况都能正向看待。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "caster",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1021.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1021.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "纯洁的心",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "绿叶涌动",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "急速开花",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "自然之力",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "muriel",
+      "slug": "muriel",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/muriel",
+      "nameZh": "缪莉尔",
+      "factionZh": "莫诺利斯教团",
+      "profileZh": "莫诺利斯教团的圣女，排序第116位。目标是一路提升排序，成为所有圣女之巅的「大圣女」，却是个惹祸不断的少女。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "caster",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1023.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1023.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "意气风发",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "神之火焰",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "圣水轰炸",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "我以后会乖乖做人",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "elisa",
+      "slug": "elisa",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/elisa",
+      "nameZh": "艾莉莎",
+      "factionZh": "莫诺利斯教团",
+      "profileZh": "莫诺利斯教团的圣女，排序第117位。对文物的知识相当深厚，但因自尊心低落又容易被影响，始终无法抬头挺胸。",
+      "rarity": "SSR",
+      "element": "chaos",
+      "class": "supporter",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1024.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1024.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "小心翼翼的祈祷",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "请回去",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "徒劳但愿能相助",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "大家一起祈祷",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "tyria",
+      "slug": "tyria",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/tyria",
+      "nameZh": "缇莉雅",
+      "factionZh": "执行者",
+      "profileZh": "出身于莫纳斯提尔的挑剔少女。平时总是维持优雅而克制的谈吐，但一旦生气，也会脱口说出粗鲁难听的话。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "striker",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1025.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1025.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "斩首执行者",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "终末序曲",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "惨剧镇魂歌",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "悲鸣渐强",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "roberta",
+      "slug": "roberta",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/roberta",
+      "nameZh": "萝贝塔",
+      "factionZh": "轨道搜索队",
+      "profileZh": "隶属于北极星轨道搜索队的队长。正努力成为一名优秀的队长，每次累积的压力似乎都通过喝酒来排解。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "striker",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1026.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1026.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "老手的直觉",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "开始作战",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "快速信道",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "紧急现场判断",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "lugh",
+      "slug": "lugh",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/lugh",
+      "nameZh": "卢格",
+      "factionZh": "轨道搜索队",
+      "profileZh": "隶属北极星的轨道搜索队副队长。因家族世代相传的特殊体质而无法感受到疼痛。据说她有个对周遭人完全保密的嗜好。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "ranger",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1027.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1027.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "驱魔师之路",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "压制符",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "雪中师友",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "天道不用，恶即斩",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "fei",
+      "slug": "fei",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/fei",
+      "nameZh": "霏",
+      "factionZh": "流浪者",
+      "profileZh": "曾为隶属于风月堂的武人，但偷走秘笈天问书后逃走的流浪武士。目标是完成幻之武功天问，并向世界传播其帅气之处。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "assassin",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1029.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1029.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "天问之路",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "月蚀",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "月影",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "清风朗月",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "epindel-house-orlan",
+      "slug": "epindel-moon-assassin",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/epindel-moon-assassin",
+      "nameZh": "艾芬黛尔",
+      "factionZh": "奥尔兰家族",
+      "profileZh": "奥尔兰家族的下任家主。与亚瑟菈是青梅竹马，但本人在各方面都对亚瑟菈相当在意，竞争心强烈。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "assassin",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1030.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1030.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "贵族的品格",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "奥尔兰式剑术",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "坚持不懈的努力",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "奥尔兰之鹰",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "omega",
+      "slug": "omega",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/omega",
+      "nameZh": "奥米嘉",
+      "factionZh": "航行者救援团",
+      "profileZh": "封印在团长剑中的超古代文明人工智慧。为了与久别重逢的家人再会，加入了航行者救援团。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "caster",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1031.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1031.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "自动狩猎系统",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "砰呀！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "百万吨重拳！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "最大、最帅气的那个！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "charlotte-heart-of-monastir",
+      "slug": "charlotte-sun-assassin",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/charlotte-sun-assassin",
+      "nameZh": "夏尔",
+      "factionZh": "莫纳斯提尔之心",
+      "profileZh": "莫纳斯提尔公国骑士团的骑士团长。努力想成为严肃沉稳的骑士团长，但原本活泼朴实的性格总是拖后腿。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "assassin",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1032.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1032.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "兔子的幸运",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "兔子步伐",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "祝酒之歌",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "走投无路的兔子",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "ceres",
+      "slug": "ceres",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/ceres",
+      "nameZh": "瑟莱丝",
+      "factionZh": "西部收复部队",
+      "profileZh": "西部收复部队队长，也是梦想收复西部的西部人的希望。追求强大的武力，不容许展现软弱的模样。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "striker",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1033.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1033.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "以力量创建的秩序",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "第1型新月",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "第7型大地震",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "第21型剑风",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "lydia",
+      "slug": "lydia",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/lydia",
+      "nameZh": "莉迪亚",
+      "factionZh": "西部收复部队",
+      "profileZh": "西部收复部队的副队长。总是在瑟莱丝身旁辅佐她，脸上始终挂着笑容，但那微笑深处潜藏着黑暗。",
+      "rarity": "SSR",
+      "element": "chaos",
+      "class": "ranger",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1034.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1034.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "虚空追求者",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "虚空之触",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "星座彼端的邀请",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "书册的虚空间",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "professor-m",
+      "slug": "professor-m",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/professor-m",
+      "nameZh": "M教授",
+      "factionZh": "兰帕迪斯",
+      "profileZh": "钻研心理学与犯罪学的私家侦探。因反社会人格倾向而缺乏同理心，试图透过探究与分析来理解人类。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "ranger",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1039.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1039.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "探究对象",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "非黑即白",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "以恶制恶",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "魔弹射手",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "gwen",
+      "slug": "gwen",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/gwen",
+      "nameZh": "克温",
+      "factionZh": "兰帕迪斯",
+      "profileZh": "NOA民间调查机构「兰帕迪斯调查咨询所」的所长兼调查官。梦想着凭天才般的推理一眼看穿一切，但真正让她大显身手的，却是咬住线索绝不放手、坚持到底的毅力与执着。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "striker",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1040.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1040.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "埋伏搜查",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "鞭梢的真相",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "照亮真相之光！",
+          "descriptionZh": "使用携带式真相诱导器，攻击被锁定为嫌疑人的敌人。使自身行动条增加10%。若该技能为额外发动，攻击时自身的伤害量增加10%。",
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "犯人就是你！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "harley",
+      "slug": "harley",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/harley",
+      "nameZh": "哈莉",
+      "factionZh": "地狱救援者",
+      "profileZh": "摩托野猪飚车族「地狱救援者」的领袖。据说犯下多起罪行而遭通缉。比起一切，豪放的她最重视的就是义气。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "defender",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1041.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1041.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "是你打了我们家孩子吗？",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "上吧，戴夫！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "想打架吗？",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "胆量对决！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "petra",
+      "slug": "petra",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/petra",
+      "nameZh": "佩特拉",
+      "factionZh": "佩特拉联合",
+      "profileZh": "从拆除到建设，只要与建筑相关的工作一概承包的佩特拉联合代表。对于能精准命中目标的炸弹开发特别有天分。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "ranger",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1042.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1042.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "建筑设计事前检讨",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "即兴设计",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "着手施工",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "建筑协议",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "scarlet-little-tyrant",
+      "slug": "scarlet-sun-ranger",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/scarlet-sun-ranger",
+      "nameZh": "丝卡蕾",
+      "factionZh": "小暴君",
+      "profileZh": "梦想成为大裁缝师的龙族少女。因对人类社会的常识不足，经常闯祸而被克莱儿责备。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "ranger",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1043.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1043.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "高分纪录！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "一口气解决！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "这不算啦！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "总之是我赢了！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "claire-flawless-blue-rose",
+      "slug": "claire-moon-striker",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/claire-moon-striker",
+      "nameZh": "克莱儿",
+      "factionZh": "无瑕蓝玫瑰​",
+      "profileZh": "烛光广场最资深的女仆，兼任代理女仆长。性格重视计划与原则，无论任何突发状况都会事先拟定应对方案。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "striker",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1044.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1044.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "对胜利的确信",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "快过肉眼的动作",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "你在看哪里？",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "兔兔头奖",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "luna-white-pearl-trap",
+      "slug": "luna-sun-defender",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/luna-sun-defender",
+      "nameZh": "露娜",
+      "factionZh": "白珍珠",
+      "profileZh": "幻梦大魔女玛琪的得意门生，继承了她的「月之法杖」，自称拉维斯塔第一的预言者。过著有多少钱就当天全在赌场花掉的毫无计划人生。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "defender",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1045.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1045.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "仲夏生存必备品",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "泡沫挥击！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "盛夏诱惑♡",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "夏日乐园！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "smile-sunshine-cat",
+      "slug": "smile-star-assassin",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/smile-star-assassin",
+      "nameZh": "微笑",
+      "factionZh": "阳光猫娘",
+      "profileZh": "自称不是人类，而是由高度科学技术制造而成的科学信奉者。因为从出生至今从未笑过，为了研究让自己能笑，将团长当成实验对象。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "assassin",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1046.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1046.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "微笑的水中实验",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "补充水分",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "冷却系统",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "夏夜与烟火",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "lacy",
+      "slug": "lacy",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/lacy",
+      "nameZh": "莱希",
+      "factionZh": "流浪者",
+      "profileZh": "来自东大陆的龙族。长年从事作家工作并曾大获成功，但最近似乎陷入低潮。",
+      "rarity": "SSR",
+      "element": "chaos",
+      "class": "ranger",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1049.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1049.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "蕴风之文",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "火龙升天",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "逆流水玉",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "水与火之歌",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "tanya",
+      "slug": "tanya",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/tanya",
+      "nameZh": "塔妮娅",
+      "factionZh": "佩特拉联合",
+      "profileZh": "隶属于佩特拉联合的实习生。拥有异于常人的怪力，若不是玛尔希阻止，所有事情都会用蛮力解决。最喜欢的是炸物。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "striker",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1051.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1051.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "拆除作业",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "砰砰工具",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "转转电锯",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "轰轰掩体",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "lily",
+      "slug": "lily",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/lily",
+      "nameZh": "莉莉",
+      "factionZh": "兰帕迪斯",
+      "profileZh": "兰帕迪斯调查咨询所的助理调查员。总是随身携带被称为兔子先生的巨大兔子玩偶，偶尔还会和兔子先生对话，让周遭的人感到担心。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "caster",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1052.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1052.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "神秘搭档",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "混乱中的一击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "莉莉的珍贵时间",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "兔子先生的即决审判",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "kyra",
+      "slug": "kyra",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/kyra",
+      "nameZh": "绮拉",
+      "factionZh": "绮拉根本没有朋友",
+      "profileZh": "拥有能将声音化为力量的特殊能力「言灵」的少女。自幼无法好好控制言灵，经常伤及他人，也因此逐渐变得内向。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "assassin",
+      "attackType": "spirit",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1053.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1053.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "刺骨的言灵",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "非日常问候",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "沉默的代价",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "扭曲的关注",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "asherah-waltz-of-starlight",
+      "slug": "asherah-order-supporter",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/asherah-order-supporter",
+      "nameZh": "亚瑟菈",
+      "factionZh": "星光华尔兹",
+      "profileZh": "憧憬星之救援者，为了成为那样的救援者而参加旅程的贵族大小姐。行动力十足，想到就做，既是优点也是缺点。",
+      "rarity": "SSR",
+      "element": "order",
+      "class": "supporter",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1054.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1054.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "月华",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "美丽刀刃",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "黄金之舞",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "光之奏鸣曲",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "carmen-eternal-promise",
+      "slug": "carmen-moon-supporter",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/carmen-moon-supporter",
+      "nameZh": "卡蜜",
+      "factionZh": "永恒誓约",
+      "profileZh": "莫纳斯提尔公国骑士团的副团长。无论身处多困难的情况，始终不失从容笑容的骑士团之盾。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "supporter",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1055.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1055.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "誓约",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "请勿打扰",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "守护骑士",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "婚礼进行曲",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "epindel-blessing-in-bloom",
+      "slug": "epindel-sun-caster",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/epindel-sun-caster",
+      "nameZh": "艾芬黛尔",
+      "factionZh": "花绽祝福",
+      "profileZh": "奥尔兰家族的下任家主。与亚瑟菈是青梅竹马，但本人在各方面都对亚瑟菈相当在意，竞争心强烈。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "caster",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1056.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1056.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "纯白斗志",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "猎鹰突袭",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "丢捧花",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "新娘，进场",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "frey-noble-princess",
+      "slug": "frey-moon-caster",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/frey-moon-caster",
+      "nameZh": "芙蕾",
+      "factionZh": "贵族公主",
+      "profileZh": "自称是莫纳斯提尔骑士团补给官的少女。对赚钱充满兴趣，总是在构思各种生意点子，但大部分都以失败告终。",
+      "rarity": "SSR",
+      "element": "moon",
+      "class": "caster",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1057.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1057.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "兑现",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "拒绝下注",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "全押",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "靶心",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "amora",
+      "slug": "amora",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/amora",
+      "nameZh": "阿莫拉",
+      "factionZh": "斯特拉尼斯伯爵家",
+      "profileZh": "斯特拉尼斯伯爵家的现任家主，也是侍奉大魔女阿丽希亚的执行者。性格从容自在，平时很喜欢捉弄别人。虽然是个酒壶从不离手的爱酒之人，但她的实力绝对不容小觑。",
+      "rarity": "SSR",
+      "element": "order",
+      "class": "assassin",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1058.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1058.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "斯特拉尼斯之主",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "不醉之枪",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "穿星之芒",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "光铸裁决",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "besta",
+      "slug": "besta",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/besta",
+      "nameZh": "薇丝塔",
+      "factionZh": "西部收复部队",
+      "profileZh": "西部收复部队的突击队员。不管在什么状况下都毫无抱怨地完成任务，使她在西部战士之间被视为典范。",
+      "rarity": "SR",
+      "element": "star",
+      "class": "defender",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1501.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1501.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "模糊的情感",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "坚定不移的长枪",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "击退",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "势不可挡的冲锋",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "annah",
+      "slug": "annah",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/annah",
+      "nameZh": "安娜",
+      "factionZh": "NOA城镇守卫",
+      "profileZh": "守护NOA治安的城镇守卫。个性爱笑、对谁都很亲切健谈，但在执行城镇守卫的工作时始终一丝不苟。",
+      "rarity": "SR",
+      "element": "sun",
+      "class": "defender",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1502.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1502.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "飘来了香味",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "请停止抵抗！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "吃完再开始！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "全部逮捕！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "marcille",
+      "slug": "marcille",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/marcille",
+      "nameZh": "玛尔希",
+      "factionZh": "佩特拉联合",
+      "profileZh": "佩特拉联合的工地班长。为了买下能与家人一同经营的胡萝卜农场，每天都努力工作。",
+      "rarity": "SR",
+      "element": "sun",
+      "class": "assassin",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1506.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1506.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "铁锤与铁砧",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "转动螺帽",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "钉入大钉",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "破坏螺丝",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "vera",
+      "slug": "vera",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/vera",
+      "nameZh": "贝拉",
+      "factionZh": "送货员协会",
+      "profileZh": "总是以勤快脚步穿梭于NOA的送货员少女。人生目标是赚大钱，买下一台送货员专用车—巡航车。",
+      "rarity": "SR",
+      "element": "moon",
+      "class": "supporter",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1507.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1507.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "资深邮差",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "适当的应对",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "快速安全的配送",
+          "descriptionZh": "贝拉带着好消息到来。恢复我军目标的生命力，并解除我军的1个弱化效果。恢复量依自身最大生命力比例增加。",
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "迈向梦想的一步",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "naru",
+      "slug": "naru",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/naru",
+      "nameZh": "娜鲁",
+      "factionZh": "轨道搜索队",
+      "profileZh": "隶属北极星的轨道搜索队实习生。梦想着透过自己设计的方程式，实现能完美观测未来的那一天。",
+      "rarity": "SR",
+      "element": "star",
+      "class": "ranger",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1508.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1508.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "晋升野心",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "请看这里！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "这就是我的实力",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "超出预期范围了！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "claire-candle-square",
+      "slug": "claire-moon-assassin",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/claire-moon-assassin",
+      "nameZh": "克莱儿",
+      "factionZh": "烛光广场",
+      "profileZh": "烛光广场最资深的女仆，兼任代理女仆长。性格重视计划与原则，无论任何突发状况都会事先拟定应对方案。",
+      "rarity": "SR",
+      "element": "moon",
+      "class": "assassin",
+      "attackType": "slash",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1509.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1509.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "严守时间",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "完美一击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "锋利荆棘",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "最后的服务",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "scarlet-candle-square",
+      "slug": "scarlet-sun-striker",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/scarlet-sun-striker",
+      "nameZh": "丝卡蕾",
+      "factionZh": "烛光广场",
+      "profileZh": "梦想成为大裁缝师的龙族少女。因对人类社会的常识不足，经常闯祸而被克莱儿责备。",
+      "rarity": "SR",
+      "element": "sun",
+      "class": "striker",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1510.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1510.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "我来当你的对手！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "将你裁断！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "痛快地上啰！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "能撑得住吗！",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "clarissa",
+      "slug": "clarissa",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/clarissa",
+      "nameZh": "克拉丽莎",
+      "factionZh": "卡诺普斯警备队",
+      "profileZh": "曾在卡诺普斯山脉以猎人身份活动的少女。天生拥有超凡的视力。个性活泼爱恶作剧，但总是与他人保持一定距离。",
+      "rarity": "SR",
+      "element": "star",
+      "class": "ranger",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1511.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1511.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "缠绕之风径",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "离远一点",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "凭感觉射击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "枪要这样射才对",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "hilde",
+      "slug": "hilde",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/hilde",
+      "nameZh": "希尔德",
+      "factionZh": "芬里尔小队",
+      "profileZh": "活跃于民间军事企业的老手。在异世界中，作为总是提出正面突破的过激指挥方针的指挥官，而在业界恶名昭彰。",
+      "rarity": "SSR",
+      "element": "sun",
+      "class": "defender",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3001.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3001.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "女武神意志",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "双生之刃",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "龙之爆裂",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "爆裂过载",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "yoo-mina",
+      "slug": "yoo-mina",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/yoo-mina",
+      "nameZh": "刘米娜",
+      "factionZh": "芬里尔小队",
+      "profileZh": "因意外事故而漂流至拉维斯塔的异世界佣兵。为了回到自己生活的世界，正与团长合作。",
+      "rarity": "SSR",
+      "element": "star",
+      "class": "ranger",
+      "attackType": "impact",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3002.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3002.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "有经验的新人",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "脉冲左轮",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "脉冲冲击",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "狼毒",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_3.webp"
+        }
+      ]
+    },
+    {
+      "rosterId": "rosaria",
+      "slug": "rosaria",
+      "pageUrl": "https://ss.espr.gg/zh-CN/database/characters/rosaria",
+      "nameZh": "罗莎莉亚",
+      "factionZh": "堕落之鹰",
+      "profileZh": "掌管命运的克里福特魔王之一，被称为北方暴君之人。仅凭一把剑就将无数星辰化作灰烬。",
+      "rarity": "SSR",
+      "element": "chaos",
+      "class": "ranger",
+      "attackType": "elemental",
+      "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3003.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3003.ui.webp",
+      "skills": [
+        {
+          "type": "passive",
+          "nameZh": "北方暴君",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_0.webp"
+        },
+        {
+          "type": "basic",
+          "nameZh": "灰烬之火",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_1.webp"
+        },
+        {
+          "type": "special",
+          "nameZh": "君王审判",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_2.webp"
+        },
+        {
+          "type": "ultimate",
+          "nameZh": "格调差异",
+          "descriptionZh": null,
+          "levelDescZh": "基本效果",
+          "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_3.webp"
+        }
+      ]
+    }
+  ]
+}
