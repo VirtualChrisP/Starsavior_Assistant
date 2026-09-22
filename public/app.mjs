@@ -246,7 +246,7 @@ function resolveActionSide(candidates) {
 }
 
 function renderStatus(candidates) {
-  const risks = summarizeDraftRisks(state, roster, knowledgeBase);
+  const risks = summarizeDraftRisks(state, roster, knowledgeBase, { esprData });
   const stage = stageFor();
   const legalSides = [...new Set(candidates.map((candidate) => candidate.side))];
   dom.status.className = "status-strip";
@@ -416,9 +416,9 @@ function filteredCharacters() {
 
 function renderRecommendations() {
   if (!dom.recommendations) return;
-  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+  const candidates = getDraftCandidates(state, roster, knowledgeBase, { esprData });
   const side = state.currentSide ?? actionSide ?? candidates[0]?.side;
-  const items = getDraftRecommendations(state, roster, knowledgeBase, { side, normalizedSkills, tycharaData, overrides: characterOverrides, matchHistory, limit: 3 });
+  const items = getDraftRecommendations(state, roster, knowledgeBase, { side, normalizedSkills, tycharaData, esprData, overrides: characterOverrides, matchHistory, limit: 3 });
   dom.recommendations.replaceChildren();
   if (getDraftProgress(state).complete || items.length === 0) { dom.recommendations.hidden = true; return; }
   dom.recommendations.hidden = false;
@@ -442,7 +442,7 @@ function renderRecommendations() {
 }
 
 function renderRoster() {
-  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+  const candidates = getDraftCandidates(state, roster, knowledgeBase, { esprData });
   resolveActionSide(candidates);
   const legalIds = new Set(candidates.filter((candidate) => candidate.side === actionSide).map((candidate) => candidate.rosterId));
   const visible = filteredCharacters();
@@ -450,7 +450,9 @@ function renderRoster() {
   dom.empty.hidden = visible.length > 0;
   for (const item of visible) {
     const data = knowledge(item.id);
-    const publicData = esprFor(item.id) ?? tycharFor(item.id);
+    const esprCharacter = esprFor(item.id);
+    const publicData = esprCharacter ?? tycharFor(item.id);
+    const hasEsprSkills = Boolean(esprCharacter?.skills?.length);
     const hasPublicSkills = Boolean(publicData?.skills?.length);
     const hasStructuredSkills = Boolean(data?.skills?.length);
     const card = document.createElement("article");
@@ -463,7 +465,7 @@ function renderRoster() {
     action.title = canAct ? `记录${state.phase === "ban" ? "禁用" : "选择"}：${displayName(item.id)}` : "当前阶段不可操作";
     action.innerHTML = `<div class="card-top"><span class="rarity">${item.rarity}</span><span>${labels.element[item.element] ?? item.element}</span></div>`;
     action.append(portrait(item.id));
-    const dataLabel = hasStructuredSkills ? "结构化技能" : hasPublicSkills ? "公开技能" : "资料占位";
+    const dataLabel = hasStructuredSkills ? "结构化技能" : hasEsprSkills ? "ESPR中文技能" : hasPublicSkills ? "公开技能" : "资料占位";
     action.insertAdjacentHTML("beforeend", `<strong class="card-name">${displayName(item.id)}</strong><span class="card-title">${titleFor(item.id)}</span><span class="card-meta"><span>${labels.class[item.class] ?? item.class}</span><span>${hasPublicSkills || hasStructuredSkills ? `<i class="knowledge-dot"></i>${dataLabel}` : dataLabel}</span></span>`);
     action.addEventListener("click", () => recordAction(item.id));
     card.append(action);
@@ -481,7 +483,7 @@ function renderRoster() {
 }
 
 function render() {
-  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+  const candidates = getDraftCandidates(state, roster, knowledgeBase, { esprData });
   renderPhase();
   renderTeams();
   renderRoster();

@@ -5,8 +5,9 @@ import { getLegalDraftActions } from "./draft-state.mjs";
  */
 
 /** @param {object} state @param {object} roster @param {object} knowledgeBase */
-export function getDraftCandidates(state, roster, knowledgeBase) {
+export function getDraftCandidates(state, roster, knowledgeBase, options = {}) {
   const legalActions = getLegalDraftActions(state, roster);
+  const esprByRosterId = new Map((options.esprData?.characters ?? []).map((character) => [character.rosterId, character]));
   const byRosterId = new Map(roster.characters.map((character) => [character.id, character]));
   const byKnowledgeRosterId = new Map(
     knowledgeBase.characters
@@ -16,19 +17,20 @@ export function getDraftCandidates(state, roster, knowledgeBase) {
   return legalActions.map((action) => {
     const rosterCharacter = byRosterId.get(action.rosterId);
     const knowledgeCharacter = byKnowledgeRosterId.get(action.rosterId) ?? null;
+    const esprCharacter = esprByRosterId.get(action.rosterId) ?? null;
     return {
       ...action,
       rosterCharacter,
       knowledgeCharacter,
-      dataCompleteness: knowledgeCharacter?.dataCompleteness ?? "metadata-only",
-      usableForSimulation: knowledgeCharacter?.skills?.length > 0
+      dataCompleteness: knowledgeCharacter?.dataCompleteness ?? (esprCharacter?.skills?.length ? "full-espr-zh-public" : "metadata-only"),
+      usableForSimulation: knowledgeCharacter?.skills?.length > 0 || esprCharacter?.skills?.length > 0
     };
   });
 }
 
 /** @param {object} state @param {object} roster @param {object} knowledgeBase */
-export function summarizeDraftRisks(state, roster, knowledgeBase) {
-  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+export function summarizeDraftRisks(state, roster, knowledgeBase, options = {}) {
+  const candidates = getDraftCandidates(state, roster, knowledgeBase, options);
   const risks = [];
   if (state.rules.teamSize === null) risks.push({ code: "TEAM_SIZE_UNCONFIRMED", message: "尚未确认队伍人数，当前不能判断阵容是否已完成" });
   if (!state.rules.strictTurnOrder) risks.push({ code: "TURN_ORDER_UNCONFIRMED", message: "尚未确认亚服真实 Ban/Pick 顺序，当前使用宽松模式" });

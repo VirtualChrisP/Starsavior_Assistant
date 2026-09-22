@@ -1,6 +1,7 @@
 import { getDraftCandidates } from "./rule-engine.mjs";
 import { getEquipmentModifier, getStatTotal } from "../knowledge/character-overrides.mjs";
 import { getCharacterPerformance } from "../matches/match-history.mjs";
+import { normalizeEsprSkills, tagsForRosterId } from "./espr-skill-adapter.mjs";
 
 const CONTROL_TAGS = new Set(["control", "stun", "freeze", "entangled-dream", "isolation", "chill"]);
 const DAMAGE_TAGS = new Set(["damage", "single-target", "area-damage", "critical", "follow-up"]);
@@ -25,14 +26,15 @@ function getPublicSkills(character, tycharaData) {
   return tycharaData?.characters?.find((item) => item.slug === slug)?.skills ?? [];
 }
 
-function tagsFor(candidate, normalizedSkills, tycharaData) {
+function tagsFor(candidate, normalizedSkills, tycharaData, esprSkills) {
   const tags = new Set(candidate.knowledgeCharacter?.tags ?? []);
   const slug = slugFor(candidate.rosterCharacter);
+  for (const tag of tagsForRosterId(esprSkills, candidate.rosterId)) tags.add(tag);
   for (const skill of normalizedSkills?.skills ?? []) {
     if (skill.ownerSlug !== slug) continue;
     for (const tag of skill.tags ?? []) tags.add(tag);
   }
-  if (getPublicSkills(candidate.rosterCharacter, tycharaData).length > 0) tags.add("public-skills");
+  if (tagsForRosterId(esprSkills, candidate.rosterId).size > 0 || getPublicSkills(candidate.rosterCharacter, tycharaData).length > 0) tags.add("public-skills");
   return tags;
 }
 
@@ -79,11 +81,12 @@ function stageId(state) {
  * 评分只表达“当前信息下的规则优先级”，不是胜率预测。
  */
 export function getDraftRecommendations(state, roster, knowledgeBase, options = {}) {
-  const candidates = getDraftCandidates(state, roster, knowledgeBase);
+  const candidates = getDraftCandidates(state, roster, knowledgeBase, { esprData: options.esprData });
   const side = options.side ?? state.currentSide ?? candidates[0]?.side ?? "ally";
   const filtered = candidates.filter((candidate) => candidate.side === side);
   const normalizedSkills = options.normalizedSkills;
   const tycharaData = options.tycharaData;
+  const esprSkills = options.esprSkills ?? normalizeEsprSkills(options.esprData);
   const overrides = options.overrides ?? { characters: {} };
   const matchHistory = options.matchHistory ?? { matches: [] };
   const ownPicks = side === "ally" ? state.allyPicks : state.enemyPicks;
@@ -91,17 +94,17 @@ export function getDraftRecommendations(state, roster, knowledgeBase, options = 
   const ownTags = new Set(ownPicks.flatMap((id) => {
     const item = roster.characters.find((character) => character.id === id);
     const data = knowledgeBase.characters.find((character) => character.rosterId === id);
-    return [...(data?.tags ?? []), ...(normalizedSkills?.skills ?? []).filter((skill) => skill.ownerSlug === slugFor(item ?? { id, name: "" })).flatMap((skill) => skill.tags ?? [])];
+    return [...(data?.tags ?? []), ...tagsForRosterId(esprSkills, id), ...(normalizedSkills?.skills ?? []).filter((skill) => skill.ownerSlug === slugFor(item ?? { id, name: "" })).flatMap((skill) => skill.tags ?? [])];
   }));
   const opponentTags = new Set(opponentPicks.flatMap((id) => {
     const item = roster.characters.find((character) => character.id === id);
     const data = knowledgeBase.characters.find((character) => character.rosterId === id);
-    return [...(data?.tags ?? []), ...(normalizedSkills?.skills ?? []).filter((skill) => skill.ownerSlug === slugFor(item ?? { id, name: "" })).flatMap((skill) => skill.tags ?? [])];
+    return [...(data?.tags ?? []), ...tagsForRosterId(esprSkills, id), ...(normalizedSkills?.skills ?? []).filter((skill) => skill.ownerSlug === slugFor(item ?? { id, name: "" })).flatMap((skill) => skill.tags ?? [])];
   }));
   const stage = stageId(state);
   const isBan = state.phase === "ban";
   const results = filtered.map((candidate) => {
-    const tags = tagsFor(candidate, normalizedSkills, tycharaData);
+    const tags = tagsFor(candidate, normalizedSkills, tycharaData, esprSkills);
     const reasons = [];
     let score = 40;
     const threat = threatScore(tags, candidate, overrides);
@@ -131,7 +134,7 @@ export function getDraftRecommendations(state, roster, knowledgeBase, options = 
       const direction = performance.scoreAdjustment >= 0 ? "+" : "";
       reasons.unshift(`本机历史 ${performance.appearances} 场，平滑胜率 ${Math.round(performance.smoothedWinRate * 100)}%，校准 ${direction}${performance.scoreAdjustment.toFixed(1)} 分`);
     }
-    if (candidate.usableForSimulation) reasons.push("技能数据可用于进一步模拟");
+    if (candidate.usableForSimulation) reasons.push("技能数据已接入规则评分");
     else reasons.push("技能数据不完整，建议人工复核后再高权重使用");
     return {
       rosterId: candidate.rosterId,
