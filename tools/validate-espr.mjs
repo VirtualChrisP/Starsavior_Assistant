@@ -15,7 +15,7 @@ for (const character of dataset.characters) {
     throw new Error(`${character.rosterId} 缺少技能条目`);
   }
   for (const skill of character.skills) {
-    if (!skill.nameZh || !skill.iconUrl) throw new Error(`${character.rosterId} 存在不完整技能条目`);
+    if (!skill.nameZh || !skill.descriptionZh || !skill.iconUrl) throw new Error(`${character.rosterId} 存在不完整技能条目`);
   }
 }
 console.log(`ESPR 中文数据校验通过：${dataset.characters.length} 个角色，${dataset.characters.reduce((total, character) => total + character.skills.length, 0)} 个技能条目`);

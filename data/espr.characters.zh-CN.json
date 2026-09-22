@@ -6,7 +6,7 @@
     "sourceLastUpdated": null,
     "verifiedInAsiaClient": false
   },
-  "generatedAt": "2026-09-22T09:41:39.083Z",
+  "generatedAt": "2026-09-22T10:13:56.802Z",
   "characters": [
     {
       "rosterId": "asherah-voyager-savior-party",
@@ -20,33 +20,33 @@
       "class": "striker",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1001.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1001.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1001.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "斯特拉尼斯式呼吸法",
-          "descriptionZh": null,
+          "descriptionZh": "亚瑟菈的攻击力增加 15% 。亚瑟菈使用 帷幕斩击 后，自身的暴击伤害增加 6% 。最多可叠加5次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "斯特拉尼斯式一闪",
-          "descriptionZh": null,
+          "descriptionZh": "冲向敌人向上大幅斩击。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_1.webp"
         },
         {
           "type": "special",
           "nameZh": "帷幕斩击",
-          "descriptionZh": null,
+          "descriptionZh": "解放部分魔法剑的力量，对全体敌人进行斩击。自身获得2回合 速度增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "夜之曙光",
-          "descriptionZh": null,
+          "descriptionZh": "暂时解除魔法剑的封印，对全体敌人造成毁灭性的伤害。自身获得2回合 暴击率增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1001_3.webp"
         }
@@ -64,33 +64,33 @@
       "class": "ranger",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1002.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1002.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1002.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "快乐扳机",
-          "descriptionZh": null,
+          "descriptionZh": "微笑的攻击力增加 15% 。微笑攻击后，若自身 跃进 为最大层数，消耗所有层数并使用 猫咪踢踏舞 。使用 确认射击座标 后，使自身行动条增加 15% 。使用 确认射击座标 时，若敌人的生命力高于50%，则使自身行动条增加 15% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "确认射击坐标",
-          "descriptionZh": null,
+          "descriptionZh": "以自制的快乐结局炮击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_1.webp"
         },
         {
           "type": "special",
           "nameZh": "猫咪踢踏舞",
-          "descriptionZh": null,
+          "descriptionZh": "使用 确认射击座标 后，若敌人的生命力低于50%，则发动 猫咪踢踏舞 。有85%的概率对全体敌人造成1回合 燃烧 效果，并使自身获得1回合 微笑矩阵（无法解除） 。若敌人因 确认射击座标 死亡则不发动。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "全员，集中射击！",
-          "descriptionZh": null,
+          "descriptionZh": "与亲手制作的微笑猫一同对敌人倾注集中砲火。有100%的概率对敌人造成2回合 防御力减少 效果。自身获得1回合 微笑矩阵（无法解除） ，并赋予3层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1002_3.webp"
         }
@@ -108,33 +108,33 @@
       "class": "caster",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1003.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1003.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1003.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "预见未来的少女",
-          "descriptionZh": null,
+          "descriptionZh": "露娜的攻击力增加 15% 。露娜使用 我眼中映照的世界 时，若为强化效果状态，则暴击伤害增加 20% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "护身用魔力弹",
-          "descriptionZh": null,
+          "descriptionZh": "弹指射出制造出的魔力球体攻击敌人。赋予自身1层 洞察 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_1.webp"
         },
         {
           "type": "special",
           "nameZh": "黑卡蒂的火种",
-          "descriptionZh": null,
+          "descriptionZh": "将帽子中注入的月亮魔力射向敌人中心并引爆。自身获得2回合 暴击率增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "我眼中映照的世界",
-          "descriptionZh": null,
+          "descriptionZh": "引出月之法杖的力量，对敌人宣告无可避免的命运。有 60% 的机率对全体敌人造成2回合 束缚 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1003_3.webp"
         }
@@ -152,33 +152,33 @@
       "class": "caster",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1005.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1005.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1005.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "辐条",
-          "descriptionZh": null,
+          "descriptionZh": "卡奈莉亚的攻击力增加 15% 。卡奈莉亚在战斗开始时，自身获得1回合 漆黑残响（无法解除） 。攻击时，依赋予在自身的 躁动 层数，每层增加 6% 攻击力，最多可套用至5层。受到致命伤害时，会强制恢复最大生命力的1%，不会死亡，并自身获得1回合 不死 与3回合的 漆黑残响（无法解除） ，并重置所有技能冷却时间。战斗中仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "黎明的手势",
-          "descriptionZh": null,
+          "descriptionZh": "将黑暗魔力转换成乌鸦形态攻击敌人。赋予自身1层 躁动 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_1.webp"
         },
         {
           "type": "special",
           "nameZh": "引领的暮色",
-          "descriptionZh": null,
+          "descriptionZh": "释放凝聚于黎明之光中的力量攻击敌人。有 85% 概率对敌人造成2回合的 无法强化 ，并使行动条减少25%。赋予自身1层 躁动 。攻击后，若自身处于 漆黑残响（无法解除） 状态，会对随机敌人额外发动1次 引领的暮色 。额外发动效果在自身回合内仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "解放乖离",
-          "descriptionZh": null,
+          "descriptionZh": "以具有瓦解与崩溃属性的乖离的业火攻击全体敌人。使自身行动条增加 20% ，并赋予1层 躁动 。若自身处于 漆黑残响（无法解除） 状态，伤害量增加50%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1005_3.webp"
         }
@@ -196,33 +196,33 @@
       "class": "ranger",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1008.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1008.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1008.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "临近的安息",
-          "descriptionZh": null,
+          "descriptionZh": "贝尔·莉丝的攻击力增加 15% 。贝尔·莉丝每当除自身外的我军或敌人死亡时，使自身行动条增加 50% ，攻击力增加 10% 。攻击力增加效果最多可叠加3次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "讣闻",
-          "descriptionZh": null,
+          "descriptionZh": "展开诅咒气息攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_1.webp"
         },
         {
           "type": "special",
           "nameZh": "吊唁",
-          "descriptionZh": null,
+          "descriptionZh": "用诅咒束缚多名敌人后攻击全体敌人。有 60% 的机率对全体敌人造成2回合 命中率减少 。自身获得2回合 速度增加 效果，并赋予3层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "入殓",
-          "descriptionZh": null,
+          "descriptionZh": "用冥界的黑暗攻击敌人。有 85% 的机率对敌人造成2回合 沉默 ，并有100%的机率解除敌人的所有强化效果。攻击时，若自身 跃进 达到最大层数，则伤害量增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1008_3.webp"
         }
@@ -240,33 +240,33 @@
       "class": "defender",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1009.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1009.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1009.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "有备而来的女仆",
-          "descriptionZh": null,
+          "descriptionZh": "埃米莉的最大生命力增加 15% 。埃米莉在首次战斗开始时，自身获得1回合 护盾 。受到攻击后， 开床服务 冷却时间减少1回合。受到全体攻击后， 开床服务 冷却时间额外减少1回合，且有 100% 的机率赋予自身1层 冷冻 。护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "开始战斗清扫",
-          "descriptionZh": null,
+          "descriptionZh": "挥动巨大的扫帚攻击敌人。赋予自身1层 冷冻 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_1.webp"
         },
         {
           "type": "special",
           "nameZh": "清洁服务",
-          "descriptionZh": null,
+          "descriptionZh": "怀着作为负责打扫女仆的骄傲，将我军擦拭得干干净净。我军目标获得3回合 攻击力增加 与 护盾 ，并赋予自身3层 冷冻 后获得额外回合。护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "开床服务",
-          "descriptionZh": null,
+          "descriptionZh": "回归资深佣兵的心态攻击全体敌人。全体我军获得2回合 防御力增加 ，且自身获得1次 苏醒的记忆（无法解除） 。攻击后，若自身 冷冻 达到最大层数，则 开床服务 冷却时间减少2回合，并消耗所有 冷冻 层数。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1009_3.webp"
         }
@@ -284,33 +284,33 @@
       "class": "striker",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1010.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1010.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1010.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "屹立不摇的骑士团长",
-          "descriptionZh": null,
+          "descriptionZh": "夏尔的攻击力增加 15% 。夏尔使用 不屈不挠的一击 后， 正直的突刺 伤害量增加 10% 。最多可叠加3次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "正直的突刺",
-          "descriptionZh": null,
+          "descriptionZh": "以毫不拖泥带水的剑术刺击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_1.webp"
         },
         {
           "type": "special",
           "nameZh": "胜利的决心",
-          "descriptionZh": null,
+          "descriptionZh": "将迈向胜利的觉悟分享给一名我军。我军目标获得2回合 暴击率增加 效果。并额外使我军目标有 90% 的机率获得1回合 攻击力增加 效果。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "不屈不挠的一击",
-          "descriptionZh": null,
+          "descriptionZh": "展现透过不懈努力钻研的莫纳斯提尔骑士团剑术。对敌人有100%的机率造成2回合 攻击力减少 效果，并使自身行动条增加 20% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1010_3.webp"
         }
@@ -328,33 +328,33 @@
       "class": "defender",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1011.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1011.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1011.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "骑士团之盾",
-          "descriptionZh": null,
+          "descriptionZh": "卡蜜的最大生命力增加 15% 。卡蜜受到攻击时，依赋予在自身身上的 冷冻 层数，每层增加 4% 防御力，最多可套用至5层。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "骑士团制式剑术",
-          "descriptionZh": null,
+          "descriptionZh": "以带动重量的回旋斩击攻击敌人。赋予自身1层 冷冻 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_1.webp"
         },
         {
           "type": "special",
           "nameZh": "冲击疗法",
-          "descriptionZh": null,
+          "descriptionZh": "举起强化盾牌向前冲锋，全力挥向面前的敌人。自身获得2回合 莫纳斯提尔规律 ，且有 85% 的机率对敌人造成1回合 挑衅 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "莫纳斯提尔机动壁垒",
-          "descriptionZh": null,
+          "descriptionZh": "将卡蜜守护众人的意志，以城墙的形态具现化。全体我军获得3回合 防御力增加 ，且有 85% 的机率对敌人造成1回合 挑衅 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1011_3.webp"
         }
@@ -372,19 +372,19 @@
       "class": "supporter",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1013.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1013.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1013.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "绝不吃亏的交易",
-          "descriptionZh": null,
+          "descriptionZh": "芙蕾的最大生命力增加 15% 。芙蕾使用 莫纳斯提尔全力支援 后，若自身的生命力低于50%，使全体我军行动条增加 15% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "谈判破裂",
-          "descriptionZh": null,
+          "descriptionZh": "面对对方荒谬的提议，芙蕾用尽全力向敌人甩一巴掌。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_1.webp"
         },
@@ -398,7 +398,7 @@
         {
           "type": "ultimate",
           "nameZh": "莫纳斯提尔全力支援",
-          "descriptionZh": null,
+          "descriptionZh": "芙蕾代表莫纳斯提尔，全心全意支持我军。恢复全体我军的生命力，并使其获得3回合 护盾 。恢复量与护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1013_3.webp"
         }
@@ -416,33 +416,33 @@
       "class": "striker",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1014.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1014.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1014.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "预知梦的庇佑",
-          "descriptionZh": null,
+          "descriptionZh": "赛拉的攻击力增加 15% 。赛拉攻击时，若敌人的生命力高于75%，则伤害量增加 15% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "虚幻之梦",
-          "descriptionZh": null,
+          "descriptionZh": "瞬间接近敌人挥舞镰刀。赋予自身1层 洞察 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_1.webp"
         },
         {
           "type": "special",
           "nameZh": "星蝶群",
-          "descriptionZh": null,
+          "descriptionZh": "召唤星光闪烁的蝶群强化我军。我军目标获得2回合 高级攻击力增加 效果，并使其行动条增加 19% 后，赋予自身3层 洞察 。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "通往幻梦的邀请",
-          "descriptionZh": null,
+          "descriptionZh": "将敌人拖入幻梦领域一并斩除。对敌人有100%的概率造成2回合 速度减少 效果。自身获得2回合 灵梦之光 。攻击时，若自身的 洞察 为最大层数，则伤害量增加20%，且在攻击后消耗所有 洞察 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1014_3.webp"
         }
@@ -460,33 +460,33 @@
       "class": "assassin",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1015.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1015.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1015.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "一流猎人",
-          "descriptionZh": null,
+          "descriptionZh": "崔瑞丝的暴击伤害增加 25% 。崔瑞丝在战斗开始时，赋予自身3层 跃进 。攻击时命中率增加50%。击败敌人时，自身的行动条增加 30% ，并赋予3层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "鬼影步",
-          "descriptionZh": null,
+          "descriptionZh": "华丽地切入，袭击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_1.webp"
         },
         {
           "type": "special",
           "nameZh": "加速强袭",
-          "descriptionZh": null,
+          "descriptionZh": "投掷匕首后，在空中华丽地接住并下劈。自身获得2回合 暴击率增加 效果。且自身的行动条增加50%，并赋予自身2层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "连续斩击",
-          "descriptionZh": null,
+          "descriptionZh": "展现只有一流猎人才能做到的电光石火般连续攻击。自身获得2回合 攻击力增加 效果。攻击时无视敌人的主动防御发生。且攻击时，依赋予在自身身上的 跃进 层数贯穿10%防御力，最多可套用至5层。攻击后消耗所有 跃进 层数。攻击后，若敌人的生命力低于25%，则该技能的冷却时间减少1回合。击败敌人时，重置该技能的冷却时间。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1015_3.webp"
         }
@@ -504,33 +504,33 @@
       "class": "striker",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1016.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1016.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1016.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "刃之舞姬",
-          "descriptionZh": null,
+          "descriptionZh": "凌的攻击力增加 15% 。凌攻击时，依赋予在自身身上的 跃进 层数，每层使攻击力增加 4% ，最多套用至5层。在自身回合使用 幻影剑舞 后，若为 清风（无法解除） 状态，则 幻影剑舞 的冷却时间缩短1回合。在自身回合使用 清风明月 后，若为 明月（无法解除） 状态，则 清风明月 的冷却时间缩短1回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "五连斩",
-          "descriptionZh": null,
+          "descriptionZh": "利用御剑术攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_1.webp"
         },
         {
           "type": "special",
           "nameZh": "幻影剑舞",
-          "descriptionZh": null,
+          "descriptionZh": "在空中发射剑气后，斩击全体敌人进行攻击。若自身为 清风（无法解除） 状态，则赋予星辰属性全体我军3层 跃进 。若自身不为 清风（无法解除） 状态，则自身获得3回合 攻击力增加 与 明月（无法解除） 。在自身回合使用 幻影剑舞 后，若 清风明月 为可使用的状态，则获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "清风明月",
-          "descriptionZh": null,
+          "descriptionZh": "施展风月堂剑法的极意，攻击全体敌人。若自身为 明月（无法解除） 状态，则攻击单一目标，攻击时，暴击伤害增加50%，且强韧度伤害增加1。若自身不为 明月（无法解除） 状态，则除自身外的星辰属性全体我军获得2回合 暴击伤害增加 ，且自身获得3回合 清风（无法解除） 。在自身回合使用 清风明月 后，若 幻影剑舞 为可使用的状态，则获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1016_3.webp"
         }
@@ -548,33 +548,33 @@
       "class": "ranger",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1017.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1017.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1017.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "累积的怨恨",
-          "descriptionZh": null,
+          "descriptionZh": "克莉丝特的攻击力增加15%。克莉丝特首次战斗开始时，赋予自身3层 点火 。除自身外的任意我军使用特殊技或必杀技攻击时，赋予自身1层 点火 。若我军目标为太阳属性，则额外赋予1层 点火 。使用 复仇与惩戒 时，使自身行动条增加 30% 。若敌人为弱化效果状态，则有100%概率对随机敌人造成与自身攻击力成比例的连锁伤害。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "复仇与惩戒",
-          "descriptionZh": null,
+          "descriptionZh": "用手枪瞄准敌人并扣下扳机射击。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_1.webp"
         },
         {
           "type": "special",
           "nameZh": "沸腾的复仇心",
-          "descriptionZh": null,
+          "descriptionZh": "除自身外的任意我军攻击后，若自身的 点火 为最大层数，则发动 沸腾的复仇心 。使用技能时，自身获得3回合 复仇心（无法解除） 。使用技能后，有 85% 概率对全体敌人赋予2层持续2回合的 燃烧 。使自身行动条增加 40% ，并除自身外的太阳属性全体我军赋予2层 点火 后，消除自身所有 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "噩梦解放",
-          "descriptionZh": null,
+          "descriptionZh": "以令人陷入痛苦的虚空之力攻击敌人。攻击时，有100%的概率延长敌人的 燃烧 1回合，敌人每持有一个弱化效果，则造成与自身攻击力成比例的连锁伤害，最多可套用至5层。攻击后，使自身行动条增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1017_3.webp"
         }
@@ -592,33 +592,33 @@
       "class": "defender",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1018.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1018.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1018.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "磨损的情感",
-          "descriptionZh": null,
+          "descriptionZh": "艾黛的防御力增加 15% 。艾黛在首次战斗开始时，自身获得1回合 守护 和 护盾 。受到攻击后，有 100% 的机率赋予自身1层 跃进 。护盾依自身防御力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "钢铁骤雨",
-          "descriptionZh": null,
+          "descriptionZh": "发射艾黛之花中凝聚的虚空之力攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_1.webp"
         },
         {
           "type": "special",
           "nameZh": "锥刺铠甲",
-          "descriptionZh": null,
+          "descriptionZh": "缠绕虚空之力采取防御姿态。自身获得3回合 护盾 与 防御力增加 。若自身 跃进 为最大层数，则消耗所有 跃进 层数，自身获得额外回合。护盾依自身防御力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "荆棘坟场",
-          "descriptionZh": null,
+          "descriptionZh": "艾黛将虚空之力聚集至极限并向敌人倾泻。自身获得 2回合 守护 ，且有100%的机率对敌人造成2回合 命中率减少 。攻击时，若自身为 护盾 状态，则伤害量增加20%。伤害量依自身防御力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1018_3.webp"
         }
@@ -636,33 +636,33 @@
       "class": "supporter",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1019.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1019.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1019.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "飞翔吧，凤凰啊",
-          "descriptionZh": null,
+          "descriptionZh": "瑟乐芬的最大生命力增加 15% 。瑟乐芬使用 就决定是你了！ 后，有 100% 的机率对敌人造成1回合 燃烧 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "就决定是你了！",
-          "descriptionZh": null,
+          "descriptionZh": "瑟乐芬将托托投向敌人进行攻击。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_1.webp"
         },
         {
           "type": "special",
           "nameZh": "我只相信你",
-          "descriptionZh": null,
+          "descriptionZh": "托托投射出充满杀意的锐利目光，压迫敌人的心理。恢复目前生命力比例最低的我军的生命力，且有100%的机率对敌人造成1回合 攻击力减少 。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "让他们看看吧，托托！",
-          "descriptionZh": null,
+          "descriptionZh": "瑟乐芬与托托将合而为一的炙热友情之力分给所有人。恢复全体我军的生命力，且自身与除自身外的目前生命力比例最低的我军获得1次 技能伤害无效 效果。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1019_3.webp"
         }
@@ -680,33 +680,33 @@
       "class": "caster",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1021.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1021.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1021.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "纯洁的心",
-          "descriptionZh": null,
+          "descriptionZh": "达娜的攻击力增加 15% 。达娜以 急速开花 发生暴击时，自身有 100% 的机率获得1回合 速度增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "绿叶涌动",
-          "descriptionZh": null,
+          "descriptionZh": "达娜吹送大自然气息攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_1.webp"
         },
         {
           "type": "special",
           "nameZh": "急速开花",
-          "descriptionZh": null,
+          "descriptionZh": "以自然气息促进植物生长并攻击敌人。自身与除自身外攻击力最高的我军获得2回合 攻击力增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "自然之力",
-          "descriptionZh": null,
+          "descriptionZh": "创造充满生命力的大地并唤起巨木攻击全体敌人。有 60% 的机率对全体敌人造成1回合 速度减少 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1021_3.webp"
         }
@@ -724,33 +724,33 @@
       "class": "caster",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1023.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1023.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1023.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "意气风发",
-          "descriptionZh": null,
+          "descriptionZh": "缪莉尔的暴击伤害增加 25% 。缪莉尔在除自身外的太阳属性我军攻击后，有 100% 的机率赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "神之火焰",
-          "descriptionZh": null,
+          "descriptionZh": "发射圣洁的火焰攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_1.webp"
         },
         {
           "type": "special",
           "nameZh": "圣水轰炸",
-          "descriptionZh": null,
+          "descriptionZh": "将偷来的圣水毫不吝惜地向敌人泼洒进行攻击。敌人每持有一个弱化效果，伤害量增加3%。有 85% 的机率延长敌人所有弱化效果1回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "我以后会乖乖做人",
-          "descriptionZh": null,
+          "descriptionZh": "缪莉尔应受的天谴波及全体敌人。有 60% 的机率对全体敌人造成2回合 攻击力减少 。若自身 点火 为最大层数，则有100%的机率对全体敌人造成2回合 燃烧 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1023_3.webp"
         }
@@ -768,33 +768,33 @@
       "class": "supporter",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1024.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1024.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1024.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "小心翼翼的祈祷",
-          "descriptionZh": null,
+          "descriptionZh": "艾莉莎的最大生命力增加 15% 。艾莉莎使用 徒劳但愿能相助 时，若自身的生命力高于50%，则恢复量增加 25% ，在自身回合使用 请回去 时，若自身躁动为最大层数，则消耗所有层数，自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "请回去",
-          "descriptionZh": null,
+          "descriptionZh": "艾莉莎以灌注觉悟的流星锤，代行神之审判。赋予自身1层 躁动 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_1.webp"
         },
         {
           "type": "special",
           "nameZh": "徒劳但愿能相助",
-          "descriptionZh": null,
+          "descriptionZh": "艾莉莎为克服不安与忧虑，进行拼上命的祈祷。恢复我军目标生命力，且获得2回合 圣洁的庇佑 。赋予自身2层 躁动 。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "大家一起祈祷",
-          "descriptionZh": null,
+          "descriptionZh": "艾莉莎的信仰于绝望中唤起奇迹。使死亡状态的我军目标以50%生命力复活，并使其增加80%行动条。若我军目标非死亡状态，则恢复其生命力，并有 85% 的机率获得2回合 圣洁的庇佑 后，使行动条增加40%。赋予自身2层 躁动 。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1024_3.webp"
         }
@@ -812,33 +812,33 @@
       "class": "striker",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1025.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1025.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1025.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "斩首执行者",
-          "descriptionZh": null,
+          "descriptionZh": "缇莉雅的攻击力增加 15% 。缇莉雅使用 终末序曲 或 惨剧镇魂歌 时，若敌人为 惨剧之棘（无法解除） 状态，则贯穿 25% 防御力。使用 终末序曲 后，有100%的几率对敌人造成1次 惨剧之棘（无法解除） 。使用 终末序曲 后，若敌人的 惨剧之棘（无法解除） 为最大层数，则发动 惨剧镇魂歌 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "终末序曲",
-          "descriptionZh": null,
+          "descriptionZh": "举起大剑，冲向敌人攻击。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_1.webp"
         },
         {
           "type": "special",
           "nameZh": "惨剧镇魂歌",
-          "descriptionZh": null,
+          "descriptionZh": "用荆棘束缚敌人，并优雅地挥舞大剑发动攻击。攻击时，若敌人为 惨剧之棘（无法解除） 状态，则每层 惨剧之棘（无法解除） 使伤害量增加10%，若敌人为坦克职业，则每层伤害量额外增加50%。攻击后解除敌人的 惨剧之棘（无法解除） 。攻击时，若自身的 点火 为最大层数，则伤害量增加20%，且在攻击后消耗所有 点火 。若该技能非额外发动的技能，则自身获得3回合 速度增加 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "悲鸣渐强",
-          "descriptionZh": null,
+          "descriptionZh": "以大剑切开空间，对所有敌人造成大量伤害。自身获得2回合 破碎 并赋予2层 点火 。有100%的几率对全体敌人造成1次 惨剧之棘（无法解除） ，并有100%的几率对防御力最高的敌人造成3次 惨剧之棘（无法解除） 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1025_3.webp"
         }
@@ -856,33 +856,33 @@
       "class": "striker",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1026.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1026.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1026.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "老手的直觉",
-          "descriptionZh": null,
+          "descriptionZh": "萝贝塔的攻击力增加 15% 。萝贝塔攻击时的暴击率增加50%。若自身生命力高于50%，伤害量增加 8% ；若自身生命力低于50%，伤害量增加 16% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "开始作战",
-          "descriptionZh": null,
+          "descriptionZh": "快速连击拳头攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_1.webp"
         },
         {
           "type": "special",
           "nameZh": "快速信道",
-          "descriptionZh": null,
+          "descriptionZh": "受到全体攻击后，对攻击者发动 快速信道 。使用技能时，解除自身的1个弱化效果。攻击后，使自身行动条增加 20% ，并赋予1层跃进。发生暴击时， 快速信道 的冷却时间缩短1回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "紧急现场判断",
-          "descriptionZh": null,
+          "descriptionZh": "根据现场判断省略过程，立即进行武力应对攻击敌人。自身获得2回合 攻击力增加 ，并使自身行动条增加 20% 。若自身 跃进 为最大层数，则消耗所有层数，使自身行动条额外增加20%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1026_3.webp"
         }
@@ -900,33 +900,33 @@
       "class": "ranger",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1027.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1027.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1027.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "驱魔师之路",
-          "descriptionZh": null,
+          "descriptionZh": "卢格的攻击力增加 15% 。卢格使用 压制符 后，有 100% 的机率对敌人造成1回合 冻结 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "压制符",
-          "descriptionZh": null,
+          "descriptionZh": "向敌人投射符咒进行攻击。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_1.webp"
         },
         {
           "type": "special",
           "nameZh": "雪中师友",
-          "descriptionZh": null,
+          "descriptionZh": "以符咒引发寒气攻击敌人。有 85% 的机率对敌人造成2回合 冻结 效果，且自身获得1回合 速度增加 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "天道不用，恶即斩",
-          "descriptionZh": null,
+          "descriptionZh": "以符咒制成的剑斩除邪秽。有 85% 的机率对敌人造成2回合 防御力减少 效果，并有100%的机率使其必杀技冷却时间增加1回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1027_3.webp"
         }
@@ -944,33 +944,33 @@
       "class": "assassin",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1029.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1029.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1029.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "天问之路",
-          "descriptionZh": null,
+          "descriptionZh": "霏的攻击力增加 15% 。霏在战斗开始时与回合结束时，自身获得1回合 回避率增加 。每次受到攻击后触发回避时，自身的攻击力增加 4% 。最多可叠加5次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "月蚀",
-          "descriptionZh": null,
+          "descriptionZh": "以迅捷之剑快速斩击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_1.webp"
         },
         {
           "type": "special",
           "nameZh": "月影",
-          "descriptionZh": null,
+          "descriptionZh": "受到敌人攻击后触发回避时，对攻击者发动 月影 。自身获得1回合 必中 ，并赋予2层 冷冻 。有 85% 的几率对敌人造成1回合 攻击力减少 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "清风朗月",
-          "descriptionZh": null,
+          "descriptionZh": "以连明月都能斩断的斩击攻击敌人。自身获得2回合 攻击力增加 。攻击时，若自身 冷冻 为最大层数，则贯穿20%防御力，并在攻击后消耗所有 冷冻 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1029_3.webp"
         }
@@ -988,33 +988,33 @@
       "class": "assassin",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1030.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1030.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1030.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "贵族的品格",
-          "descriptionZh": null,
+          "descriptionZh": "艾芬黛尔的攻击力增加 15% 。当月亮属性我军发生暴击时，艾芬黛尔赋予自身1层 冷冻 。艾芬黛尔使用奥尔兰式剑术时，若自身 冷冻 达到最大层数，则伤害量增加 20% ，并在使用奥尔兰式剑术后消耗所有 冷冻 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "奥尔兰式剑术",
-          "descriptionZh": null,
+          "descriptionZh": "用奥尔兰家族的双剑术攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_1.webp"
         },
         {
           "type": "special",
           "nameZh": "坚持不懈的努力",
-          "descriptionZh": null,
+          "descriptionZh": "唤醒奥尔兰的荣耀，集中精神。解除自身2个弱化效果后，自身获得3回合 攻击力增加 与 免疫 效果，并额外以各 90% 的概率赋予自身3层 冷冻 。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "奥尔兰之鹰",
-          "descriptionZh": null,
+          "descriptionZh": "击出鹰形态的剑气后追击并攻击敌人。自身获得 2回合 速度增加 效果。攻击时，若自身不为弱化效果状态，则伤害量增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1030_3.webp"
         }
@@ -1032,33 +1032,33 @@
       "class": "caster",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1031.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1031.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1031.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "自动狩猎系统",
-          "descriptionZh": null,
+          "descriptionZh": "奥米嘉的攻击力增加 15% 。奥米嘉在除自身外的星辰属性我军攻击后，有 100% 的机率赋予自身1层 跃进 。回合开始时，若自身 跃进 为最大层数，消耗所有层数并获得1次 强化之星 。回合开始时，若自身 强化之星 为最大层数，则不消耗 跃进 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "砰呀！",
-          "descriptionZh": null,
+          "descriptionZh": "发射三次短激光攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_1.webp"
         },
         {
           "type": "special",
           "nameZh": "百万吨重拳！",
-          "descriptionZh": null,
+          "descriptionZh": "以大范围投影体拳击攻击全体敌人。赋予自身1层 跃进 。根据自身 强化之星 的叠加次数变更套用效果。因 百万吨重拳！ 而额外发动的 百万吨重拳！ 仅在自身回合发动。 1层强化之星：额外发动一次 百万吨重拳！ 。 2层强化之星：额外发动两次 百万吨重拳！ 。 3层强化之星：伤害量增加10%，并额外发动两次 百万吨重拳！ 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "最大、最帅气的那个！",
-          "descriptionZh": null,
+          "descriptionZh": "召唤并引爆登录在数据库中最大最帅气的东西来攻击敌人。自身获得2回合 攻击力增加 ，并赋予3层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1031_3.webp"
         }
@@ -1076,33 +1076,33 @@
       "class": "assassin",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1032.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1032.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1032.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "兔子的幸运",
-          "descriptionZh": null,
+          "descriptionZh": "夏尔的攻击力增加 15% 。夏尔在除自身外的太阳属性我军开始回合时，赋予自身1层 点火 。使用 兔子步伐 后，使自身行动条增加 10% 。在自身回合使用 兔子步伐 后，若自身为 幸运代币（无法解除） 状态，则额外发动一次 兔子步伐 。额外发动效果每回合仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "兔子步伐",
-          "descriptionZh": null,
+          "descriptionZh": "夏尔快速攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_1.webp"
         },
         {
           "type": "special",
           "nameZh": "祝酒之歌",
-          "descriptionZh": null,
+          "descriptionZh": "夏尔悠闲地举杯鼓励全体我军。全体我军获得2回合 攻击力增加 ，赋予自身3回合 幸运代币（无法解除） ，并以各 87% 的机率赋予自身3层 点火 &lt; /b&gt;。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "走投无路的兔子",
-          "descriptionZh": null,
+          "descriptionZh": "输掉所有筹码的夏尔掀翻牌局攻击敌人。攻击时，依赋予在自身身上的 点火 层数，每层增加5%伤害量，最多可套用至5层。攻击后，消耗自身所有 点火 层数。若 点火 为最大层数，则在攻击后重置 走投无路的兔子 冷却时间。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1032_3.webp"
         }
@@ -1120,33 +1120,33 @@
       "class": "striker",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1033.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1033.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1033.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "以力量创建的秩序",
-          "descriptionZh": null,
+          "descriptionZh": "瑟莱丝的攻击力增加 15% 。瑟莱丝在首次战斗开始时，赋予自身2层 冷冻 。使用 第7型大地震 后，依据命中的目标数量使自身行动条增加 35% ，最多提高 175% 。使用 第1型新月 或 第21型剑风 时，若目标处于 冻结 状态，则伤害量增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "第1型新月",
-          "descriptionZh": null,
+          "descriptionZh": "独自冲向前，瞬间攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_1.webp"
         },
         {
           "type": "special",
           "nameZh": "第7型大地震",
-          "descriptionZh": null,
+          "descriptionZh": "将强大力量灌注于双剑后，下劈攻击全体敌人。有100%的概率解除全体敌人1个强化效果，并有 85% 的概率造成2回合2个 冻结 后，100%概率造成2回合 孤立 。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "第21型剑风",
-          "descriptionZh": null,
+          "descriptionZh": "以如暴风般袭来的无数斩击压倒敌人。自身获得3回合 西部风暴 。有85%的概率对敌人造成1回合 晕眩 效果，并有100%概率使敌人行动条减少20%。依赋予在自身身上的 冷冻 层数，行动条减少量增加10%，最多可套用至5个。攻击后消耗所有 冷冻 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1033_3.webp"
         }
@@ -1164,33 +1164,33 @@
       "class": "ranger",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1034.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1034.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1034.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "虚空追求者",
-          "descriptionZh": null,
+          "descriptionZh": "莉迪亚的最大生命力增加 15% 。莉迪亚使用 虚空之触 后，若敌人为弱化效果状态，则自身的攻击力每次增加 6% ，并有100%的机率对敌人造成1回合 未知咒语 。攻击力增加效果最多可叠加5次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "虚空之触",
-          "descriptionZh": null,
+          "descriptionZh": "利用无从得知根源的力量攻击敌人。赋予自身1层 躁动 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_1.webp"
         },
         {
           "type": "special",
           "nameZh": "星座彼端的邀请",
-          "descriptionZh": null,
+          "descriptionZh": "引诱库库的触角攻击全体敌人。有 60% 的机率对全体敌人造成2回合 未知咒语 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "书册的虚空间",
-          "descriptionZh": null,
+          "descriptionZh": "暂时解开库库的封印，将难以形容的恐怖释放到现实。有 85% 的机率对敌人造成2回合 速度减少 效果。攻击时，若敌人为弱化效果状态，使自身行动条增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1034_3.webp"
         }
@@ -1208,33 +1208,33 @@
       "class": "ranger",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1039.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1039.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1039.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "探究对象",
-          "descriptionZh": null,
+          "descriptionZh": "M教授的攻击力增加 15% 。M教授使用 非黑即白 后，在可使用夹攻状态且对攻击力最高的我军发动1回合 样本行动分析 ，并触发夹攻。除自身外的我军攻击时，使自身行动条增加4%，且自身有 100% 的概率获得1层 冷冻 。若我军目标为 样本行动分析 状态，则行动条额外增加4%，并额外赋予1层 冷冻 。发动新的 样本行动分析 时，会解除原有的 样本行动分析 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "非黑即白",
-          "descriptionZh": null,
+          "descriptionZh": "M教授挥舞手提包攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_1.webp"
         },
         {
           "type": "special",
           "nameZh": "以恶制恶",
-          "descriptionZh": null,
+          "descriptionZh": "我军攻击后， 若自身的 冷冻 为最大层数， 则对敌人发动 以恶制恶 。攻击后，自身行动条增加 10% ，并消耗所有 冷冻 层数。攻击时，若敌人处于强韧度击破状态，则伤害量增加30%。优先攻击自身最近一次攻击的敌人。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "魔弹射手",
-          "descriptionZh": null,
+          "descriptionZh": "以蕴含扭曲恶意的子弹攻击敌人。赋予自身3层 冷冻 ，并增加自身的行动条50%。有 85% 概率对敌人造成2回合的 标记刻印 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1039_3.webp"
         }
@@ -1252,19 +1252,19 @@
       "class": "striker",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1040.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1040.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1040.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "埋伏搜查",
-          "descriptionZh": null,
+          "descriptionZh": "克温的攻击力增加 15% 。克温首次战斗开始时，自身获得1回合 现场待命 。除自身外的我军攻击时，若自身处于 现场待命 状态，则获得1次 电机（无法解除） ，若除自身外的我军以特殊技攻击时，自身自身处于 现场待命 状态，则额外获得1次 电机（无法解除） 。我军攻击后，若自身的 电机（无法解除） 达5次以上，则对敌人发 照亮真相之光！ ，并减少5次 电机（无法解除） 。额外发动效果会优先攻击自身最近一次攻击的敌人。除自身外的我军或敌人回合开始时，若自身未处于 现场待命 状态，则依自身的 跃进 层数，每层使行动条增加 4% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "鞭梢的真相",
-          "descriptionZh": null,
+          "descriptionZh": "挥舞坚韧的皮鞭，攻击试图隐瞒真相的敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_1.webp"
         },
@@ -1278,7 +1278,7 @@
         {
           "type": "ultimate",
           "nameZh": "犯人就是你！",
-          "descriptionZh": null,
+          "descriptionZh": "成功完成推理的克温，以鞭梢攻击嫌疑最大的敌人。攻击时，使自身获得2次 电机（无法解除） 。攻击后，自身获得3回合 现场待命 ，并对敌人发动 照亮真相之光！ 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1040_3.webp"
         }
@@ -1296,33 +1296,33 @@
       "class": "defender",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1041.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1041.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1041.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "是你打了我们家孩子吗？",
-          "descriptionZh": null,
+          "descriptionZh": "哈莉的最大生命力增加 15% 。除自身外的全体我军受到攻击后，哈莉有 100% 的概率使自身的速度增加3%。最多可叠加5次。攻击时，若自身的 点火 达到最大层数，则消耗所有 点火 层数，攻击后自身获得2回合 效果命中增加 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "上吧，戴夫！",
-          "descriptionZh": null,
+          "descriptionZh": "与戴夫一同快速机动攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_1.webp"
         },
         {
           "type": "special",
           "nameZh": "想打架吗？",
-          "descriptionZh": null,
+          "descriptionZh": "踩着戴夫跃起，向敌人投掷斧头。自身获得2回合 速度增加 ，并赋予攻击力最高的一名太阳属性我军3层 点火 。有100%的机率使敌人行动条减少25%。伤害量依自身速度比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "胆量对决！",
-          "descriptionZh": null,
+          "descriptionZh": "召唤追随自己的野猪群进行突击。全体我军获得2回合 防御力增加 ，并有100%的概率使全体敌人行动条减少15%。若自身生命力高于50%，则除自身外的全体我军有 85% 的概率获得1回合 速度增加 ；若自身生命力低于50%，则自身获得3回合 暴走模式（无法解除） 。伤害量依自身速度比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1041_3.webp"
         }
@@ -1340,33 +1340,33 @@
       "class": "ranger",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1042.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1042.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1042.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "建筑设计事前检讨",
-          "descriptionZh": null,
+          "descriptionZh": "佩特拉的攻击力增加 15% 。当除自身外的我军击破敌人的强韧度后，佩特拉赋予自身1层 点火 ，并使自身行动条增加 20% 。每回合仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "即兴设计",
-          "descriptionZh": null,
+          "descriptionZh": "佩特拉以设计图砸向敌人进行攻击。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_1.webp"
         },
         {
           "type": "special",
           "nameZh": "着手施工",
-          "descriptionZh": null,
+          "descriptionZh": "佩特拉从侧背包取出炸弹攻击敌人。自身获得2回合 速度增加 效果，并赋予2层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "建筑协议",
-          "descriptionZh": null,
+          "descriptionZh": "佩特拉滚动大量炸弹攻击敌人。有 85% 的机率对敌人造成2回合 防御力减少 效果。攻击时，依赋予在自身身上的点火层数，每层增加4%伤害量，最多可套用至5层。攻击后，消耗所有 点火 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1042_3.webp"
         }
@@ -1384,33 +1384,33 @@
       "class": "ranger",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1043.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1043.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1043.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "高分纪录！",
-          "descriptionZh": null,
+          "descriptionZh": "丝卡蕾的暴击率增加 15% 。丝卡蕾在攻击时，依自身被赋予的 点火 层数，每层增加7%伤害量，最多可套用至5层。回合开始时，自身获得3次 弹珠时间！ 攻击后解除所有 弹珠时间！ 状态。回合开始时，自身每持有一个 七号球（无法解除） ，速度各增加1。最多可叠加 10次 。 普通球（无法解除）：造成的伤害量增加1%。 七号球（无法解除）：造成的伤害量增加7%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "一口气解决！",
-          "descriptionZh": null,
+          "descriptionZh": "丝卡蕾利用分离的泰利翁挥向敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_1.webp"
         },
         {
           "type": "special",
           "nameZh": "这不算啦！",
-          "descriptionZh": null,
+          "descriptionZh": "丝卡蕾扔出手中的盘子攻击敌人。有100%的概率对敌人造成2回合 恢复减少 ，并解除敌人1个强化效果后，赋予自身1层 点火 。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "总之是我赢了！",
-          "descriptionZh": null,
+          "descriptionZh": "丝卡蕾转动巨大的弹珠台，对全体敌人造成伤害。有75%的概率对全体敌人造成1回合 速度减少 ，并有100%的概率对敌人造成2回合 恢复减少 。赋予自身1层 点火 。自身每持有1个 七号球（无法解除） ，该技能冷却时间减少1回合。若 七号球（无法解除） 为3个时，重置该技能的冷却时间。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1043_3.webp"
         }
@@ -1428,33 +1428,33 @@
       "class": "striker",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1044.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1044.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1044.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "对胜利的确信",
-          "descriptionZh": null,
+          "descriptionZh": "克莱儿的攻击力增加 15% 。克莱儿在回合开始时，自身的暴击率增加 10% 。最多可叠加3次。使用 快过肉眼的动作 后，若自身 冷冻 为最大层数，则消耗所有层数并发动 你在看哪里？ 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "快过肉眼的动作",
-          "descriptionZh": null,
+          "descriptionZh": "快速接近敌人后，将长枪向后拉再用力刺出。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_1.webp"
         },
         {
           "type": "special",
           "nameZh": "你在看哪里？",
-          "descriptionZh": null,
+          "descriptionZh": "开出头奖攻击敌人。自身获得2回合 攻击力增加 ，并使其行动条增加30%。发生暴击时，赋予自身3层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "兔兔头奖",
-          "descriptionZh": null,
+          "descriptionZh": "投掷带有幸运的卡牌并引爆，攻击敌人。攻击时，自身暴击率增加20%。攻击后，自身获得3回合 头奖怒放 。敌人每持有1个强化效果，伤害量增加10%，最多可套用至5个。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1044_3.webp"
         }
@@ -1472,33 +1472,33 @@
       "class": "defender",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1045.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1045.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1045.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "仲夏生存必备品",
-          "descriptionZh": null,
+          "descriptionZh": "露娜的最大生命力增加 15% 。露娜在首次战斗开始时，赋予自身5层 点火 ，并使除自身外的全体我军获得3回合 防水防晒乳 。受到攻击后发生暴击时，赋予自身1层 点火 。除自身外的我军受到攻击后发生暴击时，有 100% 概率赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "泡沫挥击！",
-          "descriptionZh": null,
+          "descriptionZh": "朝敌人发射清凉的水珠攻击敌人。赋予自身1层 点火 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_1.webp"
         },
         {
           "type": "special",
           "nameZh": "盛夏诱惑♡",
-          "descriptionZh": null,
+          "descriptionZh": "除自身外的我军受到暴击攻击后，对攻击者发动 盛夏诱惑♡ 。自身获得2回合 护盾 ，并有100%概率对敌人造成2回合 防御力减少 。攻击时，若自身 点火 为最大层数，则伤害量额外增加100%，并有 85% 概率对敌人造成1回合 挑衅 后，消耗所有 点火 层数。伤害量与护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "夏日乐园！",
-          "descriptionZh": null,
+          "descriptionZh": "引出月之法杖的力量，献上清凉的夏天攻击敌人。全体我军获得2回合 防御力增加 ，且赋予自身3层 点火 。有100%概率对敌人造成2回合 攻击力减少 ，并造成1回合 挑衅 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1045_3.webp"
         }
@@ -1516,33 +1516,33 @@
       "class": "assassin",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1046.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1046.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1046.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "微笑的水中实验",
-          "descriptionZh": null,
+          "descriptionZh": "微笑的攻击力增加 15% 。微笑在战斗开始时，有100%概率对速度最高的敌人造成3回合 水炸弹 。战斗开始时发动的效果不受命中、效果抗性、免疫效果影响。使用 补充水分 或 夏夜与烟火 后，有100%概率对敌人造成3回合 水炸弹 。产生新的 水炸弹 时，会解除原有的 水炸弹 。攻击时若敌人为 水炸弹 状态，则自身的暴击伤害增加 20% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "补充水分",
-          "descriptionZh": null,
+          "descriptionZh": "向敌人发射清凉的水砲。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_1.webp"
         },
         {
           "type": "special",
           "nameZh": "冷却系统",
-          "descriptionZh": null,
+          "descriptionZh": "除自身外的我军攻击 水炸弹 状态的敌人后，若自身的 跃进 层数为在2层以上，则对 水炸弹 状态的敌人发动 冷却系统 。消耗自身2层 跃进 使自身获得1次 仙女棒（无法解除） 后，使行动条增加15%。除自身外的我军攻击后，若 水炸弹 状态的敌人死亡时，则不会发动该技能。若该技能非透过触发技能的条件发动，则不套用技能效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "夏夜与烟火",
-          "descriptionZh": null,
+          "descriptionZh": "展开一场充满夏夜回忆的华丽烟火秀攻击敌人。赋予自身3层 跃进 。自身每层 仙女棒（无法解除） 叠加，对 水炸弹 状态的敌人额外发动1次 冷却系统 ，并解除所有 仙女棒（无法解除） 。额外发动的 冷却系统 将优先攻击 水炸弹 状态的敌人。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1046_3.webp"
         }
@@ -1560,33 +1560,33 @@
       "class": "ranger",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1049.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1049.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1049.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "蕴风之文",
-          "descriptionZh": null,
+          "descriptionZh": "莱希的攻击力增加 15% 。莱希受到 纠缠的梦境 状态的敌人攻击后，使行动条增加 10% 并恢复自身生命力。恢复量依自身攻击力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "火龙升天",
-          "descriptionZh": null,
+          "descriptionZh": "吹出火焰气息攻击敌人。赋予自身1层 躁动 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_1.webp"
         },
         {
           "type": "special",
           "nameZh": "逆流水玉",
-          "descriptionZh": null,
+          "descriptionZh": "制造逆流而上的水柱攻击敌人。自身获得2回合 速度增加 效果。攻击时，若敌人为 纠缠的梦境 状态，则伤害量增加20%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "水与火之歌",
-          "descriptionZh": null,
+          "descriptionZh": "挥舞附着水与火气息的剑攻击敌人。自身获得2回合 攻击力增加 效果，有 85% 的机率对全体敌人造成3回合 纠缠的梦境 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1049_3.webp"
         }
@@ -1604,33 +1604,33 @@
       "class": "striker",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1051.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1051.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1051.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "拆除作业",
-          "descriptionZh": null,
+          "descriptionZh": "塔妮娅的攻击力增加 15% 。塔妮娅击破敌人的强韧度后，赋予自身3层 跃进 ，并使除自身外的全体我军行动条增加 10% 。回合开始时，若自身 跃进 为最大层数，则消耗所有层数，自身获得3回合 拆除模式 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "砰砰工具",
-          "descriptionZh": null,
+          "descriptionZh": "挥动沉重的多功能工具攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_1.webp"
         },
         {
           "type": "special",
           "nameZh": "转转电锯",
-          "descriptionZh": null,
+          "descriptionZh": "以多功能工具搭载的切削工具切割敌人。全体我军获得1回合 暴击率增加 效果。使自身行动条增加 20% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "轰轰掩体",
-          "descriptionZh": null,
+          "descriptionZh": "用动员多功能工具所有功能的手提鑽粉碎敌人。自身获得 1回合 攻击力增加 。攻击时，若自身为 拆除模式 ，则强韧度伤害增加1。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1051_3.webp"
         }
@@ -1648,33 +1648,33 @@
       "class": "caster",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1052.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1052.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1052.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "神秘搭档",
-          "descriptionZh": null,
+          "descriptionZh": "莉莉的攻击力增加 15% 。莉莉使用 兔子先生的即决审判 后，使自身行动条增加 20% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "混乱中的一击",
-          "descriptionZh": null,
+          "descriptionZh": "借用兔子先生神秘的力量攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_1.webp"
         },
         {
           "type": "special",
           "nameZh": "莉莉的珍贵时间",
-          "descriptionZh": null,
+          "descriptionZh": "当场修复兔子先生，寻找出路。除自身外的全体我军获得2回合 护盾 ，且自身获得2回合 攻击力增加 与 兔子先生的调查咨询 。护盾依自身攻击力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "兔子先生的即决审判",
-          "descriptionZh": null,
+          "descriptionZh": "危急时刻兔子先生玩偶亲自出马攻击敌人。有75%的机率对全体敌人造成2回合 攻击力减少 。攻击时，若自身为 兔子先生的调查咨询 状态，则伤害量增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1052_3.webp"
         }
@@ -1692,33 +1692,33 @@
       "class": "assassin",
       "attackType": "spirit",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1053.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1053.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1053.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "刺骨的言灵",
-          "descriptionZh": null,
+          "descriptionZh": "绮拉的攻击力增加 15% 。绮拉攻击时若自身为 隐身 状态，则伤害量增加 10% 。使用 非日常问候 后，若自身的 点火 为最大层数，则消耗所有层数，攻击后自身获得1回合 隐身 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "非日常问候",
-          "descriptionZh": null,
+          "descriptionZh": "制造偶然的碰撞攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_1.webp"
         },
         {
           "type": "special",
           "nameZh": "沉默的代价",
-          "descriptionZh": null,
+          "descriptionZh": "使用言灵使人想像骇人的未来。自身获得2回合 攻击力增加 并赋予2层 点火 。若自身为 隐身 状态，则使敌人行动条减少 20% 。若攻击 沉默 状态的敌人时伤害量增加30%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "扭曲的关注",
-          "descriptionZh": null,
+          "descriptionZh": "解放言灵之力，为敌人带来不幸的结局。自身获得2回合 隐身 赋予2层 点火 。有 100% 的概率对敌人造成2回合 攻击力减少 与1回合 沉默 效果。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1053_3.webp"
         }
@@ -1736,33 +1736,33 @@
       "class": "supporter",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1054.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1054.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1054.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "月华",
-          "descriptionZh": null,
+          "descriptionZh": "亚瑟菈的最大生命力增加 15% 。亚瑟菈使用 美丽刀刃 后，恢复目前生命力比例最低的我军生命力。依赋予在自身身上的 洞察 层数，每层增加 20% 夹攻率，最多可套用至5层。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "美丽刀刃",
-          "descriptionZh": null,
+          "descriptionZh": "跑向敌人用力向上斩击。赋予自身1层 洞察 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_1.webp"
         },
         {
           "type": "special",
           "nameZh": "黄金之舞",
-          "descriptionZh": null,
+          "descriptionZh": "散发光芒并发出剑气攻击敌人。恢复全体我军生命力，自身获得2回合 星光心愿（无法解除） ，并赋予自身1层 洞察 。伤害量与恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "光之奏鸣曲",
-          "descriptionZh": null,
+          "descriptionZh": "走下红地毯迎接我军。恢复全体我军生命力，解除2个弱化效果后，使除自身外的全体我军行动条增加15%。赋予自身1层 洞察 。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1054_3.webp"
         }
@@ -1780,33 +1780,33 @@
       "class": "supporter",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1055.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1055.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1055.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "誓约",
-          "descriptionZh": null,
+          "descriptionZh": "卡蜜最大生命力增加 15% 。卡蜜于首次战斗开始时，对除自身外的攻击力最高的我军赋予 爱的誓约（无法解除） 。处于 爱的誓约（无法解除） 状态的我军遭受单一攻击时，由自己承受该我军受到伤害的40%，并使自身行动条增加 30% 。伤害量分摊效果仅适用最高效果。使用 请勿打扰 后，恢复全体我军生命力，若冷冻达到最大层数则增加恢复量。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "请勿打扰",
-          "descriptionZh": null,
+          "descriptionZh": "由于美好时光被打扰，卡蜜满怀愤怒地攻击敌人。赋予自身1层 冷冻 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_1.webp"
         },
         {
           "type": "special",
           "nameZh": "守护骑士",
-          "descriptionZh": null,
+          "descriptionZh": "以蕴含守护之力的盾牌守护我军。处于 爱的誓约（无法解除） 状态的我军遭受攻击时，会对该我军发动 守护骑士 。恢复我军目标生命力，并产生持续2回合的 护盾 ，之后使自身与我军目标的行动条增加 20% 。赋予自身2层 冷冻 。恢复量与护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "婚礼进行曲",
-          "descriptionZh": null,
+          "descriptionZh": "卡蜜抛出自己的捧花支持我军。赋予自身3层 冷冻 。解除我军目标所有弱化效果并恢复生命力。若我军目标为月亮属性，则额外赋予该我军3层 冷冻 。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1055_3.webp"
         }
@@ -1824,33 +1824,33 @@
       "class": "caster",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1056.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1056.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1056.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "纯白斗志",
-          "descriptionZh": null,
+          "descriptionZh": "艾芬黛尔的攻击力增加 15% 。艾芬黛尔在除自身外的我军发生暴击时，赋予自身1层 点火 。太阳属性我军在回合开始时，会分别以 100% 几率赋予自身2层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "猎鹰突袭",
-          "descriptionZh": null,
+          "descriptionZh": "趁敌人露出破绽时冲入怀中，以双剑术斩击。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_1.webp"
         },
         {
           "type": "special",
           "nameZh": "丢捧花",
-          "descriptionZh": null,
+          "descriptionZh": "攻击因抛出的捧花而分心的敌人。有100%几率使敌人行动条减少20%。攻击时若敌人处于 护盾 状态，则伤害量额外增加150%，若攻击后破坏护盾，则使除自身外的攻击力最高的我军行动条增加30%。自身回合攻击后，若自身的 点火 达到最大层数，则获得额外回合并赋予自身2回合 攻击力增加 ，并消耗所有 点火 层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "新娘，进场",
-          "descriptionZh": null,
+          "descriptionZh": "下定决心的艾芬黛尔惩戒妨碍婚礼之人。赋予自身2回合 速度增加 。攻击时，若目标处于 护盾 状态，则使其行动条减少15%，并依据全体敌人的 护盾 数量使伤害量增加15%。最多可叠加3次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1056_3.webp"
         }
@@ -1868,33 +1868,33 @@
       "class": "caster",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1057.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1057.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1057.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "兑现",
-          "descriptionZh": null,
+          "descriptionZh": "芙蕾的攻击力增加 15% 。芙蕾在回合开始时，若自身 冷冻 为最大层数，则自身获得1次 豪赌之客（无法解除） ，并消耗所有 冷冻层数 。回合开始时，若自身 豪赌之客（无法解除） 为最大层数，则不消耗 冷冻 。除自身外的月亮属性我军攻击后，使自身行动条增加8%，且自身有 100% 的机率获得1次 豪赌之客（无法解除） 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "拒绝下注",
-          "descriptionZh": null,
+          "descriptionZh": "面对对方荒谬的下注，芙蕾用尽全力甩敌人一记耳光。赋予自身1层 冷冻 。在自身回合使用时，若自身的 豪赌之客（无法解除） 为最大层数，则改为使用 强制协商 而非 拒绝下注 。 强制协商：面对敌人荒谬的下注，芙蕾用尽全力重击敌人。攻击时，伤害量增加100%。攻击后，使自身行动条增加30%，并赋予自身1层 冷冻 后解除 豪赌之客（无法解除） 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_1.webp"
         },
         {
           "type": "special",
           "nameZh": "全押",
-          "descriptionZh": null,
+          "descriptionZh": "芙蕾押上自己拥有的所有筹码支持全体我军。全体我军获得3回合 暴击率增加 ，以各 87% 的机率赋予自身3层 冷冻 。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "靶心",
-          "descriptionZh": null,
+          "descriptionZh": "芙蕾射出飞镖并拿下高分攻击全体敌人。自身获得2回合 攻击力增加 ，并以各 85% 的机率获得3次 豪赌之客（无法解除） 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1057_3.webp"
         }
@@ -1912,33 +1912,33 @@
       "class": "assassin",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1058.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1058.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1058.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "斯特拉尼斯之主",
-          "descriptionZh": null,
+          "descriptionZh": "阿莫拉的攻击力增加 15% 。阿莫拉攻击时若自身并非弱化效果状态，则伤害量增加 30% 。受到敌人攻击后，若自身处于弱化效果状态，则赋予自身3层 洞察 。回合开始时，若自身的 洞察 为最大层数，消耗所有层数并解除自身的所有弱化效果后，自身获得2回合 攻击力增加 与 夜绽之花（无法解除） 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "不醉之枪",
-          "descriptionZh": null,
+          "descriptionZh": "以肉眼难以捕捉的速度连续攻击敌人。赋予自身1层 洞察 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_1.webp"
         },
         {
           "type": "special",
           "nameZh": "穿星之芒",
-          "descriptionZh": null,
+          "descriptionZh": "高高跃起后，以强大的力量向下猛击敌人。有100%概率使敌人发生1回合 命中率减少 ，使自身行动条增加 20% ，并赋予自身1层 洞察 。攻击后，若自身处于 夜绽之花（无法解除） 状态，则使该技能的冷却时间减少1回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "光铸裁决",
-          "descriptionZh": null,
+          "descriptionZh": "声明运行，攻击全体敌人。自身获得3回合 夜绽之花（无法解除） ，且有 85% 的概率对全体敌人造成2回合 命中率减少 。自身获得额外回合。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1058_3.webp"
         }
@@ -1956,33 +1956,33 @@
       "class": "defender",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1501.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1501.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1501.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "模糊的情感",
-          "descriptionZh": null,
+          "descriptionZh": "薇絲塔的最大生命力增加 15% 。薇絲塔受到攻擊後，若自身的躍進為最大層數，對自身產生2回合 護盾 ，並消耗所有 躍進 層數。受到全體攻擊後，有 40% 機率對隨機敵人發動 擊退 。額外發動效果每回合僅觸發1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "坚定不移的长枪",
-          "descriptionZh": null,
+          "descriptionZh": "以长枪冲锋刺击敌人。赋予自身1层 跃进 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_1.webp"
         },
         {
           "type": "special",
           "nameZh": "击退",
-          "descriptionZh": null,
+          "descriptionZh": "展开护盾屏蔽敌人视线后进行突袭。有100%几率对敌人造成2回合 攻击力减少 效果。使自身行动条增加30%，并对目前生命力比例最低的我军赋予2回合 护盾 后，赋予自身1层 跃进 。伤害量与护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "势不可挡的冲锋",
-          "descriptionZh": null,
+          "descriptionZh": "将虚空之力灌注于长枪后全速俯冲攻击敌人。对全体我军赋予2回合 防御力增加 效果，并对自身产生2回合护盾后，赋予自身1层 跃进 。若自身生命力低于50%，护盾数值增加50%。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1501_3.webp"
         }
@@ -2000,33 +2000,33 @@
       "class": "defender",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1502.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1502.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1502.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "飘来了香味",
-          "descriptionZh": null,
+          "descriptionZh": "安娜的最大生命力增加 15% 。安娜使用 请停止抵抗！ 后，使除自身外随机我军的行动条增加 15% 。受到单一攻击后，赋予自身1层 点火 。攻击后若自身的 点火 为最大层数，对自身产生1回合 强化反击 ，并消耗所有点火层数。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "请停止抵抗！",
-          "descriptionZh": null,
+          "descriptionZh": "挥舞甩棍教训敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_1.webp"
         },
         {
           "type": "special",
           "nameZh": "吃完再开始！",
-          "descriptionZh": null,
+          "descriptionZh": "安娜吃下最喜欢的街角烘焙坊甜甜圈来补充干劲。恢复自身生命力，且获得3回合 速度增加 和 护盾 。恢复量与护盾依自身最大生命力比例增加",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "全部逮捕！",
-          "descriptionZh": null,
+          "descriptionZh": "安娜吹响哨子召集逮捕组扑向敌人。对全体我军赋予2回合 防御力增加 效果，并有100%几率对敌人造成2回合 攻击力减少 效果，之后赋予自身3层 点火 。攻击后，若自身生命力低于50%，恢复自身生命力。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1502_3.webp"
         }
@@ -2044,33 +2044,33 @@
       "class": "assassin",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1506.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1506.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1506.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "铁锤与铁砧",
-          "descriptionZh": null,
+          "descriptionZh": "玛尔希的暴击率增加 15% 。首次战斗开始时，或我军强韧度被击破时，使自身获得2次 破损螺帽 。回合开始时，若自身的 破损螺帽 为最大层数，对自身造成 六角螺帽 ，并解除所有 破损螺帽 。攻击时，依自身被赋予的 点火 层数，每层使暴击伤害增加 3% ，最多可套用至5层。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "转动螺帽",
-          "descriptionZh": null,
+          "descriptionZh": "运用全身挥动扳手攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_1.webp"
         },
         {
           "type": "special",
           "nameZh": "钉入大钉",
-          "descriptionZh": null,
+          "descriptionZh": "以改造的钉枪攻击敌人。有100%几率对敌人造成2回合 燃烧 ，并对自身产生2回合 速度增加 效果。发生暴击时，使自身行动条增加30%，并造成1次 破损螺帽 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "破坏螺丝",
-          "descriptionZh": null,
+          "descriptionZh": "将扳手输出开到最大，拆除前方一切障碍。对自身产生2回合 攻击力增加 效果，并有100%几率对敌人造成2回合 恢复减少 效果。发生暴击时，使自身行动条增加30%，并造成1次 破损螺帽 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1506_3.webp"
         }
@@ -2088,33 +2088,33 @@
       "class": "supporter",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1507.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1507.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1507.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "资深邮差",
-          "descriptionZh": null,
+          "descriptionZh": "贝拉的最大生命力增加 15% 。贝拉受到攻击后，若自身的 冷冻 为最大层数，使自身行动条增加 15% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "适当的应对",
-          "descriptionZh": null,
+          "descriptionZh": "以守护包裹的信念攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_1.webp"
         },
         {
           "type": "special",
           "nameZh": "快速安全的配送",
-          "descriptionZh": "贝拉带着好消息到来。恢复我军目标的生命力，并解除我军的1个弱化效果。恢复量依自身最大生命力比例增加。",
+          "descriptionZh": "贝拉带着好消息到来。恢复我军目标的生命力，并解除我军的2个弱化效果后，使自身行动条增加40%。若我军目标为月亮属性，则增加恢复量。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "迈向梦想的一步",
-          "descriptionZh": null,
+          "descriptionZh": "贝拉完成为我军准备的特制包裹配送。恢复全体我军生命力，并获得2回合 特快送货 1个后，赋予自身3层 冷冻 。若我军目标为月亮属性，则增加恢复量。恢复量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1507_3.webp"
         }
@@ -2132,33 +2132,33 @@
       "class": "ranger",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1508.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1508.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1508.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "晋升野心",
-          "descriptionZh": null,
+          "descriptionZh": "娜鲁的攻击力增加 15% 。娜鲁使用 请看这里！ 时，敌人每持有一个弱化效果，伤害量增加 3% ，最多可套用至5层。使用 请看这里！ 后，若自身的 跃进 为最大层数，消耗所有层数后再发动一次 请看这里！ 。额外发动效果在自身回合内仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "请看这里！",
-          "descriptionZh": null,
+          "descriptionZh": "在六分仪上凝聚星辰之力射向敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_1.webp"
         },
         {
           "type": "special",
           "nameZh": "这就是我的实力",
-          "descriptionZh": null,
+          "descriptionZh": "计算可能坠落于敌人的落体。自身获得2回合 攻击力增加 效果。攻击时，若敌人为弱化效果状态，则伤害量增加20%。攻击后，敌人每持有一个弱化效果赋予1层 跃进 ，最多可套用至5层。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "超出预期范围了！",
-          "descriptionZh": null,
+          "descriptionZh": "以满溢的自信心，利用未完成方程式进行能量发散算式。有 85% 的几率对敌人造成2回合 速度减少 效果，并有100%几率产生2回合 效果抗性减少 效果后，赋予自身2层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1508_3.webp"
         }
@@ -2176,33 +2176,33 @@
       "class": "assassin",
       "attackType": "slash",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1509.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1509.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1509.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "严守时间",
-          "descriptionZh": null,
+          "descriptionZh": "克莱儿的攻击力增加 15% 。克莱儿攻击时，若敌人的生命力为50%以上，贯穿 15% 防御力。攻击时，若自身的 冷冻 为最大层数，消耗所有层数后，使自身行动条增加30%。自身回合内仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "完美一击",
-          "descriptionZh": null,
+          "descriptionZh": "大幅度挥舞长枪攻击敌人。赋予自身1层 冷冻 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_1.webp"
         },
         {
           "type": "special",
           "nameZh": "锋利荆棘",
-          "descriptionZh": null,
+          "descriptionZh": "以缠绕锐利气息的长枪连续刺击敌人。自身获得2回合 速度增加 。攻击时，自身每持有1个强化效果，伤害量增加3%，最多可套用至5个。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "最后的服务",
-          "descriptionZh": null,
+          "descriptionZh": "对无礼的不速之客施展实力，让其认识到自己的错误。使自身行动条增加 20% ，并获得2回合 攻击力增加 效果。攻击时无视敌人的主动防御发生。击败敌人时，使自身获得2回合 隐身 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1509_3.webp"
         }
@@ -2220,33 +2220,33 @@
       "class": "striker",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1510.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1510.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1510.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "我来当你的对手！",
-          "descriptionZh": null,
+          "descriptionZh": "丝卡蕾的最大生命力增加 15% 。丝卡蕾使用 将你裁断！ 后，有 100% 的几率对敌人造成2回合 燃烧 。攻击时，若自身的 点火 为最大层数，消耗所有层数后对敌人发动 痛快地上啰！ 。自身回合内仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "将你裁断！",
-          "descriptionZh": null,
+          "descriptionZh": "以分离的泰利翁攻击敌人。赋予自身1层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_1.webp"
         },
         {
           "type": "special",
           "nameZh": "痛快地上啰！",
-          "descriptionZh": null,
+          "descriptionZh": "投掷被龙之气息烧红的泰利翁攻击敌人。自身获得2回合 攻击力增加 效果。攻击时，依敌人持有的 燃烧 数量，每层使伤害量增加15%，最多可套用至3个。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "能撑得住吗！",
-          "descriptionZh": null,
+          "descriptionZh": "召唤贝拉尔米尼一族的眷属，喷出超高温的气息。有100%几率对敌人造成2回合 燃烧 效果，且有 85% 的几率额外造成2回合 燃烧 效果。对自身造成2回合 喀嚓喀嚓！ ，并赋予3层 点火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1510_3.webp"
         }
@@ -2264,33 +2264,33 @@
       "class": "ranger",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/1511.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1511.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/1511.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "缠绕之风径",
-          "descriptionZh": null,
+          "descriptionZh": "克拉丽莎的暴击率增加 15% 。克拉丽莎在回合开始时，有 100% 几率赋予自身1层 跃进 。依自身 跃进 层数，额外套用效果。受到攻击后，消耗自身所有 跃进 层数。 跃进2层：攻击时伤害量增加15%。 跃进3层：攻击时命中率增加50%。 跃进4层：攻击后使自身行动条增加15%。 跃进5层：攻击后有100%几率使敌人行动条减少15%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "离远一点",
-          "descriptionZh": null,
+          "descriptionZh": "以毫无破绽的姿势狙击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_1.webp"
         },
         {
           "type": "special",
           "nameZh": "凭感觉射击",
-          "descriptionZh": null,
+          "descriptionZh": "抓住敌人松懈的破绽进行狙击。有100%几率对敌人造成1回合 速度减少 效果，并使自身行动条增加25%。发生暴击时，使自身行动条额外增加15%。攻击时若敌人为月亮属性，伤害量增加20%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "枪要这样射才对",
-          "descriptionZh": null,
+          "descriptionZh": "以超凡视力捕捉敌人隐藏的弱点后狙击。自身获得2回合 速度增加 效果，并赋予2层 跃进 。发生暴击时，有100%几率使敌人行动条减少20%。攻击时若敌人为月亮属性，伤害量增加20%。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/1511_3.webp"
         }
@@ -2308,33 +2308,33 @@
       "class": "defender",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3001.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3001.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3001.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "女武神意志",
-          "descriptionZh": null,
+          "descriptionZh": "希尔德的最大生命力增加 15% 。希尔德的主动防御发生机率增加 30% ，首次战斗开始时，使除自身外的全体我军获得1回合 护盾 。护盾依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "双生之刃",
-          "descriptionZh": null,
+          "descriptionZh": "快速接近敌人后挥舞两把剑攻击。赋予自身1层 点火 。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_1.webp"
         },
         {
           "type": "special",
           "nameZh": "龙之爆裂",
-          "descriptionZh": null,
+          "descriptionZh": "贯穿敌人并跳跃，进行下劈攻击。自身获得2回合 免疫 和 防御力增加 。攻击后，若自身为 点火 最大层数，则使 龙之爆裂 的冷却时间缩短1回合，并消耗 点火 所有层数。伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "爆裂过载",
-          "descriptionZh": null,
+          "descriptionZh": "向前冲锋并以炮击攻击全体敌人。自身获得3回合 法夫尼尔降临（无法解除） ，有 85% 机率对行动条最高的敌人造成1回合 挑衅 。赋予自身1层 点火 。护盾与伤害量依自身最大生命力比例增加。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3001_3.webp"
         }
@@ -2352,33 +2352,33 @@
       "class": "ranger",
       "attackType": "impact",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3002.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3002.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3002.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "有经验的新人",
-          "descriptionZh": null,
+          "descriptionZh": "刘米娜的攻击力增加 15% 。刘米娜攻击后使自身攻击力增加 4% 。最多可叠加5次。发生暴击时，自身的行动条增加 15% 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "脉冲左轮",
-          "descriptionZh": null,
+          "descriptionZh": "使用脉冲左轮攻击敌人。赋予自身1层 跃进 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_1.webp"
         },
         {
           "type": "special",
           "nameZh": "脉冲冲击",
-          "descriptionZh": null,
+          "descriptionZh": "发射脉冲左轮的高输出能量攻击敌人。自身获得2回合 暴击率增加 ，有 85% 机率对敌人造成2回合 失血 。攻击后，若自身 跃进 为最大层数，则有100%机率对敌人额外造成2回合 失血 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "狼毒",
-          "descriptionZh": null,
+          "descriptionZh": "挥舞狼毒攻击全体敌人。自身获得2回合 攻击力增加 ，并赋予自身2层 跃进 。有 85% 机率对全体敌人各造成2回合2个 失血 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3002_3.webp"
         }
@@ -2396,33 +2396,33 @@
       "class": "ranger",
       "attackType": "elemental",
       "portraitUrl": "https://ss.esprcdn.dev/images/characters/portrait/3003.webp",
-      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3003.ui.webp",
+      "fullArtUrl": "https://ss.esprcdn.dev/images/characters/illustration/3003.webp",
       "skills": [
         {
           "type": "passive",
           "nameZh": "北方暴君",
-          "descriptionZh": null,
+          "descriptionZh": "罗莎莉亚的攻击力增加 15% 。罗莎莉亚使用 灰烬之火 后，依赋予在自身身上的 躁动 层数，每层使 业火（无法解除） 的发生概率增加20%，最多套用至5层。受到攻击时，自身目前的生命力不会降至40%以下。若受到攻击后，自身的生命力低于40%以下，获得 3回合 攻击力增加 。受到攻击后的效果在战斗中仅触发1次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_0.webp"
         },
         {
           "type": "basic",
           "nameZh": "灰烬之火",
-          "descriptionZh": null,
+          "descriptionZh": "向敌人发射灰烬之火进行攻击。赋予自身1层 躁动 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_1.webp"
         },
         {
           "type": "special",
           "nameZh": "君王审判",
-          "descriptionZh": null,
+          "descriptionZh": "以定罪的业火蹂躏敌人。赋予自身1层 躁动 。根据自身的 业火（无法解除） 叠加次数变更套用效果，并在攻击后解除所有自身的 业火（无法解除） 。 业火（无法解除）1层：伤害量增加10%。 业火（无法解除）2层：伤害量增加20%。 业火（无法解除）3层：伤害量增加20%并发动 灰烬之火 。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_2.webp"
         },
         {
           "type": "ultimate",
           "nameZh": "格调差异",
-          "descriptionZh": null,
+          "descriptionZh": "挥剑劈开行星，攻击全体敌人。有 85% 机率对全体敌人造成2回合 防御力减少 。自身的行动条增加50%，并获得3回合 王座之主人（无法解除） 。自身根据产生暴击的目标数量获得 业火（无法解除） ，最多获得3次。",
           "levelDescZh": "基本效果",
           "iconUrl": "https://ss.esprcdn.dev/images/characters/skills/3003_3.webp"
         }

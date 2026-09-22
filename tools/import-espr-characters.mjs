@@ -91,6 +91,17 @@ function parseSkills(html, skillStart) {
   const end = html.indexOf('\\"bloomSkills\\"', skillStart);
   const section = html.slice(skillStart, end >= 0 ? end : html.length);
   const starts = [...section.matchAll(/\{\\"name\\":\\"((?:\\\\.|[^"\\])*)\\",\\"type\\":\\"([^"\\]*)\\",\\"iconUrl\\":\\"([^"\\]*)\\"/g)];
+  const iconId = starts[0]?.[3]?.match(/characters\/skills\/(\d+)_\d+\.webp/)?.[1];
+  const visibleSkills = iconId
+    ? [...html.matchAll(new RegExp(`<img alt="([^"]+)"[^>]*srcSet="[^"]*skills%2F${iconId}_(\\d+)\\.webp`, "g"))]
+        .map((match, index, matches) => {
+          const chunk = html.slice(match.index, matches[index + 1]?.index ?? html.length);
+          return stripMarkup(chunk.match(/<p class="mt-2 text-sm text-gray-400">([\s\S]*?)<\/p>/)?.[1] ?? "");
+        })
+    : [];
+  const visibleDescriptions = [...html.matchAll(/<p class="mt-2 text-sm text-gray-400">([\s\S]*?)<\/p>/g)]
+    .map((match) => stripMarkup(match[1]));
+  const descriptions = visibleSkills.length >= starts.length ? visibleSkills : visibleDescriptions;
   return starts.map((match, index) => {
     const chunk = section.slice(match.index, starts[index + 1]?.index ?? section.length);
     const description = [...chunk.matchAll(/\\"descriptionHtml\\":\\"((?:\\\\.|[^"\\])*)\\"/g)].map((match) => match[1]).find((value) => !value.startsWith("$"));
@@ -98,7 +109,7 @@ function parseSkills(html, skillStart) {
     return {
       type: match[2],
       nameZh: decodeEscaped(match[1]),
-      descriptionZh: description && !description.startsWith("$") ? stripMarkup(description) : null,
+      descriptionZh: descriptions[index] || (description && !description.startsWith("$") ? stripMarkup(description) : null),
       levelDescZh: levelDesc && !levelDesc.startsWith("$") ? stripMarkup(levelDesc) : null,
       iconUrl: decodeEscaped(match[3])
     };
@@ -143,7 +154,9 @@ async function fetchHtml(url) {
 
 const roster = JSON.parse(await readFile(rosterPath, "utf8"));
 const characters = [];
-const sourceCharacters = roster.characters.slice(0, Number(process.env.ESPR_LIMIT ?? roster.characters.length));
+const importStart = Number(process.env.ESPR_START ?? 0);
+const importLimit = Number(process.env.ESPR_LIMIT ?? roster.characters.length);
+const sourceCharacters = roster.characters.slice(importStart, importStart + importLimit);
 for (const character of sourceCharacters) {
   const slug = slugByRosterId[character.id];
   if (!slug) throw new Error(`缺少 ESPR slug 映射：${character.id}`);
