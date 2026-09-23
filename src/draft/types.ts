@@ -37,6 +37,7 @@ export interface DraftStageRule {
   count?: number;
   countPerSide?: number;
   simultaneous?: boolean;
+  allowDuplicateAcrossSides?: boolean;
   eligibleFrom?: "opponentPicks";
 }
 

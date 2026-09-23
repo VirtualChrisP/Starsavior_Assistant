@@ -132,12 +132,13 @@ export function validateDraftAction(state, action, roster) {
   if (typeof action.rosterId !== "string" || action.rosterId.length === 0) errors.push("rosterId 不能为空");
   if (!roster?.characters?.some((character) => character.id === action.rosterId)) errors.push("角色不在当前阵容快照中");
 
-  const banned = new Set([...state.allyBans, ...state.enemyBans]);
+  const ownBans = new Set(action.side === "ally" ? state.allyBans : state.enemyBans);
+  const opponentBans = new Set(action.side === "ally" ? state.enemyBans : state.allyBans);
   const allyPicked = new Set(state.allyPicks);
   const enemyPicked = new Set(state.enemyPicks);
   const stage = getStage(state);
   const isClosingBan = stage?.eligibleFrom === "opponentPicks" && action.type === "ban";
-  if (banned.has(action.rosterId)) errors.push("角色已经被 Ban");
+  if (ownBans.has(action.rosterId) || (!stage?.allowDuplicateAcrossSides && opponentBans.has(action.rosterId))) errors.push("角色已经被 Ban");
   if (!isClosingBan && (allyPicked.has(action.rosterId) || enemyPicked.has(action.rosterId))) errors.push("角色已经被 Pick");
   if (!isClosingBan && !state.rules.allowDuplicateAcrossSides && (allyPicked.has(action.rosterId) || enemyPicked.has(action.rosterId))) errors.push("当前规则不允许双方重复选择角色");
 

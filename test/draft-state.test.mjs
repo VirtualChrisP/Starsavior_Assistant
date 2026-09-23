@@ -81,6 +81,19 @@ test("亚服阶段规则支持同时首轮禁用和随机首选方", () => {
   assert.equal(state.currentSide, "ally");
 });
 
+test("亚服首轮双方可以禁用同一名角色", () => {
+  let state = createDraftState({ draftId: "asia-same-opening-ban", patch: roster.patch, region: "asia", rules: asiaRules });
+  state = setFirstPicker(state, "ally");
+  state = applyDraftAction(state, { type: "ban", side: "ally", rosterId: "lacy" }, roster);
+  const enemyActions = getLegalDraftActions(state, roster).filter((action) => action.side === "enemy");
+  assert.ok(enemyActions.some((action) => action.rosterId === "lacy"));
+  state = applyDraftAction(state, { type: "ban", side: "enemy", rosterId: "lacy" }, roster);
+  assert.deepEqual(state.allyBans, ["lacy"]);
+  assert.deepEqual(state.enemyBans, ["lacy"]);
+  assert.equal(state.stageIndex, 1);
+  assert.ok(!getLegalDraftActions(state, roster).some((action) => action.rosterId === "lacy"));
+});
+
 test("亚服末轮禁用只能选择对方已选角色", () => {
   let state = createDraftState({ draftId: "asia-closing-ban", patch: roster.patch, region: "asia", rules: asiaRules, firstPicker: "ally" });
   const picks = [
